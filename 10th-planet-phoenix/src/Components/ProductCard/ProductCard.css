@@ -6,7 +6,7 @@
   padding: 16px;
   border-radius: 8px;
   text-align: center;
-  height: 350px; /* Set a fixed height for all cards */
+  height: 350px;
 }
 
 .product-card img {
@@ -34,7 +34,7 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  margin-top: auto; /* Push the button to the bottom */
+  margin-top: auto;
 }
 
 .product-card button:hover {
