@@ -72,13 +72,11 @@ function ProductGrid() {
     },
   ];
 
-  // State to control how many products to display
-  const [visibleProducts, setVisibleProducts] = useState(4); // Initial number of products (e.g., 8)
+  const [visibleProducts, setVisibleProducts] = useState(4);
 
-  // Load more products
-  const loadMoreProducts = () => {
-    setVisibleProducts((prevState) => prevState + 4); // Load 8 more each time
-  };
+  function loadMoreProducts() {
+    setVisibleProducts((prevState) => prevState + 4);
+  }
 
   return (
     <div className="p-4 product-grid-container">
