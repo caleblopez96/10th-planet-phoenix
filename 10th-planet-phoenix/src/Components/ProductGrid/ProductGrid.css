@@ -1,0 +1,16 @@
+/* Center the grid vertically and horizontally */
+.product-grid-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  width: 80%;
+  max-width: 1200px;
+}
