@@ -87,9 +87,10 @@ function ProductGrid() {
           <ProductCard key={product.id} product={product} />
         ))}
       </div>
-
       {visibleProducts < allProducts.length && (
-        <button onClick={loadMoreProducts}>Load More</button>
+        <div className="button-container">
+          <button onClick={loadMoreProducts}>Load More</button>
+        </div>
       )}
     </div>
   );
