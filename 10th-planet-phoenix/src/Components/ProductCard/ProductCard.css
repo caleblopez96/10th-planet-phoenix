@@ -23,8 +23,8 @@
 }
 
 .product-card p {
-  color: #4a4a4a; /* Equivalent to text-gray-700 */
-  margin-bottom: 8px; /* Add margin to the bottom for spacing */
+  color: #4a4a4a;
+  margin-bottom: 8px;
 }
 
 .product-card button {
