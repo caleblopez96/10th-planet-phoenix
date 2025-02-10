@@ -97,13 +97,4 @@ function ProductGrid() {
   );
 }
 
-{
-  visibleProducts < allProducts.length && (
-    <div className="button-container">
-      {" "}
-      <button onClick={loadMoreProducts}>Load More</button>
-    </div>
-  );
-}
-
 export default ProductGrid;
