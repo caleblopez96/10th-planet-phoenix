@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import desktop1 from "../../assets/HERO LG/MCC_8853.jpg";
+import desktop1 from "../../assets/HERO LG/MCC_8853(2).jpg";
 import desktop2 from "../../assets/HERO LG/MCC_8792.jpg";
 import desktop3 from "../../assets/HERO LG/20220112_200025.jpg";
 import desktop4 from "../../assets/HERO LG/received_10100266450098952.jpeg";
@@ -44,10 +44,10 @@ const Hero = () => {
       <img
         src={currentImages[imageIndex]}
         alt="Background"
-        className="absolute inset-0 w-full h-full object-cover z-0"
+        className="absolute inset-0 w-full h-full object-cover z-0 opacity-70"
       />
       <div className="p-8 rounded-lg z-10 relative">
-        <h1 className="text-4xl md:text-6xl font-bold">
+        <h1 className="text-4xl md:text-6xl font-bold text-pretty">
           10TH PLANET JIU-JITSU PHOENIX
         </h1>
         <p className="text-lg md:text-xl mt-4">
