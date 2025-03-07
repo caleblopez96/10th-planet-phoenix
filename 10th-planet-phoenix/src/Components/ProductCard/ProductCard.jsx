@@ -17,9 +17,8 @@ function ProductCard({ product }) {
         className="w-full h-64 object-cover transition-all duration-500 ease-in-out group-hover:scale-110"
       />
       <div
-        className={`absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 transition-opacity duration-300 ease-in-out ${
-          hovered ? "opacity-40" : "opacity-0"
-        }`}
+        className={`absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 transition-opacity duration-300 ease-in-out 
+        ${hovered ? "opacity-40" : "opacity-0"}`}
       />
       <div className="p-6 space-y-4">
         <h2 className="text-2xl font-bold text-gray-900 truncate hover:text-indigo-600 transition-colors duration-300">
