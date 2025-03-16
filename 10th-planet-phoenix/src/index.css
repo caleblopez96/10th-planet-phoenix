@@ -3,4 +3,25 @@
 body {
   background-color: darkgray;
   height: 100vh;
+  font-family: "Bank Gothic", sans-serif;
+}
+
+h1 {
+  font-family: "Supreme", sans-serif;
+}
+
+/* src/styles.css or src/main.css */
+
+@font-face {
+  font-family: "Bank Gothic";
+  src: url("/fonts/bank-gothic-light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Supreme";
+  src: url("/fonts/SUPRRG__.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
