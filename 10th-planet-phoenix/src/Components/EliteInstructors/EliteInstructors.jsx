@@ -40,6 +40,16 @@ const EliteInstructors = () => {
               First Last
             </p>
           </div>
+
+          <div className="w-full h-60 bg-gray-400 rounded-lg shadow-lg flex flex-col items-center justify-center transition-all hover:bg-gray-500">
+            <div className="w-20 h-20 rounded-full bg-gray-600 mb-4"></div>
+            <span className="text-gray-700 font-medium text-lg">
+              Instructor 4
+            </span>
+            <p className="text-gray-600 text-sm mt-2 px-4 text-center">
+              First Last
+            </p>
+          </div>
         </div>
       </div>
     </section>

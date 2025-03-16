@@ -6,11 +6,10 @@ body {
   font-family: "Bank Gothic", sans-serif;
 }
 
-h1 {
+h1,
+h2 {
   font-family: "Supreme", sans-serif;
 }
-
-/* src/styles.css or src/main.css */
 
 @font-face {
   font-family: "Bank Gothic";

@@ -40,20 +40,27 @@ const Hero = () => {
   const currentImages = isMobile ? mobileImages : desktopImages;
 
   return (
-    <section className="relative min-h-screen w-full flex flex-col items-center justify-center text-white text-center transition-all duration-500 overflow-hidden">
-      <img
-        src={currentImages[imageIndex]}
-        alt="Background"
-        className="absolute inset-0 w-full h-full object-cover z-0 opacity-70"
-      />
-      <div className="p-8 rounded-lg z-10 relative">
-        <h1 className="text-4xl md:text-6xl font-bold text-pretty">
+    <section
+      className="relative min-h-screen w-full flex flex-col items-center justify-center text-white text-center transition-all duration-500 overflow-hidden"
+      style={{ marginTop: "0", paddingTop: "4rem" }}
+    >
+      <div className="absolute inset-0 w-full h-full z-0 overflow-hidden pt-16">
+        <img
+          src={currentImages[imageIndex]}
+          alt="Background"
+          className="w-full h-full object-cover opacity-70"
+          style={{ objectPosition: "center 25%" }}
+        />
+        <div className="absolute inset-0 bg-black opacity-30"></div>
+      </div>
+      <div className="p-8 rounded-lg z-10 relative max-w-4xl">
+        <h1 className="text-4xl md:text-6xl font-bold text-pretty drop-shadow-lg">
           10TH PLANET JIU-JITSU PHOENIX
         </h1>
-        <p className="text-lg md:text-xl mt-4">
+        <p className="text-lg md:text-xl mt-4 drop-shadow-md">
           LEARN THIS UNIQUE STYLE OF SUBMISSION GRAPPLING
         </p>
-        <button className="mt-6 px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg text-lg transition">
+        <button className="mt-8 px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white rounded-lg text-lg transition shadow-lg">
           Get Started
         </button>
       </div>
