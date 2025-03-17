@@ -60,7 +60,7 @@ const Hero = () => {
         <p className="text-lg md:text-xl mt-4 drop-shadow-md">
           LEARN THIS UNIQUE STYLE OF SUBMISSION GRAPPLING
         </p>
-        <button className="mt-8 px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white rounded-lg text-lg transition shadow-lg">
+        <button className="mt-8 px-8 py-4 bg-gray-300 hover:bg-gray-400 text-gray-800 rounded-md transition-colors shadow-md">
           Get Started
         </button>
       </div>
