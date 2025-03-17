@@ -49,7 +49,7 @@ const Information = () => {
 
           {/* Call to Action Buttons in Horizontal Layout */}
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
-            <button className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-md transition-colors shadow-md flex-1">
+            <button className="px-8 py-4 bg-red-600 hover:bg-red-700 text-white rounded-md transition-colors shadow-md flex-1">
               Start Training
             </button>
             <button className="px-8 py-4 bg-gray-700 hover:bg-gray-600 text-white border border-gray-600 rounded-md transition-colors shadow-md flex-1">

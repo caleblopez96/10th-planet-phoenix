@@ -31,17 +31,17 @@ const ClassesSection = () => {
   return (
     <section className="bg-gradient-to-b from-gray-800 to-gray-900 px-4 py-16 w-full relative overflow-hidden">
       {/* Decorative Background Elements */}
-      <div className="absolute top-0 left-0 w-64 h-64 bg-blue-500 opacity-10 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-500 opacity-10 rounded-full translate-x-1/2 translate-y-1/2"></div>
+      <div className="absolute top-0 left-0 w-64 h-64 bg-red-500 opacity-10 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-red-500 opacity-10 rounded-full translate-x-1/2 translate-y-1/2"></div>
 
       <div className="container mx-auto flex flex-col items-center relative z-10">
         {/* Section Header with Improved Typography */}
         <div className="mb-16 text-center">
-          <h3 className="text-sm uppercase tracking-widest text-blue-400 font-semibold mb-2">
+          <h3 className="text-sm uppercase tracking-widest text-red-400 font-semibold mb-2">
             Something for Everybody
           </h3>
           <h2 className="text-4xl font-bold text-white mb-4">Our Classes</h2>
-          <div className="w-24 h-1 bg-blue-500 mx-auto"></div>
+          <div className="w-24 h-1 bg-red-500 mx-auto"></div>
         </div>
 
         {/* Classes Grid with Staggered Layout */}
@@ -54,13 +54,13 @@ const ClassesSection = () => {
               }`}
             >
               {/* Class Card with Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-purple-700 opacity-80 group-hover:opacity-90 transition-opacity"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-red-600 to-purple-700 opacity-80 group-hover:opacity-90 transition-opacity"></div>
 
               {/* Class Content */}
               <div className="relative z-10 p-6 h-full flex flex-col justify-between min-h-64">
                 <div>
                   {/* Level Badge */}
-                  <span className="inline-block px-3 py-1 bg-gray-900 bg-opacity-50 text-xs text-white rounded-full mb-4">
+                  <span className="inline-block px-3 py-1 bg-red-900 bg-opacity-50 text-xs text-white rounded-full mb-4">
                     {classItem.level}
                   </span>
 
@@ -95,7 +95,7 @@ const ClassesSection = () => {
 
         {/* CTA Button */}
         <div className="mt-16">
-          <button className="px-8 py-4 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors shadow-lg">
+          <button className="px-8 py-4 bg-red-600 text-white rounded-md hover:bg-red-700 transition-colors shadow-lg">
             View Full Schedule
           </button>
         </div>
