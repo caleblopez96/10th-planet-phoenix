@@ -30,12 +30,7 @@ const ClassesSection = () => {
 
   return (
     <section className="bg-gradient-to-b from-gray-800 to-gray-900 px-4 py-16 w-full relative overflow-hidden">
-      {/* Decorative Background Elements */}
-      <div className="absolute top-0 left-0 w-64 h-64 bg-red-500 opacity-10 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-red-500 opacity-10 rounded-full translate-x-1/2 translate-y-1/2"></div>
-
       <div className="container mx-auto flex flex-col items-center relative z-10">
-        {/* Section Header with Improved Typography */}
         <div className="mb-16 text-center">
           <h3 className="text-sm uppercase tracking-widest text-red-400 font-semibold mb-2">
             Something for Everybody
@@ -44,7 +39,6 @@ const ClassesSection = () => {
           <div className="w-24 h-1 bg-red-500 mx-auto"></div>
         </div>
 
-        {/* Classes Grid with Staggered Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full max-w-6xl">
           {classes.map((classItem, index) => (
             <div

@@ -1,7 +1,6 @@
 const Information = () => {
   return (
     <div className="py-12 bg-gradient-to-r from-gray-900 to-gray-800">
-      {/* Quote Section with Stylized Design */}
       <div className="max-w-4xl mx-auto mb-12 relative">
         <div className="absolute text-6xl text-gray-700 opacity-30 top-0 left-5">
           "

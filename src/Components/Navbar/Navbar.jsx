@@ -70,7 +70,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <ul className="md:hidden flex flex-col items-center mt-4 space-y-4 bg-gray-100 py-4">
+        <ul className="md:hidden flex flex-col items-center mt-4 space-y-4 py-4">
           <li>
             <a href="#home" className="cursor-pointer" onClick={toggleMenu}>
               Home
