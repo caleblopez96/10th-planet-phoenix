@@ -17,17 +17,26 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6">
           <li>
-            <a href="#home" className="cursor-pointer hover:text-blue-500">
+            <a
+              href="#home"
+              className="cursor-pointer hover:text-blue-500 text-lg"
+            >
               Home
             </a>
           </li>
           <li>
-            <a href="#about" className="cursor-pointer hover:text-blue-500">
+            <a
+              href="#about"
+              className="cursor-pointer hover:text-blue-500 text-lg"
+            >
               About
             </a>
           </li>
           <li>
-            <a href="#contact" className="cursor-pointer hover:text-blue-500">
+            <a
+              href="#contact"
+              className="cursor-pointer hover:text-blue-500 text-lg"
+            >
               Contact
             </a>
           </li>
