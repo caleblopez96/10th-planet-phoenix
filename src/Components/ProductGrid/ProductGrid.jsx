@@ -8,26 +8,28 @@ function ProductGrid() {
       id: 1,
       name: "Men's 10th Planet Neon Slides",
       price: "45.00",
-      image: "products/10th-planet-neon-slides.webp",
+      image: "/10th-planet-phoenix/products/10th-planet-neon-slides.webp",
     },
     {
       id: 2,
       name: "Men's 10th Planet Slides",
       price: "45.00",
-      image: "products/10th-planet-mens-slides.webp",
+      image: "/10th-planet-phoenix/products/10th-planet-mens-slides.webp",
     },
     {
       id: 3,
       name: "Hoodie",
       price: "60.00",
-      image: "products/10th-planet-phoenix-hoodie.webp",
+      image: "/10th-planet-phoenix/products/10th-planet-phoenix-hoodie.webp",
     },
     {
       id: 4,
       name: "Kids Orange Ranked Shirt",
       price: 25.0,
-      image: "products/10th-planet-kids-orange-ranked-shirt.webp",
-      imageHovered: "products/10th-planet-kids-orange-ranked-shirt-hover.jpg",
+      image:
+        "/10th-planet-phoenix/products/10th-planet-kids-orange-ranked-shirt.webp",
+      imageHovered:
+        "/10th-planet-phoenix/products/10th-planet-kids-orange-ranked-shirt-hover.jpg",
     },
     {
       id: 5,
