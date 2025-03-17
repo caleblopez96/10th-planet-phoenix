@@ -53,8 +53,7 @@ const ClassesSection = () => {
                 index % 2 === 0 ? "md:translate-y-8" : ""
               }`}
             >
-              {/* Class Card with Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-br from-red-600 to-purple-700 opacity-80 group-hover:opacity-90 transition-opacity"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-red-600 to-gray-800 opacity-80 group-hover:opacity-90 transition-opacity"></div>
 
               {/* Class Content */}
               <div className="relative z-10 p-6 h-full flex flex-col justify-between min-h-64">

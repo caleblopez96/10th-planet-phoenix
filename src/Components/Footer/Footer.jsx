@@ -2,7 +2,7 @@ import logo from "../../assets/logo/10th-planet-phoenix.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-white text-gray-900 py-8 mt-12 border-t border-gray-300">
+    <footer className="bg-white text-white py-8 mt-12 border-t border-gray-300 bg-gradient-to-b from-gray-800 to-gray-900">
       <div className="max-w-screen-xl mx-auto px-4">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
@@ -11,7 +11,7 @@ const Footer = () => {
             <a href="#home" className="mb-4">
               <img src={logo} alt="10th Planet Phoenix Logo" className="h-16" />
             </a>
-            <p className="text-gray-600 mb-4">
+            <p className="text-white mb-4">
               Training Brazilian Jiu-Jitsu athletes in the Phoenix area since
               2010. Join our community of dedicated grapplers today!
             </p>

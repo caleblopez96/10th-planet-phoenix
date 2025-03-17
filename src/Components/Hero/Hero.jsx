@@ -44,7 +44,7 @@ const Hero = () => {
       className="relative min-h-screen w-full flex flex-col items-center justify-center text-white text-center transition-all duration-500 overflow-hidden"
       style={{ marginTop: "0", paddingTop: "4rem" }}
     >
-      <div className="absolute inset-0 w-full h-full z-0 overflow-hidden pt-16">
+      <div className="absolute inset-0 w-full h-full z-0 overflow-hidden pt-16 grayscale">
         <img
           src={currentImages[imageIndex]}
           alt="Background"
@@ -54,7 +54,7 @@ const Hero = () => {
         <div className="absolute inset-0 bg-black opacity-30"></div>
       </div>
       <div className="p-8 rounded-lg z-10 relative max-w-4xl">
-        <h1 className="text-4xl md:text-6xl font-bold text-pretty drop-shadow-lg">
+        <h1 className="text-4xl md:text-6xl font-bold text-pretty drop-shadow-lg leading-20">
           10TH PLANET JIU-JITSU PHOENIX
         </h1>
         <p className="text-lg md:text-xl mt-4 drop-shadow-md">

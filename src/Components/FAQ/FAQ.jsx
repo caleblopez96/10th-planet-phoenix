@@ -26,7 +26,7 @@ const faqs = [
 
 const FAQ = () => {
   return (
-    <div className="max-w-lg mx-auto bg-gray-800 px-6 py-15 rounded-lg shadow-lg">
+    <div className="max-w-lg mx-auto bg-gray-800 px-6 py-15 rounded-lg shadow-lg my-10">
       <h2 className="text-white text-xl font-bold uppercase tracking-wide mb-4">
         Frequently Asked Questions
       </h2>

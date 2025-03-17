@@ -15,14 +15,14 @@ h3 {
 
 @font-face {
   font-family: "Bank Gothic";
-  src: url("/fonts/bank-gothic-light.ttf") format("truetype");
+  src: url("/src/Fonts/bank-gothic-light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Supreme";
-  src: url("/fonts/SUPRRG__.ttf") format("truetype");
+  src: url("/src/Fonts/SUPRRG__.TTF") format("truetype");
   font-weight: normal;
   font-style: normal;
 }

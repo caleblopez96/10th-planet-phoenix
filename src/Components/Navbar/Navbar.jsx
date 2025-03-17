@@ -7,7 +7,7 @@ const Navbar = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <nav className="fixed w-full z-50 p-4 transition-all bg-white text-gray-900">
+    <nav className="fixed w-full z-50 p-4 transition-all bg-gradient-to-br from-gray-800 to-gray-900 text-white">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <a href="#home">
