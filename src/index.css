@@ -1,4 +1,8 @@
 @import "tailwindcss";
+@import "tailwindcss/preflight";
+
+/* Import the Tailwind utilities */
+@tailwind utilities;
 
 body {
   background-color: darkgray;
