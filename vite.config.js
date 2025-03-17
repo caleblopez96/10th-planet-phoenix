@@ -5,5 +5,5 @@ import tailwindcss from "@tailwindcss/vite";
 // vite.config.js
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: "/10th-planet-phoenix/", // This should match the subdirectory in the URL
+  base: "/10th-planet-phoenix/",
 });
