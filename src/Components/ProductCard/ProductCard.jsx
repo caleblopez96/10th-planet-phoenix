@@ -25,7 +25,7 @@ function ProductCard({ product }) {
         />
       </div>
       <div className="p-4 space-y-2 bg-white">
-        <h2 className="text-lg font-bold text-gray-900 truncate hover:text-indigo-600 transition-colors duration-300">
+        <h2 className="text-md text-gray-900 truncate hover:text-indigo-600 transition-colors duration-300">
           {product.name}
         </h2>
         <p className="text-base font-semibold text-gray-700">

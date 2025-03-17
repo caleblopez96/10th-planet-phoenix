@@ -7,8 +7,10 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: "Supreme", sans-serif;
+  letter-spacing: 3px;
 }
 
 @font-face {

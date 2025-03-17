@@ -9,7 +9,7 @@ const CTABanner = ({
 }) => {
   return (
     <section
-      className={`relative w-full py-12 flex flex-col items-center justify-center ${
+      className={`relative w-full px-6 py-15 flex flex-col items-center justify-center ${
         !backgroundImage ? backgroundColor : ""
       }`}
     >
@@ -29,7 +29,7 @@ const CTABanner = ({
       )}
 
       <div className="container mx-auto flex flex-col items-center text-center z-10 px-4">
-        <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 tracking-wider">
+        <h2 className="text-2xl md:text-3xl text-white mb-8 tracking-wider">
           {title}
         </h2>
 

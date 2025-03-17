@@ -29,6 +29,22 @@ const Navbar = () => {
               href="#about"
               className="cursor-pointer hover:text-blue-500 text-lg"
             >
+              Instructors
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contact"
+              className="cursor-pointer hover:text-blue-500 text-lg"
+            >
+              Classes
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contact"
+              className="cursor-pointer hover:text-blue-500 text-lg"
+            >
               About
             </a>
           </li>
@@ -62,6 +78,16 @@ const Navbar = () => {
           </li>
           <li>
             <a href="#about" className="cursor-pointer" onClick={toggleMenu}>
+              Instructors
+            </a>
+          </li>
+          <li>
+            <a href="#contact" className="cursor-pointer" onClick={toggleMenu}>
+              Classes
+            </a>
+          </li>
+          <li>
+            <a href="#contact" className="cursor-pointer" onClick={toggleMenu}>
               About
             </a>
           </li>
