@@ -9,12 +9,11 @@ const Navbar = () => {
   return (
     <nav className="fixed w-full z-50 p-4 transition-all bg-gradient-to-br from-gray-800 to-gray-900 text-white">
       <div className="container mx-auto flex justify-between items-center">
-        {/* Logo */}
         <a href="#home">
           <img src={logo} alt="Logo" className="h-20" />
         </a>
 
-        {/* Desktop Menu */}
+        {/* desktop */}
         <ul className="hidden md:flex space-x-6">
           <li>
             <a
@@ -58,7 +57,6 @@ const Navbar = () => {
           </li>
         </ul>
 
-        {/* Mobile Menu Button */}
         <div className="md:hidden ml-4" onClick={toggleMenu}>
           <div className={`hamburger ${isMenuOpen ? "open" : ""}`}>
             <span className="block w-6 h-0.75 bg-current mb-1"></span>
