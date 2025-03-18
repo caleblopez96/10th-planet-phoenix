@@ -14,12 +14,9 @@ const Information = () => {
         </div>
       </div>
 
-      {/* Content Section with Visual Separation */}
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 px-5">
-        {/* Left Column - Image/Background */}
         <div className="hidden lg:block relative overflow-hidden rounded-lg shadow-xl">
           <div className="bg-gray-700 h-full w-full p-8 flex items-center justify-center">
-            {/* Could be replaced with actual image */}
             <div className="w-full h-full bg-gradient-to-br from-gray-700 to-gray-900 flex items-center justify-center">
               <div className="border-4 border-white bg-gray-800 rounded-full h-48 w-48 flex items-center justify-center">
                 <span className="text-white text-4xl font-bold">10P</span>
@@ -28,7 +25,6 @@ const Information = () => {
           </div>
         </div>
 
-        {/* Right Column - Text Content */}
         <div className="bg-gray-800 p-8 rounded-lg shadow-xl">
           <p className="text-gray-300 leading-relaxed mb-8">
             10th Planet Jiu Jitsu was created by Eddie Bravo under the tutelage
@@ -46,7 +42,6 @@ const Information = () => {
             further the system.
           </p>
 
-          {/* Call to Action Buttons in Horizontal Layout */}
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
             <button className="px-8 py-4 bg-red-600 hover:bg-red-700 text-white rounded-md transition-colors shadow-md flex-1">
               Start Training

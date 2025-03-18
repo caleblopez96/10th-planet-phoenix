@@ -49,7 +49,6 @@ const ClassesSection = () => {
             >
               <div className="absolute inset-0 bg-gradient-to-br from-red-600 to-gray-800 opacity-80 group-hover:opacity-90 transition-opacity"></div>
 
-              {/* Class Content */}
               <div className="relative z-10 p-6 h-full flex flex-col justify-between min-h-64">
                 <div>
                   {/* Level Badge */}
@@ -57,25 +56,21 @@ const ClassesSection = () => {
                     {classItem.level}
                   </span>
 
-                  {/* Class Title - Modified to allow wrapping */}
                   <h3 className="text-xl font-bold text-white mb-2 break-words hyphens-auto">
                     {classItem.title}
                   </h3>
 
-                  {/* Class Description */}
                   <p className="text-gray-200 mb-4 text-sm overflow-hidden">
                     {classItem.description}
                   </p>
                 </div>
 
-                {/* Class Time */}
                 <div className="flex items-center mt-auto">
                   <span className="text-xs text-gray-200 border-l-2 border-white pl-2 break-words">
                     {classItem.time}
                   </span>
                 </div>
 
-                {/* Hover Reveal Button */}
                 <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 py-3 px-6 translate-y-full group-hover:translate-y-0 transition-transform">
                   <button className="text-white text-sm font-medium w-full text-center">
                     Learn More
@@ -86,7 +81,6 @@ const ClassesSection = () => {
           ))}
         </div>
 
-        {/* CTA Button */}
         <div className="mt-16">
           <button className="px-8 py-4 bg-red-600 text-white rounded-md hover:bg-red-700 transition-colors shadow-lg">
             View Full Schedule

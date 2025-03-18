@@ -15,7 +15,6 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Quick Links */}
           <div>
             <h3 className="font-bold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2">
@@ -62,7 +61,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Info */}
           <div>
             <h3 className="font-bold text-lg mb-4">Contact Us</h3>
             <ul className="space-y-2">
@@ -91,7 +89,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Hours */}
           <div>
             <h3 className="font-bold text-lg mb-4">Hours</h3>
             <ul className="space-y-2">
@@ -106,7 +103,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Social Media */}
         <div className="flex justify-center space-x-6 my-6">
           <a
             href="#instagram"
@@ -134,7 +130,6 @@ const Footer = () => {
         {/* Divider */}
         <div className="border-t border-gray-200 my-4"></div>
 
-        {/* Copyright */}
         <div className="flex flex-col md:flex-row justify-between items-center pt-4">
           <p className="text-gray-500 text-sm mb-2 md:mb-0">
             &copy; {new Date().getFullYear()} 10th Planet Phoenix. All rights
