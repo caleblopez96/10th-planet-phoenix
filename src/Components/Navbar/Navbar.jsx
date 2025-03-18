@@ -19,7 +19,7 @@ const Navbar = () => {
           <li>
             <a
               href="#home"
-              className="cursor-pointer hover:text-blue-500 text-lg"
+              className="cursor-pointer hover:text-blue-500 text-md"
             >
               Home
             </a>
@@ -27,7 +27,7 @@ const Navbar = () => {
           <li>
             <a
               href="#about"
-              className="cursor-pointer hover:text-blue-500 text-lg"
+              className="cursor-pointer hover:text-blue-500 text-md"
             >
               Instructors
             </a>
@@ -35,7 +35,7 @@ const Navbar = () => {
           <li>
             <a
               href="#contact"
-              className="cursor-pointer hover:text-blue-500 text-lg"
+              className="cursor-pointer hover:text-blue-500 text-md"
             >
               Classes
             </a>
@@ -43,7 +43,7 @@ const Navbar = () => {
           <li>
             <a
               href="#contact"
-              className="cursor-pointer hover:text-blue-500 text-lg"
+              className="cursor-pointer hover:text-blue-500 text-md"
             >
               About
             </a>
@@ -51,7 +51,7 @@ const Navbar = () => {
           <li>
             <a
               href="#contact"
-              className="cursor-pointer hover:text-blue-500 text-lg"
+              className="cursor-pointer hover:text-blue-500 text-md"
             >
               Contact
             </a>

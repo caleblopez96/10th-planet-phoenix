@@ -57,20 +57,20 @@ const ClassesSection = () => {
                     {classItem.level}
                   </span>
 
-                  {/* Class Title */}
-                  <h3 className="text-xl font-bold text-white mb-2">
+                  {/* Class Title - Modified to allow wrapping */}
+                  <h3 className="text-xl font-bold text-white mb-2 break-words hyphens-auto">
                     {classItem.title}
                   </h3>
 
                   {/* Class Description */}
-                  <p className="text-gray-200 mb-4 text-sm">
+                  <p className="text-gray-200 mb-4 text-sm overflow-hidden">
                     {classItem.description}
                   </p>
                 </div>
 
                 {/* Class Time */}
                 <div className="flex items-center mt-auto">
-                  <span className="text-xs text-gray-200 border-l-2 border-white pl-2">
+                  <span className="text-xs text-gray-200 border-l-2 border-white pl-2 break-words">
                     {classItem.time}
                   </span>
                 </div>

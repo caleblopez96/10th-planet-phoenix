@@ -3,7 +3,7 @@ const CTABanner = ({
   buttonText = "Learn More",
   buttonLink = "#",
   backgroundImage = "",
-  backgroundColor = "bg-gradient-to-b from-gray-800 to-gray-900",
+  backgroundColor = "bg-gradient-to-t from-gray-800 to-gray-900",
   overlayOpacity = "opacity-60",
   onClick,
 }) => {

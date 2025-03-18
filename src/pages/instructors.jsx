@@ -5,6 +5,7 @@ const Instructors = () => {
   return (
     <>
       <Navbar />
+      <h2> test</h2>
     </>
   );
 };
