@@ -6,7 +6,6 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
-  // Get the basename from your configuration
   const basename = "/10th-planet-phoenix";
 
   return (
@@ -75,8 +74,7 @@ const Navbar = () => {
           <li>
             <Link
               to={`${basename}`}
-              className="cursor-pointer"
-              onClick={toggleMenu}
+              className="cursor-pointer hover:text-blue-500 text-md"
             >
               Home
             </Link>
