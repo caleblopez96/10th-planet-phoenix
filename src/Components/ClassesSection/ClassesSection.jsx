@@ -51,12 +51,12 @@ const ClassesSection = () => {
 
               <div className="relative z-10 p-6 h-full flex flex-col justify-between min-h-64">
                 <div>
-                  {/* Level Badge */}
+                  {/* class level */}
                   <span className="inline-block px-3 py-1 bg-red-900 bg-opacity-50 text-xs text-white rounded-full mb-4">
                     {classItem.level}
                   </span>
 
-                  <h3 className="text-xl font-bold text-white mb-2 break-words hyphens-auto">
+                  <h3 className="text-xl font-bold text-white mb-2 break-words hyphens-auto text-pretty">
                     {classItem.title}
                   </h3>
 

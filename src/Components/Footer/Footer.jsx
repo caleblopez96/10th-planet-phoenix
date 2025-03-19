@@ -127,7 +127,7 @@ const Footer = () => {
           </a>
         </div>
 
-        {/* Divider */}
+        {/* gray divider */}
         <div className="border-t border-gray-200 my-4"></div>
 
         <div className="flex flex-col md:flex-row justify-between items-center pt-4">

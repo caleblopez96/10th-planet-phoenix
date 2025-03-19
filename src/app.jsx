@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./Components/Navbar/Navbar"; // This assumes Navbar.jsx is inside src/Components/Navbar
+import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import Home from "./pages/home";
 import Instructors from "./pages/instructors";
@@ -13,7 +13,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/instructors" element={<Instructors />} />
+        <Route path="/instructors" element={<Instructors />} />{" "}
+        {/* Fixed path */}
         <Route path="/classes" element={<Classes />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />

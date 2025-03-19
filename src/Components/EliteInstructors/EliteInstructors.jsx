@@ -27,11 +27,11 @@ const EliteInstructors = () => {
 
   return (
     <section className="bg-gradient-to-r from-gray-900 to-gray-800 px-4 py-16 w-full relative">
-      {/* Background Pattern */}
+      {/* background */}
       <div className="absolute inset-0 opacity-5"></div>
 
       <div className="container mx-auto flex flex-col items-center relative z-10">
-        {/* Section Header with Visual Style */}
+        {/* header */}
         <div className="mb-16 text-center relative">
           <h3 className="text-sm uppercase tracking-widest text-red-400 font-bold mb-2">
             Meet the Team
@@ -49,7 +49,7 @@ const EliteInstructors = () => {
           </p>
         </div>
 
-        {/* Instructor Cards with Interactive Design */}
+        {/* instructor cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full max-w-6xl">
           {instructors.map((instructor, index) => (
             <div

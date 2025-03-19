@@ -1,11 +1,10 @@
-import Navbar from "../Components/Navbar/Navbar";
-import Footer from "../Components/Footer/Footer";
-
+import EliteInstructors from "../Components/EliteInstructors/EliteInstructors";
+import InstructorBio from "../Components/EliteInstructors/InstructorBio";
 const Instructors = () => {
   return (
     <>
-      <Navbar />
-      <h2> test</h2>
+      <EliteInstructors />
+      <InstructorBio />
     </>
   );
 };

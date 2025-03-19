@@ -1,4 +1,4 @@
-const Information = () => {
+const InstructorBio = () => {
   return (
     <div className="py-12 bg-gradient-to-b from-gray-900 to-gray-800">
       <div className="max-w-4xl mx-auto mb-12 relative">
@@ -6,8 +6,7 @@ const Information = () => {
           "
         </div>
         <h3 className="text-xl md:text-2xl lg:text-3xl text-white text-center my-4 p-5 italic font-light">
-          Where other systems cease to grow, 10th Planet finds itself in a
-          situation where its entire focus is to continue its own growth.
+          Coach John Botello
         </h3>
         <div className="absolute text-6xl text-gray-700 opacity-30 bottom-0 right-5">
           "
@@ -56,4 +55,4 @@ const Information = () => {
   );
 };
 
-export default Information;
+export default InstructorBio;

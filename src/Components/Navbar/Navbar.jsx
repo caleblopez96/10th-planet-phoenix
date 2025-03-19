@@ -1,59 +1,62 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import logo from "../../assets/logo/10th-planet-phoenix.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+  // Get the basename from your configuration
+  const basename = "/10th-planet-phoenix";
 
   return (
     <nav className="fixed w-full z-50 p-4 transition-all bg-gradient-to-br from-gray-800 to-gray-900 text-white">
       <div className="container mx-auto flex justify-between items-center">
-        <a href="#home">
+        <Link to={`${basename}`}>
           <img src={logo} alt="Logo" className="h-20" />
-        </a>
+        </Link>
 
         {/* desktop */}
         <ul className="hidden md:flex space-x-6">
           <li>
-            <a
-              href="#home"
+            <Link
+              to={`${basename}`}
               className="cursor-pointer hover:text-blue-500 text-md"
             >
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#about"
+            <Link
+              to={`${basename}/instructors`}
               className="cursor-pointer hover:text-blue-500 text-md"
             >
               Instructors
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#contact"
+            <Link
+              to={`${basename}/classes`}
               className="cursor-pointer hover:text-blue-500 text-md"
             >
               Classes
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#contact"
+            <Link
+              to={`${basename}/about`}
               className="cursor-pointer hover:text-blue-500 text-md"
             >
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#contact"
+            <Link
+              to={`${basename}/contact`}
               className="cursor-pointer hover:text-blue-500 text-md"
             >
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
 
@@ -70,29 +73,49 @@ const Navbar = () => {
       {isMenuOpen && (
         <ul className="md:hidden flex flex-col items-center mt-4 space-y-4 py-4">
           <li>
-            <a href="#home" className="cursor-pointer" onClick={toggleMenu}>
+            <Link
+              to={`${basename}`}
+              className="cursor-pointer"
+              onClick={toggleMenu}
+            >
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#about" className="cursor-pointer" onClick={toggleMenu}>
+            <Link
+              to={`${basename}/instructors`}
+              className="cursor-pointer"
+              onClick={toggleMenu}
+            >
               Instructors
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#contact" className="cursor-pointer" onClick={toggleMenu}>
+            <Link
+              to={`${basename}/classes`}
+              className="cursor-pointer"
+              onClick={toggleMenu}
+            >
               Classes
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#contact" className="cursor-pointer" onClick={toggleMenu}>
+            <Link
+              to={`${basename}/about`}
+              className="cursor-pointer"
+              onClick={toggleMenu}
+            >
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#contact" className="cursor-pointer" onClick={toggleMenu}>
+            <Link
+              to={`${basename}/contact`}
+              className="cursor-pointer"
+              onClick={toggleMenu}
+            >
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       )}
