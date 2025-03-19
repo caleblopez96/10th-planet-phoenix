@@ -74,7 +74,11 @@ const Navbar = () => {
           <li>
             <Link
               to={`${basename}`}
-              className="cursor-pointer hover:text-blue-500 text-md"
+              className="cursor-pointer"
+              onClick={(e) => {
+                toggleMenu();
+                alert("FUCKING CHRIS");
+              }}
             >
               Home
             </Link>
@@ -82,7 +86,8 @@ const Navbar = () => {
           <li>
             <Link
               to={`${basename}/instructors`}
-              className="cursor-pointer hover:text-blue-500 text-md"
+              className="cursor-pointer"
+              onClick={toggleMenu}
             >
               Instructors
             </Link>
