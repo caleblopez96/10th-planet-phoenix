@@ -82,8 +82,7 @@ const Navbar = () => {
           <li>
             <Link
               to={`${basename}/instructors`}
-              className="cursor-pointer"
-              onClick={toggleMenu}
+              className="cursor-pointer hover:text-blue-500 text-md"
             >
               Instructors
             </Link>
