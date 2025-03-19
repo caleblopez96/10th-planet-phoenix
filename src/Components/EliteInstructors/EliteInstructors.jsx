@@ -56,10 +56,10 @@ const EliteInstructors = () => {
               key={index}
               className="group relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg overflow-hidden shadow-xl transition-all duration-300 hover:-translate-y-2"
             >
-              {/* Color Accent */}
+              {/* colored accent */}
               <div className="absolute top-0 left-0 w-full h-1 bg-red-600"></div>
 
-              {/* Instructor Content */}
+              {/* instructure content */}
               <div className="p-8 pt-12 relative">
                 {/* Profile Image with Ring */}
                 <div className="relative mx-auto mb-6">
@@ -72,7 +72,6 @@ const EliteInstructors = () => {
                   </div>
                 </div>
 
-                {/* Instructor Info */}
                 <div className="text-center mb-6">
                   <h3 className="text-xl font-bold text-white mb-1">
                     {instructor.name}
@@ -83,7 +82,6 @@ const EliteInstructors = () => {
 
                   <div className="w-12 h-0.5 bg-gray-600 mx-auto my-4"></div>
 
-                  {/* Stats with Icon Indicators */}
                   <div className="text-left text-sm text-gray-300 space-y-2">
                     <div className="flex items-center">
                       <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>

@@ -59,7 +59,7 @@ const Navbar = () => {
           </li>
         </ul>
 
-        {/* Mobile menu button */}
+        {/* mobile menu button */}
         <button
           className="md:hidden ml-4"
           onClick={toggleMenu}
