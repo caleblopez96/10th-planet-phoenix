@@ -59,67 +59,71 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <div className="md:hidden ml-4" onClick={toggleMenu}>
+        {/* Mobile menu button */}
+        <button
+          className="md:hidden ml-4"
+          onClick={toggleMenu}
+          aria-label="Toggle menu"
+        >
           <div className={`hamburger ${isMenuOpen ? "open" : ""}`}>
             <span className="block w-6 h-0.75 bg-current mb-1"></span>
             <span className="block w-6 h-0.75 bg-current mb-1"></span>
             <span className="block w-6 h-0.75 bg-current"></span>
           </div>
-        </div>
+        </button>
       </div>
 
       {/* mobile */}
       {isMenuOpen && (
-        <ul className="md:hidden flex flex-col items-center mt-4 space-y-4 py-4">
-          <li>
-            <Link
-              to={`${basename}`}
-              className="cursor-pointer"
-              onClick={(e) => {
-                toggleMenu();
-                alert("FUCKING CHRIS");
-              }}
-            >
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              to={`${basename}/instructors`}
-              className="cursor-pointer"
-              onClick={toggleMenu}
-            >
-              Instructors
-            </Link>
-          </li>
-          <li>
-            <Link
-              to={`${basename}/classes`}
-              className="cursor-pointer"
-              onClick={toggleMenu}
-            >
-              Classes
-            </Link>
-          </li>
-          <li>
-            <Link
-              to={`${basename}/about`}
-              className="cursor-pointer"
-              onClick={toggleMenu}
-            >
-              About
-            </Link>
-          </li>
-          <li>
-            <Link
-              to={`${basename}/contact`}
-              className="cursor-pointer"
-              onClick={toggleMenu}
-            >
-              Contact
-            </Link>
-          </li>
-        </ul>
+        <div className="md:hidden py-4">
+          <ul className="flex flex-col items-center mt-4 space-y-4">
+            <li className="w-full text-center">
+              <Link
+                to={`${basename}`}
+                className="cursor-pointer block w-full py-2"
+                onClick={toggleMenu}
+              >
+                Home
+              </Link>
+            </li>
+            <li className="w-full text-center">
+              <Link
+                to={`${basename}/instructors`}
+                className="cursor-pointer block w-full py-2"
+                onClick={toggleMenu}
+              >
+                Instructors
+              </Link>
+            </li>
+            <li className="w-full text-center">
+              <Link
+                to={`${basename}/classes`}
+                className="cursor-pointer block w-full py-2"
+                onClick={toggleMenu}
+              >
+                Classes
+              </Link>
+            </li>
+            <li className="w-full text-center">
+              <Link
+                to={`${basename}/about`}
+                className="cursor-pointer block w-full py-2"
+                onClick={toggleMenu}
+              >
+                About
+              </Link>
+            </li>
+            <li className="w-full text-center">
+              <Link
+                to={`${basename}/contact`}
+                className="cursor-pointer block w-full py-2"
+                onClick={toggleMenu}
+              >
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </div>
       )}
     </nav>
   );
