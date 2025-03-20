@@ -1,3 +1,5 @@
+import banner from "./10th-planet-phoenix (1).png";
+
 const ClassesSection = () => {
   const classes = [
     {
@@ -29,7 +31,7 @@ const ClassesSection = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-b from-gray-800 to-gray-900 px-4 py-16 w-full relative overflow-hidden">
+    <section className="bg-gradient-to-b from-gray-800 to-gray-900 px-4 py-16 w-full relative">
       <div className="container mx-auto flex flex-col items-center relative z-10">
         <div className="mb-16 text-center">
           <h3 className="text-sm uppercase tracking-widest text-red-400 font-semibold mb-2">

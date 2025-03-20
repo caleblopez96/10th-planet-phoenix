@@ -43,20 +43,20 @@ const Hero = () => {
       className="relative min-h-screen w-full flex flex-col items-center justify-center text-white text-center transition-all duration-500 overflow-hidden"
       style={{ marginTop: "0", paddingTop: "4rem" }}
     >
-      <div className="absolute inset-0 w-full h-full z-0 overflow-hidden pt-16 grayscale">
+      <div className="w-full h-full z-0 overflow-hidden pt-16 absolute inset-0 bg-black bg-opacity-50">
         <img
           src={currentImages[imageIndex]}
           alt="Background"
           className="w-full h-full object-cover opacity-70"
-          style={{ objectPosition: "center 25%" }}
+          style={{ objectPosition: "center 45%" }}
         />
         <div className="absolute inset-0 bg-black opacity-30"></div>
       </div>
-      <div className="p-8 rounded-lg z-10 relative max-w-4xl">
-        <h1 className="text-4xl md:text-6xl font-bold text-pretty drop-shadow-lg leading-20">
+      <div className="p-8 rounded-lg z-10 relative max-w-4xl pt-24">
+        <h1 className="text-4xl md:text-6xl font-bold text-pretty drop-shadow-2xl leading-20">
           10TH PLANET JIU-JITSU PHOENIX
         </h1>
-        <p className="text-lg md:text-xl mt-4 drop-shadow-md">
+        <p className="text-lg md:text-xl mt-4 drop-shadow-2xl">
           LEARN THIS UNIQUE STYLE OF SUBMISSION GRAPPLING
         </p>
         <button className="mt-8 px-8 py-4 bg-gray-300 hover:bg-gray-400 text-gray-800 rounded-md transition-colors shadow-md">
