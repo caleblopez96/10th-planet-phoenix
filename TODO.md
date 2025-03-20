@@ -6,3 +6,6 @@ if that doesnt work use black nd white images?
 
 ROUTING:
 [X] add react router and create routes
+
+IMG OPTIMIZATION:
+[] convert all images to webp

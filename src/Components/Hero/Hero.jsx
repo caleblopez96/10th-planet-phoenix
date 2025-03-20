@@ -36,7 +36,6 @@ const Hero = () => {
     return () => clearInterval(interval);
   }, []);
 
-  // Choose the correct image array based on screen size
   const currentImages = isMobile ? mobileImages : desktopImages;
 
   return (

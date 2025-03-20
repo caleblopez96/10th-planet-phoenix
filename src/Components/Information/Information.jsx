@@ -1,3 +1,5 @@
+import eddieB from "./eddie-bravo.jpg";
+
 const Information = () => {
   return (
     <div className="py-12 bg-gradient-to-b from-gray-900 to-gray-800">
@@ -18,9 +20,11 @@ const Information = () => {
         <div className="hidden lg:block relative overflow-hidden rounded-lg shadow-xl">
           <div className="bg-gray-700 h-full w-full p-8 flex items-center justify-center">
             <div className="w-full h-full bg-gradient-to-br from-gray-700 to-gray-900 flex items-center justify-center">
-              <div className="border-4 border-white bg-gray-800 rounded-full h-48 w-48 flex items-center justify-center">
-                <span className="text-white text-4xl font-bold">red40</span>
-              </div>
+              <img
+                src={eddieB}
+                alt="Eddie Bravo vs Royler Gracie at Metamoris 3"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
