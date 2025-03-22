@@ -10,14 +10,14 @@ const ClassesSection = () => {
       time: "Mon/Wed/Fri 6:00pm",
     },
     {
-      title: "No-Gi Advanced",
+      title: "All Levels Jiu-Jitsu",
       description:
         "Develop your skills with advanced techniques and live training",
       level: "Intermediate",
       time: "Tue/Thu 7:30pm",
     },
     {
-      title: "Competition Team",
+      title: "Kids Little Lobos Jiu-Jitsu",
       description: "Focused training for athletes preparing for tournaments",
       level: "Advanced",
       time: "Sat 10:00am",

@@ -30,7 +30,7 @@ const Hero = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setImageIndex((prevIndex) => (prevIndex + 1) % desktopImages.length);
+      setImageIndex((prevIndex) => (prevIndex + 1) % 4); // Using 4 since both arrays have the same length
     }, 4000);
 
     return () => clearInterval(interval);
