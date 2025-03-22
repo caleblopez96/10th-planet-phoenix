@@ -37,7 +37,7 @@ import Classes from "./pages/classes.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/10th-planet-phoenix">
       <Navbar />
       <Hero />
       <Routes>

@@ -6,12 +6,10 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
-  const basename = "/10th-planet-phoenix";
-
   return (
     <nav className="fixed w-full z-50 p-4 transition-all bg-gradient-to-br from-gray-800 to-gray-900 text-white">
       <div className="container mx-auto flex justify-between items-center">
-        <NavLink to={`${basename}`}>
+        <NavLink to="/">
           <img src={logo} alt="Logo" className="h-20" />
         </NavLink>
 
@@ -19,40 +17,60 @@ const Navbar = () => {
         <ul className="hidden md:flex space-x-6">
           <li>
             <NavLink
-              to={`${basename}`}
-              className="cursor-pointer hover:text-blue-500 text-md"
+              to="/"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-red-500 text-md"
+                  : "cursor-pointer hover:text-red-500 text-md"
+              }
             >
               Home
             </NavLink>
           </li>
           <li>
             <NavLink
-              to={`${basename}/instructors`}
-              className="cursor-pointer hover:text-blue-500 text-md"
+              to="/instructors"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-red-500 text-md"
+                  : "cursor-pointer hover:text-red-500 text-md"
+              }
             >
               Instructors
             </NavLink>
           </li>
           <li>
             <NavLink
-              to={`${basename}/classes`}
-              className="cursor-pointer hover:text-blue-500 text-md"
+              to="/classes"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-red-500 text-md"
+                  : "cursor-pointer hover:text-red-500 text-md"
+              }
             >
               Classes
             </NavLink>
           </li>
           <li>
             <NavLink
-              to={`${basename}/about`}
-              className="cursor-pointer hover:text-blue-500 text-md"
+              to="/about"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-red-500 text-md"
+                  : "cursor-pointer hover:text-red-500 text-md"
+              }
             >
               About
             </NavLink>
           </li>
           <li>
             <NavLink
-              to={`${basename}/contact`}
-              className="cursor-pointer hover:text-blue-500 text-md"
+              to="/contact"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-red-500 text-md"
+                  : "cursor-pointer hover:text-red-500 text-md"
+              }
             >
               Contact
             </NavLink>
@@ -79,8 +97,12 @@ const Navbar = () => {
           <ul className="flex flex-col items-center mt-4 space-y-4">
             <li className="w-full text-center">
               <NavLink
-                to={`${basename}`}
-                className="cursor-pointer block w-full py-2"
+                to="/"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-red-500 block w-full py-2"
+                    : "cursor-pointer block w-full py-2"
+                }
                 onClick={toggleMenu}
               >
                 Home
@@ -88,8 +110,12 @@ const Navbar = () => {
             </li>
             <li className="w-full text-center">
               <NavLink
-                to={`${basename}/instructors`}
-                className="cursor-pointer block w-full py-2"
+                to="/instructors"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-red-500 block w-full py-2"
+                    : "cursor-pointer block w-full py-2"
+                }
                 onClick={toggleMenu}
               >
                 Instructors
@@ -97,8 +123,12 @@ const Navbar = () => {
             </li>
             <li className="w-full text-center">
               <NavLink
-                to={`${basename}/classes`}
-                className="cursor-pointer block w-full py-2"
+                to="/classes"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-red-500 block w-full py-2"
+                    : "cursor-pointer block w-full py-2"
+                }
                 onClick={toggleMenu}
               >
                 Classes
@@ -106,8 +136,12 @@ const Navbar = () => {
             </li>
             <li className="w-full text-center">
               <NavLink
-                to={`${basename}/about`}
-                className="cursor-pointer block w-full py-2"
+                to="/about"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-red-500 block w-full py-2"
+                    : "cursor-pointer block w-full py-2"
+                }
                 onClick={toggleMenu}
               >
                 About
@@ -115,8 +149,12 @@ const Navbar = () => {
             </li>
             <li className="w-full text-center">
               <NavLink
-                to={`${basename}/contact`}
-                className="cursor-pointer block w-full py-2"
+                to="/contact"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-red-500 block w-full py-2"
+                    : "cursor-pointer block w-full py-2"
+                }
                 onClick={toggleMenu}
               >
                 Contact

@@ -1,3 +1,4 @@
+// desktop
 import { useState, useEffect } from "react";
 import desktop1 from "../../assets/HERO LG/MCC_8853(2).jpg";
 import desktop2 from "../../assets/HERO LG/MCC_8792.jpg";
@@ -9,6 +10,10 @@ import mobile1 from "../../assets/HERO SM/20211025_200740.jpg";
 import mobile2 from "../../assets/HERO SM/20220122_113831_edited.jpg";
 import mobile3 from "../../assets/HERO SM/20220627_185141.jpg";
 import mobile4 from "../../assets/HERO SM/IMG_20210703_121346.jpg";
+
+// UI Components
+import ButtonDark from "../Buttons/ButtonDark";
+import ButtonLight from "../Buttons/ButtonLight";
 
 const desktopImages = [desktop1, desktop2, desktop3, desktop4];
 const mobileImages = [mobile1, mobile2, mobile3, mobile4];
@@ -61,12 +66,8 @@ const Hero = () => {
         </p>
 
         <div className="flex justify-center gap-4 mt-6 sm:mt-4">
-          <button className="px-6 py-3 sm:px-4 sm:py-2 text-base sm:text-sm bg-gray-300 hover:bg-gray-400 text-gray-800 rounded-md transition-colors shadow-md">
-            Get Started
-          </button>
-          <button className="px-6 py-3 sm:px-4 sm:py-2 text-base sm:text-sm bg-gray-800 hover:bg-gray-400 text-gray-300 rounded-md transition-colors shadow-md">
-            Learn More
-          </button>
+          <ButtonLight content={"Get Started"} />
+          <ButtonDark content={"Learn More"} />
         </div>
       </div>
     </section>
