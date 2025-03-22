@@ -7,4 +7,4 @@ const About = () => {
   );
 };
 
-export default About; // Ensure this is present
+export default About;

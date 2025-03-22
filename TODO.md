@@ -10,4 +10,8 @@ ROUTING:
 IMG OPTIMIZATION:
 [] convert all images to webp
 
+[] FINISH ADDING FAQ to each page
+
+[] in nav add active page
+
 ctrl alt a toggles tailwind fold on/off

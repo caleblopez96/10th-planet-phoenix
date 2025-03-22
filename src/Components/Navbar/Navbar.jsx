@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../../assets/logo/10th-planet-phoenix.png";
 
 const Navbar = () => {
@@ -11,51 +11,51 @@ const Navbar = () => {
   return (
     <nav className="fixed w-full z-50 p-4 transition-all bg-gradient-to-br from-gray-800 to-gray-900 text-white">
       <div className="container mx-auto flex justify-between items-center">
-        <Link to={`${basename}`}>
+        <NavLink to={`${basename}`}>
           <img src={logo} alt="Logo" className="h-20" />
-        </Link>
+        </NavLink>
 
         {/* desktop */}
         <ul className="hidden md:flex space-x-6">
           <li>
-            <Link
+            <NavLink
               to={`${basename}`}
               className="cursor-pointer hover:text-blue-500 text-md"
             >
               Home
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link
+            <NavLink
               to={`${basename}/instructors`}
               className="cursor-pointer hover:text-blue-500 text-md"
             >
               Instructors
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link
+            <NavLink
               to={`${basename}/classes`}
               className="cursor-pointer hover:text-blue-500 text-md"
             >
               Classes
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link
+            <NavLink
               to={`${basename}/about`}
               className="cursor-pointer hover:text-blue-500 text-md"
             >
               About
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link
+            <NavLink
               to={`${basename}/contact`}
               className="cursor-pointer hover:text-blue-500 text-md"
             >
               Contact
-            </Link>
+            </NavLink>
           </li>
         </ul>
 
@@ -78,49 +78,49 @@ const Navbar = () => {
         <div className="md:hidden py-4">
           <ul className="flex flex-col items-center mt-4 space-y-4">
             <li className="w-full text-center">
-              <Link
+              <NavLink
                 to={`${basename}`}
                 className="cursor-pointer block w-full py-2"
                 onClick={toggleMenu}
               >
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li className="w-full text-center">
-              <Link
+              <NavLink
                 to={`${basename}/instructors`}
                 className="cursor-pointer block w-full py-2"
                 onClick={toggleMenu}
               >
                 Instructors
-              </Link>
+              </NavLink>
             </li>
             <li className="w-full text-center">
-              <Link
+              <NavLink
                 to={`${basename}/classes`}
                 className="cursor-pointer block w-full py-2"
                 onClick={toggleMenu}
               >
                 Classes
-              </Link>
+              </NavLink>
             </li>
             <li className="w-full text-center">
-              <Link
+              <NavLink
                 to={`${basename}/about`}
                 className="cursor-pointer block w-full py-2"
                 onClick={toggleMenu}
               >
                 About
-              </Link>
+              </NavLink>
             </li>
             <li className="w-full text-center">
-              <Link
+              <NavLink
                 to={`${basename}/contact`}
                 className="cursor-pointer block w-full py-2"
                 onClick={toggleMenu}
               >
                 Contact
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
