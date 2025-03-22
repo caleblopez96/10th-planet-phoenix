@@ -15,43 +15,43 @@ const mobileImages = [mobile1, mobile2, mobile3, mobile4];
 
 const Hero = () => {
   const [imageIndex, setImageIndex] = useState(0);
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const checkScreenSize = () => {
-      setIsMobile(window.innerWidth < 800);
-    };
-    checkScreenSize();
-
-    window.addEventListener("resize", checkScreenSize);
-
-    return () => window.removeEventListener("resize", checkScreenSize);
-  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setImageIndex((prevIndex) => (prevIndex + 1) % 4); // Using 4 since both arrays have the same length
+      setImageIndex((prevIndex) => (prevIndex + 1) % 4);
     }, 4000);
 
     return () => clearInterval(interval);
   }, []);
-
-  const currentImages = isMobile ? mobileImages : desktopImages;
 
   return (
     <section
       className="relative min-h-screen w-full flex flex-col items-center justify-center text-white text-center transition-all duration-500 overflow-hidden"
       style={{ marginTop: "0", paddingTop: "4rem" }}
     >
-      <div className="w-full h-full z-0 overflow-hidden pt-16 absolute inset-0 bg-black bg-opacity-50">
+      {/* sm */}
+      <div className="block lg:hidden w-full h-full z-0 overflow-hidden pt-16 absolute inset-0 bg-black bg-opacity-50">
         <img
-          src={currentImages[imageIndex]}
+          src={mobileImages[imageIndex]}
           alt="Background"
           className="w-full h-full object-cover opacity-70"
           style={{ objectPosition: "center 45%" }}
         />
         <div className="absolute inset-0 bg-black opacity-30"></div>
       </div>
+
+      {/* lg */}
+      <div className="hidden lg:block w-full h-full z-0 overflow-hidden pt-16 absolute inset-0 bg-black bg-opacity-50">
+        <img
+          src={desktopImages[imageIndex]}
+          alt="Background"
+          className="w-full h-full object-cover opacity-70"
+          style={{ objectPosition: "center 45%" }}
+        />
+        <div className="absolute inset-0 bg-black opacity-30"></div>
+      </div>
+
+      {/* content*/}
       <div className="p-8 rounded-lg z-10 relative max-w-4xl pt-24">
         <h1 className="text-4xl md:text-6xl font-bold text-pretty drop-shadow-2xl lg:leading-20 md:leading-15 sm:leading-10">
           10TH PLANET JIU-JITSU PHOENIX

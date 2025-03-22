@@ -102,7 +102,8 @@ export default function ClassSchedule() {
 
   return (
     <div className="w-full">
-      <section className="w-full overflow-x-auto">
+      {/* day tabs */}
+      <div className="block lg:hidden w-full overflow-x-auto">
         <ul className="flex gap-4 whitespace-nowrap w-max m-4">
           {Object.keys(schedules).map((day) => (
             <li
@@ -116,7 +117,24 @@ export default function ClassSchedule() {
             </li>
           ))}
         </ul>
-      </section>
+      </div>
+
+      {/* spaced evenly on lg*/}
+      <div className="hidden lg:block w-full py-6">
+        <ul className="flex w-full px-2">
+          {Object.keys(schedules).map((day) => (
+            <li
+              key={day}
+              className={`cursor-pointer flex-1 text-center px-2 py-2 mx-1 rounded ${
+                selectedDay === day ? "bg-gray-800 text-white" : "bg-gray-200"
+              }`}
+              onClick={() => setSelectedDay(day)}
+            >
+              {day}
+            </li>
+          ))}
+        </ul>
+      </div>
 
       <div className="p-4 bg-gray-100">
         <h2 className="text-lg font-semibold">{selectedDay}</h2>
