@@ -53,7 +53,7 @@ const Hero = () => {
         <div className="absolute inset-0 bg-black opacity-30"></div>
       </div>
       <div className="p-8 rounded-lg z-10 relative max-w-4xl pt-24">
-        <h1 className="text-4xl md:text-6xl font-bold text-pretty drop-shadow-2xl leading-20">
+        <h1 className="text-4xl md:text-6xl font-bold text-pretty drop-shadow-2xl lg:leading-20 md:leading-15 sm:leading-10">
           10TH PLANET JIU-JITSU PHOENIX
         </h1>
         <p className="text-lg md:text-xl mt-4 drop-shadow-2xl">
