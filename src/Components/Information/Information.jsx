@@ -17,7 +17,7 @@ const Information = () => {
       </div>
 
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 px-5">
-        <div className="hidden lg:block relative overflow-hidden rounded-lg shadow-xl">
+        <div className="lg:block relative overflow-hidden rounded-lg shadow-xl">
           <div className="bg-gray-700 h-full w-full p-8 flex items-center justify-center">
             <div className="w-full h-full bg-gradient-to-br from-gray-700 to-gray-900 flex items-center justify-center">
               <img

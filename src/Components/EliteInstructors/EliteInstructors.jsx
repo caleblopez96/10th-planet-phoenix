@@ -24,7 +24,7 @@ const EliteInstructors = () => {
       image: "",
     },
     {
-      name: "Sarah Williams",
+      name: "Billy Phillips",
       title: "Strength & Conditioning",
       belt: "Black Belt",
       image: "",

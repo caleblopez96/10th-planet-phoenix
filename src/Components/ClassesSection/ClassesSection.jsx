@@ -5,21 +5,22 @@ const ClassesSection = () => {
     {
       title: "Fundamentals",
       description:
-        "Learn the core techniques that form the foundation of 10th Planet Jiu-Jitsu",
+        "The 10th Planet warm-ups are dynamic BJJ exchanges that go beyond static drills, helping beginners grasp jiu-jitsu concepts through sequenced movements. By emphasizing transitions, attacking combinations, and counters with active resistance, these exercises create a more engaging and practical training experience compared to traditional drills with passive partners.",
       level: "Beginner",
       time: "Mon/Wed/Fri 6:00pm",
     },
     {
       title: "All Levels Jiu-Jitsu",
       description:
-        "Develop your skills with advanced techniques and live training",
-      level: "Intermediate",
+        "All Levels classes are open to both beginners and more experienced practitioners looking to learn and sharpen technique. At 10th Planet Jiu Jitsu Phoenix we offer a variety of different packages to meet all of your training needs. From 1 year contracted memberships to month to month options, we have you covered! ",
+      level: "All Levels",
       time: "Tue/Thu 7:30pm",
     },
     {
       title: "Kids Little Lobos Jiu-Jitsu",
-      description: "Focused training for athletes preparing for tournaments",
-      level: "Advanced",
+      description:
+        "Our 10th Planet Little Lobos Kids Class is a fun and engaging program that introduces children to 10th Planet Jiu-Jitsu through structured drills and exercises. With a focus on confidence, self-defense, discipline, and teamwork, our highly trained coach fosters a love for movement in a positive and encouraging environment. Beyond the mats, the class builds a strong, family-friendly community through gym events, competitions, and social activities, creating a supportive network for both kids and parents.",
+      level: "All Levels",
       time: "Sat 10:00am",
     },
     {
@@ -62,7 +63,7 @@ const ClassesSection = () => {
                     {classItem.title}
                   </h3>
 
-                  <p className="text-gray-200 mb-4 text-sm overflow-hidden">
+                  <p className="text-gray-200 mb-4 text-sm overflow-hidden leading-8">
                     {classItem.description}
                   </p>
                 </div>

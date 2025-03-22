@@ -9,3 +9,5 @@ ROUTING:
 
 IMG OPTIMIZATION:
 [] convert all images to webp
+
+ctrl alt a toggles tailwind fold on/off
