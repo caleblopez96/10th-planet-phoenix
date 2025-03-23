@@ -1,4 +1,3 @@
-import { useEffect, useRef } from "react";
 import eddieB from "./eddie-bravo.jpg";
 import ButtonRed from "../Buttons/ButtonRed";
 import ButtonMed from "../Buttons/ButtonMed";
