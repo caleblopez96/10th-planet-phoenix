@@ -43,14 +43,12 @@ const ClassesSection = () => {
           <div className="w-24 h-1 bg-red-500 mx-auto"></div>
         </div>
 
-        {/* class cards - improved layout for larger screens */}
+        {/* class cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full max-w-6xl">
           {classes.map((classItem, index) => (
             <div
               key={index}
-              className={`group relative overflow-hidden rounded-lg shadow-xl transition-all duration-300 hover:-translate-y-2 ${
-                index % 2 === 0 ? "md:translate-y-8" : ""
-              }`}
+              className={`group relative overflow-hidden rounded-lg shadow-xl transition-all duration-300 hover:-translate-y-2`}
             >
               <div className="absolute inset-0 bg-gradient-to-br from-red-600 to-gray-800 opacity-80 group-hover:opacity-90 transition-opacity"></div>
 
@@ -60,7 +58,7 @@ const ClassesSection = () => {
                     {classItem.level}
                   </span>
 
-                  <h3 className="text-xl font-bold text-white mb-2 break-words hyphens-auto">
+                  <h3 className="text-sm font-bold text-white mb-2 break-words hyphens-auto">
                     {classItem.title}
                   </h3>
 
@@ -77,7 +75,7 @@ const ClassesSection = () => {
                   </span>
                 </div>
 
-                <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 py-3 px-6 translate-y-full group-hover:translate-y-0 transition-transform flex just">
+                <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 py-3 px-6 translate-y-full group-hover:translate-y-0 transition-transform flex">
                   <ButtonLight content={"Learn More"} />
                 </div>
               </div>

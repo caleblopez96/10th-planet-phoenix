@@ -1,11 +1,11 @@
-// desktop
+// images desktop
 import { useState, useEffect } from "react";
 import desktop1 from "../../assets/HERO LG/MCC_8853(2).jpg";
 import desktop2 from "../../assets/HERO LG/MCC_8792.jpg";
 import desktop3 from "../../assets/HERO LG/20220112_200025.jpg";
 import desktop4 from "../../assets/HERO LG/received_10100266450098952.jpeg";
 
-// mobile
+// images mobile
 import mobile1 from "../../assets/HERO SM/20211025_200740.jpg";
 import mobile2 from "../../assets/HERO SM/20220122_113831_edited.jpg";
 import mobile3 from "../../assets/HERO SM/20220627_185141.jpg";
