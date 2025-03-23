@@ -30,6 +30,7 @@ const homeFAQs = [
 function Home() {
   return (
     <>
+      <Hero />
       <Information />
       <EliteInstructors />
       <ClassesSection />

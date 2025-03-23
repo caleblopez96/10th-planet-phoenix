@@ -15,7 +15,6 @@ createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter basename="/10th-planet-phoenix">
       <Navbar />
-      <Hero />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
