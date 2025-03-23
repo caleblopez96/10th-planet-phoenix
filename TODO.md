@@ -12,6 +12,10 @@ IMG OPTIMIZATION:
 
 [] FINISH ADDING FAQ to each page
 
-[] in nav add active page
+[X] in nav add active page
+
+[] link all buttons to the proper pages
+
+[] convert all buttons to the component version of itself
 
 ctrl alt a toggles tailwind fold on/off

@@ -1,4 +1,7 @@
+import { Link } from "react-router-dom";
+
 import johnBotello from "../../assets/instructor photos/john botello.png";
+import ButtonRed from "../Buttons/ButtonRed";
 
 const EliteInstructors = () => {
   const instructors = [
@@ -27,13 +30,14 @@ const EliteInstructors = () => {
       name: "Billy Phillips",
       title: "Strength & Conditioning",
       belt: "Black Belt",
+      experience: "10 Years",
       image: "",
     },
   ];
 
   return (
-    <section className="bg-gradient-to-r from-gray-900 to-gray-800 px-4 py-16 w-full relative">
-      <div className="absolute inset-0 opacity-5"></div>
+    <section className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 px-4 py-16 w-full relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 animate-moveGradient"></div>
 
       <div className="container mx-auto flex flex-col items-center relative z-10">
         <div className="mb-16 text-center relative">
@@ -57,7 +61,7 @@ const EliteInstructors = () => {
           {instructors.map((instructor, index) => (
             <div
               key={index}
-              className="group relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg overflow-hidden shadow-xl transition-all duration-300 hover:-translate-y-2"
+              className="group relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg overflow-hidden shadow-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
             >
               <div className="absolute top-0 left-0 w-full h-1 bg-red-600"></div>
 
@@ -78,7 +82,7 @@ const EliteInstructors = () => {
                 </div>
 
                 <div className="text-center mb-6">
-                  <h3 className="text-xl font-bold text-white mb-1">
+                  <h3 className="text-2xl font-bold text-white mb-1">
                     {instructor.name}
                   </h3>
                   <p className="text-red-400 font-medium text-sm mb-4">
@@ -104,9 +108,12 @@ const EliteInstructors = () => {
                 </div>
 
                 <div className="absolute inset-x-0 bottom-0 h-12 bg-red-600 flex items-center justify-center translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                  <button className="text-white text-sm font-medium w-full h-full">
+                  <Link
+                    to="/instructors#instructorBios"
+                    className="text-white text-sm font-medium w-full h-full hover:bg-red-700 transition-colors duration-300 cursor-pointer text-center py-4"
+                  >
                     View Profile
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -114,9 +121,7 @@ const EliteInstructors = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <button className="px-8 py-4 bg-red-600 text-white rounded-md hover:bg-red-700 transition-colors shadow-lg">
-            Train With Our Team
-          </button>
+          <ButtonRed content={"Train With Our Team"} />
           <p className="text-gray-400 mt-4">
             Drop in for a free trial class and meet our instructors in person.
           </p>

@@ -1,4 +1,5 @@
-import banner from "./10th-planet-phoenix (1).png";
+import ButtonLight from "../Buttons/ButtonLight";
+import ButtonRed from "../Buttons/ButtonRed";
 
 const ClassesSection = () => {
   const classes = [
@@ -77,9 +78,7 @@ const ClassesSection = () => {
                 </div>
 
                 <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 py-3 px-6 translate-y-full group-hover:translate-y-0 transition-transform">
-                  <button className="text-white text-sm font-medium w-full text-center">
-                    Learn More
-                  </button>
+                  <ButtonLight content={"Learn More"} />
                 </div>
               </div>
             </div>
@@ -87,9 +86,7 @@ const ClassesSection = () => {
         </div>
 
         <div className="mt-16">
-          <button className="px-8 py-4 bg-red-600 text-white rounded-md hover:bg-red-700 transition-colors shadow-lg">
-            View Full Schedule
-          </button>
+          <ButtonRed content={"View Full Schedule"} />
         </div>
       </div>
     </section>

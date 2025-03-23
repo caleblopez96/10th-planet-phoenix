@@ -31,7 +31,10 @@ const InstructorBio = () => {
   ];
 
   return (
-    <div className="py-12 bg-gradient-to-b from-gray-900 to-gray-800">
+    <div
+      id="instructorBios"
+      className="py-12 bg-gradient-to-b from-gray-900 to-gray-800"
+    >
       {instructors.map((instructor, index) => (
         <div key={index}>
           <div className="max-w-4xl mx-auto mb-12 relative">

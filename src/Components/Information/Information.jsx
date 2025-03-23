@@ -1,30 +1,34 @@
+import { useEffect, useRef } from "react";
 import eddieB from "./eddie-bravo.jpg";
+import ButtonRed from "../Buttons/ButtonRed";
+import ButtonMed from "../Buttons/ButtonMed";
 
 const Information = () => {
   return (
-    <div className="py-12 bg-gradient-to-b from-gray-900 to-gray-800">
+    <div className="py-12 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
       <div className="max-w-4xl mx-auto mb-12 relative">
-        <div className="absolute text-6xl text-gray-700 opacity-30 top-0 left-5">
+        <div className="absolute text-6xl text-gray-700 opacity-30 top-0 left-5 transition-transform duration-500 hover:scale-110">
           "
         </div>
-        <h3 className="text-xl md:text-2xl lg:text-3xl text-white text-center my-4 p-5 italic font-light">
+        <h3 className="text-xl md:text-2xl lg:text-3xl text-white text-center my-4 p-5 italic font-light opacity-0 transform translate-y-10 transition-all duration-1000">
           Where other systems cease to grow, 10th Planet finds itself in a
           situation where its entire focus is to continue its own growth.
         </h3>
-        <div className="absolute text-6xl text-gray-700 opacity-30 bottom-0 right-5">
+        <div className="absolute text-6xl text-gray-700 opacity-30 bottom-0 right-5 transition-transform duration-500 hover:scale-110">
           "
         </div>
       </div>
 
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 px-5">
-        <div className="lg:block relative overflow-hidden rounded-lg shadow-xl">
+        <div className="lg:block relative overflow-hidden rounded-lg shadow-xl group">
           <div className="bg-gray-700 h-full w-full p-8 flex items-center justify-center">
-            <div className="w-full h-full bg-gradient-to-br from-gray-700 to-gray-900 flex items-center justify-center">
+            <div className="w-full h-full bg-gradient-to-br from-gray-700 to-gray-900 flex items-center justify-center relative">
               <img
                 src={eddieB}
                 alt="Eddie Bravo vs Royler Gracie at Metamoris 3"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
+              <div className="absolute inset-0 bg-gradient-to-br from-gray-900/50 to-gray-800/50"></div>
             </div>
           </div>
         </div>
@@ -47,12 +51,8 @@ const Information = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
-            <button className="px-8 py-4 bg-red-600 hover:bg-red-700 text-white rounded-md transition-colors shadow-md flex-1">
-              Start Training
-            </button>
-            <button className="px-8 py-4 bg-gray-700 hover:bg-gray-600 text-white border border-gray-600 rounded-md transition-colors shadow-md flex-1">
-              Learn More
-            </button>
+            <ButtonRed content={"Start Training"} />
+            <ButtonMed content={"Learn More"} />
           </div>
         </div>
       </div>
