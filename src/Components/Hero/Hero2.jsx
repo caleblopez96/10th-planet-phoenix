@@ -12,7 +12,7 @@ const Hero2 = ({ content, imageOne, imageTwo, height }) => {
       <img
         src={imageTwo}
         alt="Background"
-        className="w-full h-full object-cover opacity-70 transform translate-y-16 lg:hidden"
+        className="w-full h-[70vh] object-cover opacity-70 transform translate-y-20 lg:hidden"
       />
 
       <p className="absolute bottom-4 left-4 text-white z-10 text-lg lg:text-4xl border-l-4 border-red-700 pl-2">

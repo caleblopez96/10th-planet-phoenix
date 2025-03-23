@@ -31,11 +31,11 @@ const Hero = () => {
 
   return (
     <section
-      className="relative min-h-screen w-full flex flex-col items-center justify-center text-white text-center transition-all duration-500 overflow-hidden"
+      className="relative h-[65vh] w-full flex flex-col items-center justify-center text-white text-center transition-all duration-500 overflow-hidden"
       style={{ marginTop: "0", paddingTop: "4rem" }}
     >
       {/* sm */}
-      <div className="block lg:hidden w-full h-full z-0 overflow-hidden pt-16 absolute inset-0 bg-black bg-opacity-50">
+      <div className="block lg:hidden w-full z-0 overflow-hidden pt-16 absolute inset-0 bg-black bg-opacity-50">
         <img
           src={mobileImages[imageIndex]}
           alt="Background"
