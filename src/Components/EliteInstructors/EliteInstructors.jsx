@@ -76,7 +76,7 @@ const EliteInstructors = () => {
                   ) : (
                     <div className="w-24 h-24 rounded-full bg-gray-700 border-4 border-red-500 overflow-hidden mx-auto"></div>
                   )}
-                  <div className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full px-2 py-1">
+                  <div className="absolute -top-5 -right-5 bg-red-500 text-white text-xs rounded-full px-2 py-1">
                     {instructor.belt}
                   </div>
                 </div>
