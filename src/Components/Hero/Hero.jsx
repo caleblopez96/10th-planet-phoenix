@@ -31,7 +31,7 @@ const Hero = () => {
 
   return (
     <section
-      className="relative h-[70vh] w-full flex flex-col items-center justify-center text-white text-center transition-all duration-500 overflow-hidden"
+      className="relative min-h-screen w-full flex flex-col items-center justify-center text-white text-center transition-all duration-500 overflow-hidden"
       style={{ marginTop: "0", paddingTop: "4rem" }}
     >
       {/* sm */}

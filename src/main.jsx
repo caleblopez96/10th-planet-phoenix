@@ -13,7 +13,7 @@ import Classes from "./pages/classes.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter basename="/10th-planet-phoenix">
+    <BrowserRouter basename="/10th-planet-phoenix/">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
