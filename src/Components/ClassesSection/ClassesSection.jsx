@@ -77,7 +77,7 @@ const ClassesSection = () => {
                   </span>
                 </div>
 
-                <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 py-3 px-6 translate-y-full group-hover:translate-y-0 transition-transform">
+                <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 py-3 px-6 translate-y-full group-hover:translate-y-0 transition-transform flex justify-center">
                   <ButtonLight content={"Learn More"} />
                 </div>
               </div>

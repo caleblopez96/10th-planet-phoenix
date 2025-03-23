@@ -9,7 +9,7 @@ const Information = () => {
         <div className="absolute text-6xl text-gray-700 opacity-30 top-0 left-5 transition-transform duration-500 hover:scale-110">
           "
         </div>
-        <h3 className="text-xl md:text-2xl lg:text-3xl text-white text-center my-4 p-5 italic font-light opacity-0 transform translate-y-10 transition-all duration-1000">
+        <h3 className="text-xl md:text-2xl lg:text-3xl text-white text-center my-4 p-5 italic font-light">
           Where other systems cease to grow, 10th Planet finds itself in a
           situation where its entire focus is to continue its own growth.
         </h3>
