@@ -18,4 +18,6 @@ IMG OPTIMIZATION:
 
 [] convert all buttons to the component version of itself
 
+[] fix the CTABanner background on lg screens
+
 ctrl alt a toggles tailwind fold on/off
