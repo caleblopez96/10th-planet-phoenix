@@ -8,22 +8,16 @@ import classes1 from "../assets/classes/classes1.jpg";
 import classes2 from "../assets/classes/classes2.jpg";
 
 const classesFAQs = [
-  { question: "", answer: "" },
-  { question: "", answer: "" },
-  { question: "", answer: "" },
-  { question: "", answer: "" },
-  { question: "", answer: "" },
+  { question: "Do you offer classes for beginners?", answer: "" },
+  { question: "What should I bring with me?", answer: "" },
+  { question: "What should I wear?", answer: "" },
+  { question: "Are mouth pieces required?", answer: "" },
 ];
 
 const Classes = () => {
   return (
     <>
-      <Hero2
-        imageOne={classes1}
-        imageTwo={classes2}
-        content={"Classes"}
-        height={"75vh"}
-      />
+      <Hero2 imageOne={classes1} imageTwo={classes2} content={"Classes"} />
       <ClassSchedule />
       <ClassesSection />
       <FAQ faqs={classesFAQs} />
