@@ -24,10 +24,10 @@ const Information = () => {
             <div className="w-full h-full bg-gradient-to-br from-gray-700 to-gray-900 flex items-center justify-center relative">
               <img
                 src={eddieB}
-                alt="Eddie Bravo vs Royler Gracie at Metamoris 3"
+                alt="Eddie Bravo rolling with student"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-br from-gray-900/50 to-gray-800/50"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-gray-900/50 to-gray-800/50 transition-transform duration-500 group-hover:scale-105"></div>
             </div>
           </div>
         </div>
