@@ -1,4 +1,4 @@
-import Pricing from "./pricing";
+import Pricing from "./Pricing";
 
 const pricingCardInformation = [
   { membership: "$25 Drop-in", description: "$200 10 Use Punch Pass" },
