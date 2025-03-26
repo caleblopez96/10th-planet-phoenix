@@ -30,8 +30,8 @@ const PricingCard = () => {
       <Pricing />
       <ul>
         {pricingCardInformation.map((membership, index) => (
-          <li key={index}>
-            <h2>{membership.membership}</h2>
+          <li key={index} className="my-4">
+            <h2 className="py-2">{membership.membership}</h2>
             <p>{membership.description}</p>
           </li>
         ))}
