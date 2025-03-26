@@ -79,7 +79,7 @@ const Navbar = () => {
 
         {/* mobile menu button */}
         <button
-          className="md:hidden ml-4"
+          className="md:hidden"
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >

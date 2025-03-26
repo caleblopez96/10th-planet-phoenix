@@ -19,11 +19,17 @@ const facilityFacts = [
 const Facility = () => {
   return (
     <section className="p-4 md:p-8 lg:p-12 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 flex justify-center items-center">
-      <div className="w-full max-w-sm md:max-w-2xl lg:max-w-4xl xl:max-w-6xl bg-gray-700/50 p-4 md:p-12 lg:p-12 rounded-lg shadow-lg my-12">
+      <div className="w-full max-w-sm md:max-w-2xl lg:max-w-4xl xl:max-w-6xl bg-gray-700/50 p-4 md:p-8 lg:p-8 rounded-lg shadow-lg my-12">
         <ul>
           {facilityFacts.map((fact, index) => (
-            <li key={index}>
-              <h3>{fact.title}</h3>
+            <li
+              key={index}
+              className="text-white
+            py-4"
+            >
+              <h3 className="border-l-4 border-red-700 pl-2 text-balance my-2 font-sm lg:font-lg">
+                {fact.title}
+              </h3>
               <p>{fact.description}</p>
             </li>
           ))}
