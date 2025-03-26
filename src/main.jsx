@@ -3,7 +3,6 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Navbar from "./Components/Navbar/Navbar";
-import Hero from "./Components/Hero/Hero.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
 import Home from "./pages/home.jsx";
 import About from "./pages/about.jsx";
