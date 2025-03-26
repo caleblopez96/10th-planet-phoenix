@@ -1,8 +1,10 @@
-add tailwind and convert all css to tailwind so i dont have any css files
-
-HERO:
-make gifs of youtube video and try that instead of the pictures
+HERO - MAYBE
+[] make gifs of youtube video and try that instead of the pictures
 if that doesnt work use black nd white images?
+
+// STYLING:
+[X] add tailwind
+[] convert all css to tailwind so i dont have any css files
 
 ROUTING:
 [X] add react router and create routes

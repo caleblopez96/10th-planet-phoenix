@@ -13,8 +13,8 @@ const GymEtiquette = () => {
   ];
 
   return (
-    <section className="p-4 md:p-8 lg:p-12 bg-gray-800 text-gray-200 flex justify-center items-center">
-      <div className="w-full max-w-sm md:max-w-2xl lg:max-w-4xl xl:max-w-6xl bg-gray-700/50 p-4 md:p-12 lg:p-12 rounded-lg shadow-lg my-12">
+    <section className="p-4 md:p-8 lg:p-12 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 flex justify-center items-center">
+      <div className="w-full max-w-sm md:max-w-2xl lg:max-w-4xl xl:max-w-6xl bg-gray-500/50 p-4 md:p-12 lg:p-12 rounded-lg shadow-lg my-12">
         <h2 className="text-xl md:text-2xl lg:text-3xl font-bold uppercase tracking-widest my-4 md:mb-8 text-gray-300 text-center lg:text-left">
           GYM ETIQUETTE
         </h2>
@@ -24,7 +24,7 @@ const GymEtiquette = () => {
           {rules.map((rule, index) => (
             <li
               key={index}
-              className="text-xs md:text-sm opacity-80 leading-relaxed"
+              className="text-xs md:text-sm opacity-80 leading-relaxed text-white"
             >
               {rule}
             </li>
