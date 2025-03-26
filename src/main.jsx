@@ -2,6 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+// UI Component Imports
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop.js";
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer.jsx";
