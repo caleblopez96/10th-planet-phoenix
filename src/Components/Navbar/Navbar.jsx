@@ -7,7 +7,7 @@ const Navbar = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <nav className="fixed w-full z-50 p-4 transition-all bg-gradient-to-br from-gray-800 to-gray-900 text-white">
+    <nav className="fixed w-full z-50 p-4 transition-all bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900  text-white shadow-2xl">
       <div className="container mx-auto flex justify-between items-center">
         <NavLink to="/">
           <img src={logo} alt="Logo" className="h-20" />
@@ -77,7 +77,7 @@ const Navbar = () => {
           </li>
         </ul>
 
-        {/* mobile menu button */}
+        {/* hamburger menu button */}
         <button
           className="md:hidden"
           onClick={toggleMenu}

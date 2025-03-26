@@ -4,21 +4,21 @@ import ButtonMed from "../Buttons/ButtonMed";
 
 const Information = () => {
   return (
-    <div className="py-12 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
-      <div className="max-w-4xl mx-auto mb-12 relative">
-        <div className="absolute text-6xl text-gray-700 opacity-30 top-0 left-5 transition-transform duration-500 hover:scale-110">
+    <div className="py-8 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+      <div className="max-w-4xl mx-auto mb-8 relative">
+        <div className="absolute text-6xl text-gray-700 opacity-30 top-0 left-5 transition-transform duration-500 hover:scale-130">
           "
         </div>
         <h3 className="text-xl md:text-2xl lg:text-3xl text-white text-center  p-5 italic font-light">
-          Where other systems cease to grow, 10th Planet finds itself in a
-          situation where its entire focus is to continue its own growth.
+          Where other systems cease to grow, 10th Planets entire focus is to
+          continue its own growth.
         </h3>
         <div className="absolute text-6xl text-gray-700 opacity-30 bottom-0 right-5 transition-transform duration-500 hover:scale-110">
           "
         </div>
       </div>
 
-      <div className="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 px-5">
+      <div className="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 px-5 my-8">
         <div className="lg:block relative overflow-hidden rounded-lg shadow-xl group">
           <div className="bg-gray-700 h-full w-full p-8 flex items-center justify-center">
             <div className="w-full h-full bg-gradient-to-br from-gray-700 to-gray-900 flex items-center justify-center relative">

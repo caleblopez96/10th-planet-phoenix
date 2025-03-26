@@ -31,18 +31,17 @@ const Hero = () => {
 
   return (
     <section
-      className="relative min-h-screen w-full flex flex-col items-center justify-center text-white text-center transition-all duration-500 overflow-hidden"
+      className="relative min-h-[75vh] lg:min-h-screen w-full flex flex-col items-center justify-center text-gray-300 text-center transition-all duration-500 overflow-hidden"
       style={{ marginTop: "0", paddingTop: "4rem" }}
     >
       {/* sm */}
-      <div className="block lg:hidden w-full z-0 overflow-hidden pt-16 absolute inset-0 bg-black bg-opacity-50">
+      <div className="block lg:hidden w-full z-0 overflow-hidden pt-16 absolute inset-0 bg-black bg-opacity-50 mt-10">
         <img
           src={mobileImages[imageIndex]}
           alt="Background"
-          className="w-full h-full object-cover opacity-70"
+          className="w-full h-full object-cover opacity-50"
           style={{ objectPosition: "center 45%" }}
         />
-        <div className="absolute inset-0 bg-black opacity-30"></div>
       </div>
 
       {/* lg */}
@@ -58,7 +57,7 @@ const Hero = () => {
 
       {/* content*/}
       <div className="p-8 rounded-lg z-10 relative max-w-4xl pt-24">
-        <h1 className="text-4xl md:text-6xl font-bold text-pretty drop-shadow-2xl lg:leading-20 md:leading-15 sm:leading-10">
+        <h1 className="text-4xl md:text-6xl font-bold text-pretty drop-shadow-2xl leading-15 lg:leading-20">
           10TH PLANET JIU-JITSU PHOENIX
         </h1>
         <p className="text-lg md:text-xl mt-4 drop-shadow-2xl">
