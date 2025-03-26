@@ -2,6 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import ScrollToTop from "./Components/ScrollToTop/ScrollToTop.js";
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer.jsx";
 import Home from "./pages/home.jsx";
@@ -13,6 +14,7 @@ import Classes from "./pages/classes.jsx";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter basename="/10th-planet-phoenix/">
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
