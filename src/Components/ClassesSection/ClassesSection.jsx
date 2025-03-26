@@ -38,8 +38,10 @@ const ClassesSection = () => {
           <h3 className="text-sm uppercase tracking-widest text-red-400 font-semibold mb-2">
             Something for Everybody
           </h3>
-          <h2 className="text-4xl font-bold text-white mb-4">Our Classes</h2>
-          <div className="w-24 h-1 bg-red-500 mx-auto"></div>
+          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
+            Our Classes
+          </h2>
+          <div className="w-full h-1 bg-red-500 mx-auto"></div>
         </div>
 
         {/* class cards */}

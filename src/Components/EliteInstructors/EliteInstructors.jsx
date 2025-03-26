@@ -45,7 +45,7 @@ const EliteInstructors = () => {
             Meet the Team
           </h3>
           <div className="relative inline-block">
-            <h2 className="text-4xl font-bold text-white mb-2 relative z-10">
+            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-2 relative z-10">
               Elite Level <span className="text-red-500">Instructors</span>
             </h2>
             <div className="absolute -bottom-3 left-0 w-full h-1 bg-red-500"></div>
