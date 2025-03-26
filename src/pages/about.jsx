@@ -7,7 +7,7 @@ import GymEtiquette from "../Components/GymEtiquette/GymEtiquette";
 import aboutLg from "../assets/about/lineage10p.png";
 import aboutSm from "../assets/about/JohnLineageImg.jpg";
 import Facility from "../Components/Facility/Facility";
-import PricingCard from "../Components/Pricing/pricingCard";
+import PricingCard from "../Components/Pricing/PricingCard";
 
 const About = () => {
   return (
