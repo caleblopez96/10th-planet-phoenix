@@ -1,5 +1,3 @@
-import Pricing from "./Pricing";
-
 const pricingCardInformation = [
   { membership: "$25 Drop-in", description: "$200 10 Use Punch Pass" },
   {
@@ -27,7 +25,6 @@ const pricingCardInformation = [
 const PricingCard = () => {
   return (
     <section className="py-8 px-4">
-      <Pricing />
       <ul>
         {pricingCardInformation.map((membership, index) => (
           <li key={index} className="my-4">
