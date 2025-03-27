@@ -1,6 +1,6 @@
 // UI Component imports
 import ButtonLight from "../Buttons/ButtonLight";
-import ctaBackgroundImg from "../../assets/CTA BANNER/adultClass.jpg"; // Ensure path is correct
+import ctaBackgroundImg from "../../assets/CTA BANNER/adultClass.jpg";
 
 const CTABanner = ({ title = "CLASSES FOR ALL AGES AND SKILL LEVELS" }) => {
   return (

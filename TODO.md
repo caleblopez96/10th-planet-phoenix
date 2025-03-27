@@ -7,7 +7,8 @@ if that doesnt work use black nd white images?
 [] convert all css to tailwind so i dont have any css files
 
 ROUTING:
-[X] add react router and create routes
+[X] add react router and create routes for main nav
+[] add routing for CTA's, buttons etc...
 
 IMG OPTIMIZATION:
 [] convert all images to webp
@@ -16,14 +17,18 @@ IMG OPTIMIZATION:
 
 [X] in nav add active page
 
-[] link all buttons to the proper pages
+[] finish routing all of my buttons and cta
 
 [] convert all buttons to the component version of itself
 
 [] fix the CTABanner background on lg screens
 
-[] add NavLink to="/About#skills" to my routes but add a top class to the top most element for 2 purposes: so react router scrolls me to top and so that I can have a scroll to top button. (so, put on nav or put on hero?)
-
 [] address vs code not recognizing import despite everything being correct (it should fix itself but it not in 24 hours, manually do it) in PricingSection component
+
+[] change inline styles on cta banner
+
+[] find new secondary font
+
+[] add controls to my animations for better accessibility
 
 ctrl alt a toggles tailwind fold on/off

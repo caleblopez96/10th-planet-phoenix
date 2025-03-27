@@ -14,6 +14,7 @@ import mobile4 from "../../assets/HERO SM/IMG_20210703_121346.jpg";
 // UI Components
 import ButtonDark from "../Buttons/ButtonDark";
 import ButtonLight from "../Buttons/ButtonLight";
+import { NavLink, Route } from "react-router-dom";
 
 const desktopImages = [desktop1, desktop2, desktop3, desktop4];
 const mobileImages = [mobile1, mobile2, mobile3, mobile4];
@@ -60,8 +61,14 @@ const Hero = () => {
         </p>
 
         <div className="flex justify-center gap-4 mt-6 sm:mt-4">
-          <ButtonLight content={"Get Started"} />
-          <ButtonDark content={"Learn More"} />
+          {/* idk if this is best practice. research into it */}
+          {/* the other way im thinking is add it to the component, but right now im rendering the button dynamically based on the content prop*/}
+          <NavLink to={"/contact"}>
+            <ButtonLight content={"Get Started"} />
+          </NavLink>
+          <NavLink to={"/about"}>
+            <ButtonDark content={"Learn More"} />
+          </NavLink>
         </div>
       </div>
     </section>
