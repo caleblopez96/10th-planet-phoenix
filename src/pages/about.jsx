@@ -7,7 +7,7 @@ import GymEtiquette from "../Components/GymEtiquette/GymEtiquette";
 import aboutLg from "../assets/about/lineage10p.png";
 import aboutSm from "../assets/about/JohnLineageImg.jpg";
 import Facility from "../Components/Facility/Facility";
-import PricingCard from "../Components/Pricing/PricingCard";
+import PricingSection from "../Components/Pricing/PricingSection";
 
 const About = () => {
   return (
@@ -17,7 +17,7 @@ const About = () => {
         <Information />
         <GymEtiquette />
         <Facility />
-        <PricingCard />
+        <PricingSection />
       </section>
     </div>
   );

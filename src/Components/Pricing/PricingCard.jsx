@@ -22,7 +22,7 @@ const pricingCardInformation = [
   },
 ];
 
-const PricingCard = () => {
+const PricingCards = () => {
   return (
     <section className="py-8 px-4">
       <ul>
@@ -37,4 +37,4 @@ const PricingCard = () => {
   );
 };
 
-export default PricingCard;
+export default PricingCards;
