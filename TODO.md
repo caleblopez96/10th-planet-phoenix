@@ -24,4 +24,6 @@ IMG OPTIMIZATION:
 
 [] add NavLink to="/About#skills" to my routes but add a top class to the top most element for 2 purposes: so react router scrolls me to top and so that I can have a scroll to top button. (so, put on nav or put on hero?)
 
+[] address vs code not recognizing import despite everything being correct (it should fix itself but it not in 24 hours, manually do it) in PricingSection component
+
 ctrl alt a toggles tailwind fold on/off
