@@ -8,6 +8,28 @@ import aboutLg from "../assets/about/lineage10p.png";
 import aboutSm from "../assets/about/JohnLineageImg.jpg";
 import Facility from "../Components/Facility/Facility";
 import PricingSection from "../Components/Pricing/PricingSection";
+import FAQ from "../Components/FAQ/FAQ";
+
+const aboutFAQs = [
+  {
+    question: "What is 10th Planet?",
+    answer:
+      "It is a unique style of no gi Brazilian Jiu Jitsu which was made to work both inside the cage and on the sporting mats. The intentionality behind the creation was to have an unorthodox style which could keep an opponent under constant control and in the threat of danger",
+  },
+  {
+    question: "Where are you located?",
+    answer: "We are located in Phoenix, AZ, off N. Stapley and Baseline",
+  },
+  {
+    question: "Do I need experience?",
+    answer:
+      "10th Planet Jiu-Jitsu caters to atheletes of all skill levels. We encourage new grapplers to come and try our innovative system",
+  },
+  {
+    question: "How do I sign up?",
+    answer: "Visit our website or give us a call to sign up!",
+  },
+];
 
 const About = () => {
   return (
@@ -18,6 +40,7 @@ const About = () => {
         <GymEtiquette />
         <Facility />
         <PricingSection />
+        <FAQ faqs={aboutFAQs} />
       </section>
     </div>
   );
