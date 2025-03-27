@@ -30,17 +30,13 @@ const Hero = () => {
   }, []);
 
   return (
-    <section
-      className="relative min-h-[75vh] lg:min-h-screen w-full flex flex-col items-center justify-center text-gray-300 text-center transition-all duration-500 overflow-hidden"
-      style={{ marginTop: "0", paddingTop: "4rem" }}
-    >
+    <section className="relative min-h-[75vh] lg:min-h-screen w-full flex flex-col items-center justify-center text-gray-300 text-center transition-all duration-500 overflow-hidden mt-0 pt-16">
       {/* sm */}
       <div className="block lg:hidden w-full z-0 overflow-hidden pt-16 absolute inset-0 bg-black bg-opacity-50 mt-10">
         <img
           src={mobileImages[imageIndex]}
           alt="Background"
-          className="w-full h-full object-cover opacity-50"
-          style={{ objectPosition: "center 45%" }}
+          className="w-full h-full object-cover opacity-50 object-center-45"
         />
       </div>
 
@@ -49,8 +45,7 @@ const Hero = () => {
         <img
           src={desktopImages[imageIndex]}
           alt="Background"
-          className="w-full h-full object-cover opacity-70"
-          style={{ objectPosition: "center 45%" }}
+          className="w-full h-full object-cover opacity-70 object-center-45"
         />
         <div className="absolute inset-0 bg-black opacity-30"></div>
       </div>
