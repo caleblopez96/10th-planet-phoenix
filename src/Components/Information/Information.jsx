@@ -1,6 +1,7 @@
 import eddieB from "./eddie-bravo.jpg";
 import ButtonRed from "../Buttons/ButtonRed";
 import ButtonMed from "../Buttons/ButtonMed";
+import { Link } from "react-router-dom";
 
 const Information = () => {
   return (
@@ -50,8 +51,12 @@ const Information = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
-            <ButtonRed content={"Start Training"} />
-            <ButtonMed content={"Learn More"} />
+            <Link to={"/contact"} className="flex w-full">
+              <ButtonRed content={"Start Training"} />
+            </Link>
+            <Link to={"/about"} className="flex w-full">
+              <ButtonMed content={"Learn More"} />
+            </Link>
           </div>
         </div>
       </div>
