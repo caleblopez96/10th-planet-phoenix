@@ -14,7 +14,8 @@ import mobile4 from "../../assets/HERO SM/IMG_20210703_121346.jpg";
 // UI Components
 import ButtonDark from "../Buttons/ButtonDark";
 import ButtonLight from "../Buttons/ButtonLight";
-import { Link, NavLink, Route } from "react-router-dom";
+import LearnMoreBtn from "../Buttons/LearnMoreBtn";
+import { Link } from "react-router-dom";
 
 const desktopImages = [desktop1, desktop2, desktop3, desktop4];
 const mobileImages = [mobile1, mobile2, mobile3, mobile4];
@@ -59,15 +60,11 @@ const Hero = () => {
         <p className="text-lg md:text-xl mt-4 drop-shadow-2xl">
           LEARN THIS UNIQUE STYLE OF SUBMISSION GRAPPLING
         </p>
-
         <div className="flex justify-center gap-4 mt-6 sm:mt-4">
           <Link to={"/contact"}>
             <ButtonLight content={"Get Started"} />
           </Link>
-
-          <Link to={"/about"}>
-            <ButtonDark content={"Learn More"} />
-          </Link>
+          <LearnMoreBtn />
         </div>
       </div>
     </section>

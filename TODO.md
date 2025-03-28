@@ -1,6 +1,5 @@
 HERO - MAYBE
 [] make gifs of youtube video and try that instead of the pictures
-if that doesnt work use black nd white images?
 
 // STYLING:
 [X] add tailwind
@@ -8,7 +7,7 @@ if that doesnt work use black nd white images?
 
 ROUTING:
 [X] add react router and create routes for main nav
-[] add routing for CTA's, buttons etc...
+[] add routing to the actual button components. instead of buttons by color, do button by color and route. basically routing should be done at component level not on the page its being rendered on. USE THE LEARNMOREBTN as an example of what to do for each btn.
 
 IMG OPTIMIZATION:
 [] convert all images to webp
@@ -17,13 +16,11 @@ IMG OPTIMIZATION:
 
 [X] in nav add active page
 
-[] finish routing all of my buttons and cta
-
 [] convert all buttons to the component version of itself
 
 [] fix the CTABanner background on lg screens
 
-[] address vs code not recognizing import despite everything being correct (it should fix itself but it not in 24 hours, manually do it) in PricingSection component
+[X] address vs code not recognizing import despite everything being correct (it should fix itself but it not in 24 hours, manually do it) in PricingSection component
 
 [] change inline styles on cta banner
 
