@@ -4,8 +4,8 @@ import Information from "../Components/Information/Information";
 import GymEtiquette from "../Components/GymEtiquette/GymEtiquette";
 
 // image imports
-import aboutLg from "../assets/about/lineage10p.png";
-import aboutSm from "../assets/about/JohnLineageImg.jpg";
+import infoLg from "../assets/about/lineage10p.png";
+import infoSm from "../assets/about/JohnLineageImg.jpg";
 import Facility from "../Components/Facility/Facility";
 import PricingSection from "../Components/Pricing/PricingSection";
 import FAQ from "../Components/FAQ/FAQ";
@@ -35,7 +35,7 @@ const About = () => {
   return (
     <div>
       <section>
-        <Hero2 imageOne={aboutLg} imageTwo={aboutSm} content={"About"} />
+        <Hero2 imageOne={infoLg} imageTwo={infoSm} content={"Info"} />
         <Information />
         <GymEtiquette />
         <Facility />

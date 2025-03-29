@@ -9,10 +9,10 @@ ROUTING:
 [X] add react router and create routes for main nav
 [] add one button for each page that takes a content prop
 [X] learn more --> about page
-[] Get started --> contact page
+[X] Get started --> contact page
 [] Start training --> contact page or sign up
 [] train win our team --> contact page or sign up
-[]
+[] route the dropdown menus on my nav to their respective page sections
 
 IMG OPTIMIZATION:
 [] convert all images to webp

@@ -6,7 +6,7 @@ const LearnMoreBtn = ({
   hover = "hover:bg-gray-400",
 }) => {
   return (
-    <Link to={"/about"}>
+    <Link to={"/info"}>
       <button
         className={`px-8 py-4 sm:px-4 sm:py-2 text-base sm:text-sm ${hover} text-gray-300 rounded-md transition-colors shadow-md cursor-pointer ${backgroundColor}`}
       >

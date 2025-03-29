@@ -7,7 +7,7 @@ import ScrollToTop from "./Components/ScrollToTop/ScrollToTop.js";
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer.jsx";
 import Home from "./pages/home.jsx";
-import About from "./pages/about.jsx";
+import Info from "./pages/info.jsx";
 import Contact from "./pages/contact.jsx";
 import Instructors from "./pages/instructors.jsx";
 import Classes from "./pages/classes.jsx";
@@ -20,10 +20,10 @@ createRoot(document.getElementById("root")).render(
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/classes" element={<Classes />} />
+        <Route path="/info" element={<Info />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/instructors" element={<Instructors />} />
-        <Route path="/classes" element={<Classes />} />
         <Route path="/membership" element={<Membership />} />
       </Routes>
       <Footer />

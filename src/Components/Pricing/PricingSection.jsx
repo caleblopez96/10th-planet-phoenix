@@ -58,7 +58,7 @@ export const PricingCard = () => {
         <div
           key={plan.id}
           className={`
-            p-6 rounded-lg shadow-md transition-all duration-300 
+            p-6 rounded-lg shadow-md transition-all duration-300
             ${
               plan.featured
                 ? "bg-red-50 border-2 border-red-700 scale-105"

@@ -2,96 +2,109 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/logo/10th-planet-phoenix.png";
 
-// NavLink isActive prop comes from react router. its not custom logic
-
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState(null);
+
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
+  const navItems = [
+    {
+      name: "Home",
+      path: "/",
+      sections: [],
+      showDropdown: false,
+    },
+    {
+      name: "Classes",
+      path: "/classes",
+      sections: [
+        "Schedule",
+        "Brazilian Jiu-Jitsu",
+        "No-Gi Grappling",
+        "MMA",
+        "Kids Classes",
+      ],
+      showDropdown: true,
+    },
+    {
+      name: "Info",
+      path: "/info",
+      sections: ["About the Gym", "Facility", "FAQ", "Policies"],
+      showDropdown: true,
+    },
+    {
+      name: "Instructors",
+      path: "/instructors",
+      sections: [],
+      showDropdown: false,
+    },
+    {
+      name: "Membership",
+      path: "/membership",
+      sections: [],
+      showDropdown: false,
+    },
+    {
+      name: "Contact",
+      path: "/contact",
+      sections: [],
+      showDropdown: false,
+    },
+  ];
+
+  // toggle dropdown for mobile
+  const toggleDropdown = (index) => {
+    setActiveDropdown(activeDropdown === index ? null : index);
+  };
+
   return (
-    <nav className="fixed w-full z-50 p-4 transition-all bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900  text-white shadow-2xl">
+    <nav className="fixed w-full z-50 p-4 transition-all bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white shadow-2xl">
       <div className="container mx-auto flex justify-between items-center">
         <NavLink to="/">
           <img src={logo} alt="Logo" className="h-18" />
         </NavLink>
 
-        {/* desktop */}
+        {/* nav for lg */}
         <ul className="hidden md:flex space-x-6">
-          <li>
-            <NavLink
-              to="/"
-              className={({ isActive }) =>
-                isActive
-                  ? "text-red-500 text-md"
-                  : "cursor-pointer hover:text-red-500 text-md"
-              }
+          {navItems.map((item, index) => (
+            <li
+              key={index}
+              className={`relative ${item.showDropdown ? "group" : ""}`}
             >
-              Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/about"
-              className={({ isActive }) =>
-                isActive
-                  ? "text-red-500 text-md"
-                  : "cursor-pointer hover:text-red-500 text-md"
-              }
-            >
-              About
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/instructors"
-              className={({ isActive }) =>
-                isActive
-                  ? "text-red-500 text-md"
-                  : "cursor-pointer hover:text-red-500 text-md"
-              }
-            >
-              Instructors
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/classes"
-              className={({ isActive }) =>
-                isActive
-                  ? "text-red-500 text-md"
-                  : "cursor-pointer hover:text-red-500 text-md"
-              }
-            >
-              Classes
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/membership"
-              className={({ isActive }) =>
-                isActive
-                  ? "text-red-500 text-md"
-                  : "cursor-pointer hover:text-red-500 text-md"
-              }
-            >
-              Membership
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/contact"
-              className={({ isActive }) =>
-                isActive
-                  ? "text-red-500 text-md"
-                  : "cursor-pointer hover:text-red-500 text-md"
-              }
-            >
-              Contact
-            </NavLink>
-          </li>
+              <NavLink
+                to={item.path}
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-red-500 text-md"
+                    : "cursor-pointer hover:text-red-500 text-md"
+                }
+              >
+                {item.name}
+                {item.showDropdown && <span className="ml-1 text-xs">▼</span>}
+              </NavLink>
+
+              {/* desktop dropdown */}
+              {item.showDropdown && (
+                <div className="invisible group-hover:visible absolute left-0 mt-2 w-48 bg-gray-800 rounded-md shadow-lg py-1 z-50 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  {item.sections.map((section, sectionIndex) => (
+                    <a
+                      key={sectionIndex}
+                      href={`${item.path}#${section
+                        .toLowerCase()
+                        .replace(/\s+/g, "-")}`}
+                      className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-700 hover:text-red-500"
+                    >
+                      {section}
+                    </a>
+                  ))}
+                </div>
+              )}
+            </li>
+          ))}
         </ul>
 
-        {/* hamburger menu button */}
+        {/* hambruger */}
         <button
           className="md:hidden"
           onClick={toggleMenu}
@@ -108,85 +121,60 @@ const Navbar = () => {
       {/* mobile */}
       {isMenuOpen && (
         <div className="md:hidden py-4">
-          <ul className="flex flex-col items-center mt-4 space-y-4">
-            <li className="w-full text-center">
-              <NavLink
-                to="/"
-                className={({ isActive }) =>
-                  isActive
-                    ? "text-red-500 block w-full py-2"
-                    : "cursor-pointer block w-full py-2"
-                }
-                onClick={toggleMenu}
+          <ul className="flex flex-col mt-4">
+            {navItems.map((item, index) => (
+              <li
+                key={index}
+                className="w-full border-b border-gray-700 last:border-b-0"
               >
-                Home
-              </NavLink>
-            </li>
-            <li className="w-full text-center">
-              <NavLink
-                to="/instructors"
-                className={({ isActive }) =>
-                  isActive
-                    ? "text-red-500 block w-full py-2"
-                    : "cursor-pointer block w-full py-2"
-                }
-                onClick={toggleMenu}
-              >
-                Instructors
-              </NavLink>
-            </li>
-            <li className="w-full text-center">
-              <NavLink
-                to="/classes"
-                className={({ isActive }) =>
-                  isActive
-                    ? "text-red-500 block w-full py-2"
-                    : "cursor-pointer block w-full py-2"
-                }
-                onClick={toggleMenu}
-              >
-                Classes
-              </NavLink>
-            </li>
-            <li className="w-full text-center">
-              <NavLink
-                to="/about"
-                className={({ isActive }) =>
-                  isActive
-                    ? "text-red-500 block w-full py-2"
-                    : "cursor-pointer block w-full py-2"
-                }
-                onClick={toggleMenu}
-              >
-                About
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/membership"
-                className={({ isActive }) =>
-                  isActive
-                    ? "text-red-500 text-md"
-                    : "cursor-pointer hover:text-red-500 text-md"
-                }
-              >
-                Membership
-              </NavLink>
-            </li>
-            <li></li>
-            <li className="w-full text-center">
-              <NavLink
-                to="/contact"
-                className={({ isActive }) =>
-                  isActive
-                    ? "text-red-500 block w-full py-2"
-                    : "cursor-pointer block w-full py-2"
-                }
-                onClick={toggleMenu}
-              >
-                Contact
-              </NavLink>
-            </li>
+                <div className="flex justify-between items-center px-4">
+                  <NavLink
+                    to={item.path}
+                    className={({ isActive }) =>
+                      isActive
+                        ? "text-red-500 block py-3"
+                        : "cursor-pointer block py-3"
+                    }
+                    onClick={() => !item.showDropdown && toggleMenu()}
+                  >
+                    {item.name}
+                  </NavLink>
+
+                  {/* show dropdown buttons for items that have showDropdown only */}
+                  {item.showDropdown && (
+                    <button
+                      className="p-2 text-gray-300 hover:text-white"
+                      onClick={() => toggleDropdown(index)}
+                      aria-label={`Toggle ${item.name} sections`}
+                    >
+                      {activeDropdown === index ? (
+                        <span className="text-red-500">▲</span>
+                      ) : (
+                        <span>▼</span>
+                      )}
+                    </button>
+                  )}
+                </div>
+
+                {/* sm dropdown content */}
+                {item.showDropdown && activeDropdown === index && (
+                  <div className="bg-gray-700 py-2 px-6 mb-2">
+                    {item.sections.map((section, sectionIndex) => (
+                      <a
+                        key={sectionIndex}
+                        href={`${item.path}#${section
+                          .toLowerCase()
+                          .replace(/\s+/g, "-")}`}
+                        className="block text-sm py-1 text-gray-200 hover:text-white"
+                        onClick={toggleMenu}
+                      >
+                        {section}
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </li>
+            ))}
           </ul>
         </div>
       )}
