@@ -7,7 +7,12 @@ HERO - MAYBE
 
 ROUTING:
 [X] add react router and create routes for main nav
-[] add routing to the actual button components. instead of buttons by color, do button by color and route. basically routing should be done at component level not on the page its being rendered on. USE THE LEARNMOREBTN as an example of what to do for each btn.
+[] add one button for each page that takes a content prop
+[X] learn more --> about page
+[] Get started --> contact page
+[] Start training --> contact page or sign up
+[] train win our team --> contact page or sign up
+[]
 
 IMG OPTIMIZATION:
 [] convert all images to webp

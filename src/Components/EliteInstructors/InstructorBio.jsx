@@ -42,7 +42,9 @@ const InstructorBio = () => {
               "
             </div>
             <h3 className="text-xl md:text-2xl lg:text-3xl text-white text-center my-4 p-5 italic font-light">
-              Coach {instructor.name}
+              {instructor.name === "John Botello"
+                ? `Head Coach ${instructor.name}`
+                : `Coach ${instructor.name}`}
             </h3>
             <div className="absolute text-6xl text-gray-700 opacity-30 bottom-0 right-5">
               "

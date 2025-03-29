@@ -12,10 +12,8 @@ import mobile3 from "../../assets/HERO SM/20220627_185141.jpg";
 import mobile4 from "../../assets/HERO SM/IMG_20210703_121346.jpg";
 
 // UI Components
-import ButtonDark from "../Buttons/ButtonDark";
-import ButtonLight from "../Buttons/ButtonLight";
+import GetStarted from "../../Components/Buttons/GetStarted";
 import LearnMoreBtn from "../Buttons/LearnMoreBtn";
-import { Link } from "react-router-dom";
 
 const desktopImages = [desktop1, desktop2, desktop3, desktop4];
 const mobileImages = [mobile1, mobile2, mobile3, mobile4];
@@ -61,9 +59,7 @@ const Hero = () => {
           LEARN THIS UNIQUE STYLE OF SUBMISSION GRAPPLING
         </p>
         <div className="flex justify-center gap-4 mt-6 sm:mt-4">
-          <Link to={"/contact"}>
-            <ButtonLight content={"Get Started"} />
-          </Link>
+          <GetStarted />
           <LearnMoreBtn />
         </div>
       </div>

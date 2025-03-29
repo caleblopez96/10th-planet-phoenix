@@ -14,7 +14,6 @@ const Instructors = () => {
         content={"Instructors"}
         height="75vh"
       />
-      <EliteInstructors />
       <InstructorBio />
     </>
   );

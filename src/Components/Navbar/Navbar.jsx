@@ -12,7 +12,7 @@ const Navbar = () => {
     <nav className="fixed w-full z-50 p-4 transition-all bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900  text-white shadow-2xl">
       <div className="container mx-auto flex justify-between items-center">
         <NavLink to="/">
-          <img src={logo} alt="Logo" className="h-20" />
+          <img src={logo} alt="Logo" className="h-18" />
         </NavLink>
 
         {/* desktop */}
@@ -27,6 +27,18 @@ const Navbar = () => {
               }
             >
               Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-red-500 text-md"
+                  : "cursor-pointer hover:text-red-500 text-md"
+              }
+            >
+              About
             </NavLink>
           </li>
           <li>
@@ -51,18 +63,6 @@ const Navbar = () => {
               }
             >
               Classes
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/about"
-              className={({ isActive }) =>
-                isActive
-                  ? "text-red-500 text-md"
-                  : "cursor-pointer hover:text-red-500 text-md"
-              }
-            >
-              About
             </NavLink>
           </li>
           <li>
