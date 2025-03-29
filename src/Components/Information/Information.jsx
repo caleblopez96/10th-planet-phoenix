@@ -1,6 +1,5 @@
 import eddieB from "./eddie-bravo.jpg";
-import GetStared from "../Buttons/GetStarted";
-import LearnMoreBtn from "../Buttons/LearnMoreBtn";
+import LearnMoreBtnLg from "../Buttons/LearnMoreBtnLg";
 import StartTraining from "../Buttons/StartTraining";
 
 const Information = () => {
@@ -10,7 +9,7 @@ const Information = () => {
         <div className="absolute text-6xl text-gray-700 opacity-30 top-0 left-5 transition-transform duration-500 hover:scale-130">
           "
         </div>
-        <h3 className="text-xl md:text-2xl lg:text-3xl text-white text-center  p-5 italic font-light">
+        <h3 className="text-xl md:text-2xl lg:text-3xl text-white text-center p-5 italic font-light">
           Where other systems cease to grow, 10th Planets entire focus is to
           continue its own growth.
         </h3>
@@ -50,9 +49,20 @@ const Information = () => {
             further the system.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 mt-8">
-            <StartTraining />
-            <LearnMoreBtn backgroundColor="bg-gray-600" />
+          <div className="flex flex-col sm:flex-row gap-4 mt-8 w-full">
+            <div className="flex-1 w-full">
+              <StartTraining
+                content="Start Training"
+                backgroundColor="bg-red-600"
+                hover="hover:bg-red-700"
+              />
+            </div>
+            <div className="flex-1 w-full">
+              <LearnMoreBtnLg
+                content="Learn More"
+                backgroundColor="bg-gray-600"
+              />
+            </div>
           </div>
         </div>
       </div>

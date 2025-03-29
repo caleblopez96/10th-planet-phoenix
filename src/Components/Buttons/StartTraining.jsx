@@ -6,9 +6,9 @@ const StartTraining = ({
   hover = "hover:bg-red-700",
 }) => {
   return (
-    <Link to={"/membership"}>
+    <Link to={"/membership"} className="w-full block">
       <button
-        className={`px-8 py-4 ${backgroundColor} ${hover} text-white rounded-md transition-colors shadow-md flex-1 cursor-pointer lg:text-medium`}
+        className={`w-full px-8 py-4 ${backgroundColor} ${hover} text-white rounded-md transition-colors shadow-md cursor-pointer lg:text-medium`}
       >
         {content}
       </button>
