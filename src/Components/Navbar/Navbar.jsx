@@ -67,6 +67,18 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
+              to="/membership"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-red-500 text-md"
+                  : "cursor-pointer hover:text-red-500 text-md"
+              }
+            >
+              Membership
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
               to="/contact"
               className={({ isActive }) =>
                 isActive
@@ -149,6 +161,19 @@ const Navbar = () => {
                 About
               </NavLink>
             </li>
+            <li>
+              <NavLink
+                to="/membership"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-red-500 text-md"
+                    : "cursor-pointer hover:text-red-500 text-md"
+                }
+              >
+                Membership
+              </NavLink>
+            </li>
+            <li></li>
             <li className="w-full text-center">
               <NavLink
                 to="/contact"

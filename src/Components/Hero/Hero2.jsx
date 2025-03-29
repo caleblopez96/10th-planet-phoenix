@@ -15,7 +15,7 @@ const Hero2 = ({ content, imageOne, imageTwo }) => {
         className="w-full min-h-[25vh]object-cover opacity-90 transform translate-y-20 lg:hidden "
       />
 
-      <p className="absolute bottom-4 left-4 text-white z-10 text-lg lg:text-4xl border-l-4 border-red-700 pl-2">
+      <p className="absolute bottom-4 left-4 text-gray-300 z-10 text-lg lg:text-4xl border-l-4 border-red-700 pl-2">
         {content}
       </p>
     </section>

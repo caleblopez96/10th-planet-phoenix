@@ -11,6 +11,7 @@ import About from "./pages/about.jsx";
 import Contact from "./pages/contact.jsx";
 import Instructors from "./pages/instructors.jsx";
 import Classes from "./pages/classes.jsx";
+import Membership from "./pages/membership.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -23,6 +24,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/contact" element={<Contact />} />
         <Route path="/instructors" element={<Instructors />} />
         <Route path="/classes" element={<Classes />} />
+        <Route path="/membership" element={<Membership />} />
       </Routes>
       <Footer />
     </BrowserRouter>

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 import johnBotello from "../../assets/instructor photos/john botello.png";
-import ButtonRed from "../Buttons/ButtonRed";
+import GetStarted from "../Buttons/GetStarted";
 
 const EliteInstructors = () => {
   const instructors = [
@@ -121,7 +121,7 @@ const EliteInstructors = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <ButtonRed content={"Train With Our Team"} />
+          <GetStarted />
           <p className="text-gray-400 mt-4">
             Drop in for a free trial class and meet our instructors in person.
           </p>

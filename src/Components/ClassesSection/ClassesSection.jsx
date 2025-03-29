@@ -1,4 +1,4 @@
-import ButtonRed from "../Buttons/ButtonRed";
+import GetStarted from "../Buttons/GetStarted";
 
 const ClassesSection = () => {
   const classes = [
@@ -77,7 +77,7 @@ const ClassesSection = () => {
                 </div>
 
                 <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 py-3 px-6 translate-y-full group-hover:translate-y-0 transition-transform flex justify-center">
-                  <ButtonRed content={"Learn More"} />
+                  <GetStarted />
                 </div>
               </div>
             </div>
@@ -85,7 +85,7 @@ const ClassesSection = () => {
         </div>
 
         <div className="mt-16">
-          <ButtonRed content={"View Full Schedule"} />
+          <GetStarted />
         </div>
       </div>
     </section>

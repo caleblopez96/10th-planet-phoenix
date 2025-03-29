@@ -1,7 +1,7 @@
 import eddieB from "./eddie-bravo.jpg";
-import ButtonRed from "../Buttons/ButtonRed";
-import ButtonMed from "../Buttons/ButtonMed";
-import { Link } from "react-router-dom";
+import GetStared from "../Buttons/GetStarted";
+import LearnMoreBtn from "../Buttons/LearnMoreBtn";
+import StartTraining from "../Buttons/StartTraining";
 
 const Information = () => {
   return (
@@ -51,12 +51,8 @@ const Information = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
-            <Link to={"/contact"} className="flex w-full">
-              <ButtonRed content={"Start Training"} />
-            </Link>
-            <Link to={"/about"} className="flex w-full">
-              <ButtonMed content={"Learn More"} />
-            </Link>
+            <StartTraining />
+            <LearnMoreBtn backgroundColor="bg-gray-600" />
           </div>
         </div>
       </div>
