@@ -33,7 +33,7 @@ const Information = () => {
         </div>
 
         <div className="bg-gray-800 p-8 rounded-lg shadow-xl">
-          <p className="text-gray-300 leading-relaxed mb-8">
+          <p id="info" className="text-gray-300 leading-relaxed mb-8">
             10th Planet Jiu Jitsu was created by Eddie Bravo under the tutelage
             of Jean Jacques Machado. It is a unique style of no gi Brazilian Jiu
             Jitsu which was made to work both inside the cage and on the

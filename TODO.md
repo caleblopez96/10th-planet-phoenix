@@ -25,8 +25,6 @@ IMG OPTIMIZATION:
 
 [] fix the CTABanner background on lg screens
 
-[X] address vs code not recognizing import despite everything being correct (it should fix itself but it not in 24 hours, manually do it) in PricingSection component
-
 [] change inline styles on cta banner
 
 [] find new secondary font

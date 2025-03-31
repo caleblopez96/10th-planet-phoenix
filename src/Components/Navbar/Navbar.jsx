@@ -18,13 +18,7 @@ const Navbar = () => {
     {
       name: "Classes",
       path: "/classes",
-      sections: [
-        "Schedule",
-        "Brazilian Jiu-Jitsu",
-        "No-Gi Grappling",
-        "MMA",
-        "Kids Classes",
-      ],
+      sections: ["Schedule", "No-Gi Grappling", "Kids Classes"],
       showDropdown: true,
     },
     {
