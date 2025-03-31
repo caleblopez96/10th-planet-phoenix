@@ -2,7 +2,6 @@ import ClassSchedule from "../Components/ClassSchedule/ClassSchedule";
 import ClassesSection from "../Components/ClassesSection/ClassesSection";
 import FAQ from "../Components/FAQ/FAQ";
 import Hero2 from "../Components/Hero/Hero2";
-import ClassDescription from "../Components/ClassDescription/classDescription";
 
 // image imports
 import classes1 from "../assets/classes/classes1.jpg";
