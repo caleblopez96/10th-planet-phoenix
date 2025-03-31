@@ -101,7 +101,7 @@ export default function ClassSchedule() {
   const [selectedDay, setSelectedDay] = useState("Monday");
 
   return (
-    <div id="class-schedule" className="w-full">
+    <div id="schedule" className="w-full">
       {/* day tabs */}
       <div className="block lg:hidden w-full overflow-x-auto px-0.5">
         <ul className="flex gap-4 whitespace-nowrap w-max m-4">

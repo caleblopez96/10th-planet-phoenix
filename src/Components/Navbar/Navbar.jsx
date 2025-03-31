@@ -1,10 +1,30 @@
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import logo from "../../assets/logo/10th-planet-phoenix.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const location = useLocation();
+
+  // this handles scrolling to the correct section when the hash changes
+  useEffect(() => {
+    // check if there's a hash in the URL
+    if (location.hash) {
+      // remove the # symbol
+      const elementId = location.hash.substring(1);
+
+      // find the element with that ID
+      const element = document.getElementById(elementId);
+
+      // if the element exists scroll to it
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      }
+    }
+  }, [location]);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
@@ -18,7 +38,7 @@ const Navbar = () => {
     {
       name: "Classes",
       path: "/classes",
-      sections: ["Schedule", "No-Gi Grappling", "Kids Classes"],
+      sections: ["schedule", "NoGi Jiu-Jitsu"],
       showDropdown: true,
     },
     {
@@ -82,15 +102,15 @@ const Navbar = () => {
               {item.showDropdown && (
                 <div className="invisible group-hover:visible absolute left-0 mt-2 w-48 bg-gray-800 rounded-md shadow-lg py-1 z-50 opacity-0 group-hover:opacity-100 transition-all duration-300">
                   {item.sections.map((section, sectionIndex) => (
-                    <a
+                    <NavLink
                       key={sectionIndex}
-                      href={`${item.path}#${section
+                      to={`${item.path}#${section
                         .toLowerCase()
                         .replace(/\s+/g, "-")}`}
                       className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-700 hover:text-red-500"
                     >
                       {section}
-                    </a>
+                    </NavLink>
                   ))}
                 </div>
               )}
@@ -98,7 +118,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* hambruger */}
+        {/* hamburger */}
         <button
           className="md:hidden"
           onClick={toggleMenu}
@@ -154,16 +174,16 @@ const Navbar = () => {
                 {item.showDropdown && activeDropdown === index && (
                   <div className="bg-gray-700 py-2 px-6 mb-2">
                     {item.sections.map((section, sectionIndex) => (
-                      <a
+                      <NavLink
                         key={sectionIndex}
-                        href={`${item.path}#${section
+                        to={`${item.path}#${section
                           .toLowerCase()
                           .replace(/\s+/g, "-")}`}
                         className="block text-sm py-1 text-gray-200 hover:text-white"
                         onClick={toggleMenu}
                       >
                         {section}
-                      </a>
+                      </NavLink>
                     ))}
                   </div>
                 )}

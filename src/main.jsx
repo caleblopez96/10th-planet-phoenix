@@ -14,19 +14,17 @@ import Classes from "./pages/classes.jsx";
 import Membership from "./pages/membership.jsx";
 
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <BrowserRouter basename="/10th-planet-phoenix/">
-      <ScrollToTop />
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/classes" element={<Classes />} />
-        <Route path="/info" element={<Info />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/instructors" element={<Instructors />} />
-        <Route path="/membership" element={<Membership />} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
-  </StrictMode>
+  <BrowserRouter basename="/10th-planet-phoenix/">
+    <ScrollToTop />
+    <Navbar />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/classes" element={<Classes />} />
+      <Route path="/info" element={<Info />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/instructors" element={<Instructors />} />
+      <Route path="/membership" element={<Membership />} />
+    </Routes>
+    <Footer />
+  </BrowserRouter>
 );

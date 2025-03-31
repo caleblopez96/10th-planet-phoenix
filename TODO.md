@@ -31,4 +31,6 @@ IMG OPTIMIZATION:
 
 [] add controls to my animations for better accessibility
 
+[] implenet react router hash
+
 ctrl alt a toggles tailwind fold on/off
