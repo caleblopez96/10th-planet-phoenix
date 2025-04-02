@@ -72,6 +72,14 @@ const Navbar = () => {
     setActiveDropdown(activeDropdown === index ? null : index);
   };
 
+  // Handle navigation item click
+  const handleNavItemClick = (item) => {
+    // If it doesn't have a dropdown or we're not on mobile, close the menu
+    if (!item.showDropdown || window.innerWidth < 768) {
+      setIsMenuOpen(false);
+    }
+  };
+
   return (
     <nav className="fixed w-full z-50 p-4 transition-all bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white shadow-2xl">
       <div className="container mx-auto flex justify-between items-center">
@@ -93,6 +101,7 @@ const Navbar = () => {
                     ? "text-red-500 text-md"
                     : "cursor-pointer hover:text-red-500 text-md"
                 }
+                onClick={() => handleNavItemClick(item)}
               >
                 {item.name}
                 {item.showDropdown && <span className="ml-1 text-xs">▼</span>}
@@ -108,6 +117,7 @@ const Navbar = () => {
                         .toLowerCase()
                         .replace(/\s+/g, "-")}`}
                       className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-700 hover:text-red-500"
+                      onClick={() => setIsMenuOpen(false)}
                     >
                       {section}
                     </NavLink>
@@ -149,7 +159,7 @@ const Navbar = () => {
                         ? "text-red-500 block py-3"
                         : "cursor-pointer block py-3"
                     }
-                    onClick={() => !item.showDropdown && toggleMenu()}
+                    onClick={() => handleNavItemClick(item)}
                   >
                     {item.name}
                   </NavLink>
@@ -158,7 +168,10 @@ const Navbar = () => {
                   {item.showDropdown && (
                     <button
                       className="p-2 text-gray-300 hover:text-white"
-                      onClick={() => toggleDropdown(index)}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        toggleDropdown(index);
+                      }}
                       aria-label={`Toggle ${item.name} sections`}
                     >
                       {activeDropdown === index ? (
@@ -180,7 +193,7 @@ const Navbar = () => {
                           .toLowerCase()
                           .replace(/\s+/g, "-")}`}
                         className="block text-sm py-1 text-gray-200 hover:text-white"
-                        onClick={toggleMenu}
+                        onClick={() => setIsMenuOpen(false)}
                       >
                         {section}
                       </NavLink>

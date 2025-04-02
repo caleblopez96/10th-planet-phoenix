@@ -12,7 +12,7 @@ import mobile3 from "../../assets/HERO SM/20220627_185141.jpg";
 import mobile4 from "../../assets/HERO SM/IMG_20210703_121346.jpg";
 
 // UI Components
-import GetStarted from "../../Components/Buttons/GetStarted";
+import GetStartedBtn from "../Buttons/GetStartedBtn";
 import LearnMoreBtn from "../Buttons/LearnMoreBtn";
 
 const desktopImages = [desktop1, desktop2, desktop3, desktop4];
@@ -59,7 +59,7 @@ const Hero = () => {
           LEARN THIS UNIQUE STYLE OF SUBMISSION GRAPPLING
         </p>
         <div className="flex justify-center gap-4 mt-6 sm:mt-4">
-          <GetStarted />
+          <GetStartedBtn />
           <LearnMoreBtn />
         </div>
       </div>

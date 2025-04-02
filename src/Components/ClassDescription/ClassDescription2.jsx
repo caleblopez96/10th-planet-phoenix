@@ -24,7 +24,7 @@ export default function ClassDescription() {
         <div key={index} className="container mx-auto px-4">
           {/* first row */}
           <div className="flex flex-col md:flex-row mb-8 gap-6">
-            {/* Vid */}
+            {/* vid */}
             <div className="w-full md:w-1/2">
               <div className="bg-black p-1">
                 <iframe

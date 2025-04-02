@@ -22,14 +22,13 @@ export default function ClassDescription() {
         <div key={index} className="container mx-auto px-4">
           {/* first row */}
           <div className="flex flex-col md:flex-row mb-8 gap-6">
-            {/* Vid */}
+            {/* vid */}
             <div className="w-full md:w-1/2">
               <div className="bg-black p-1">
                 <iframe
                   className="w-full h-[50vh]"
                   src="https://www.youtube.com/embed/PqZiShzsvCM?si=v0camAQ4kLcEJ_SQ"
                   title="YouTube video player"
-                  frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerPolicy="strict-origin-when-cross-origin"
                   allowFullScreen
@@ -47,16 +46,16 @@ export default function ClassDescription() {
           <div key={index} className="container mx-auto px-4">
             {/* second row */}
             <div className="flex flex-col md:flex-row mb-8 gap-6">
-              {/* Video 1 */}
+              {/* vid */}
               <div className="w-full md:w-1/2">
                 <div className="bg-black p-1">
                   <iframe
                     className="w-full h-[50vh]"
-                    src="https://www.youtube.com/embed/PqZiShzsvCM?si=v0camAQ4kLcEJ_SQ"
+                    src="https://www.youtube.com/embed/GOocqe3LebM?si=xQYiLYAsO3xutoRM"
                     title="YouTube video player"
-                    frameBorder="0"
+                    frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerPolicy="strict-origin-when-cross-origin"
+                    referrerpolicy="strict-origin-when-cross-origin"
                     allowFullScreen
                   ></iframe>
                 </div>

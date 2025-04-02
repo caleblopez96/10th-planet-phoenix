@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 import johnBotello from "../../assets/instructor photos/john botello.png";
-import GetStarted from "../Buttons/GetStarted";
+import GetStartedBtn from "../Buttons/GetStartedBtn";
 
 const EliteInstructors = () => {
   const instructors = [
@@ -36,7 +36,7 @@ const EliteInstructors = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 px-4 py-16 w-full relative overflow-hidden">
+    <section className=" px-4 py-16 w-full relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 animate-moveGradient"></div>
 
       <div className="container mx-auto flex flex-col items-center relative z-10">
@@ -121,7 +121,7 @@ const EliteInstructors = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <GetStarted />
+          <GetStartedBtn />
           <p className="text-gray-400 mt-4">
             Drop in for a free trial class and meet our instructors in person.
           </p>

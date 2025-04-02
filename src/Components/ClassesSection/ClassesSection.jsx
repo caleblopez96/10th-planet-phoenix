@@ -1,4 +1,4 @@
-import GetStarted from "../Buttons/GetStarted";
+import GetStartedBtn from "../Buttons/GetStartedBtn";
 
 const ClassesSection = () => {
   const classes = [
@@ -77,7 +77,7 @@ const ClassesSection = () => {
                 </div>
 
                 <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 py-3 px-6 translate-y-full group-hover:translate-y-0 transition-transform flex justify-center">
-                  <GetStarted />
+                  <GetStartedBtn />
                 </div>
               </div>
             </div>
@@ -85,7 +85,7 @@ const ClassesSection = () => {
         </div>
 
         <div className="mt-16">
-          <GetStarted />
+          <GetStartedBtn />
         </div>
       </div>
     </section>

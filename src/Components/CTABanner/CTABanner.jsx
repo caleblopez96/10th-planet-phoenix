@@ -5,7 +5,7 @@ import ctaBackgroundImg from "../../assets/CTA BANNER/adultClass.jpg";
 const CTABanner = ({ title = "CLASSES FOR ALL AGES AND SKILL LEVELS" }) => {
   return (
     <section
-      className={`relative w-full px-6 py-16 flex flex-col items-center justify-center bg-cover bg-center grayscale`}
+      className={`relative w-full px-6 py-16 flex flex-col items-center justify-center bg-cover bg-center grayscale lg:h-[65vh]`}
       style={{ backgroundImage: `url(${ctaBackgroundImg})` }}
     >
       {/* overlay */}
