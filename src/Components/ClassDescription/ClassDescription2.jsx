@@ -16,7 +16,9 @@ export default function ClassDescription() {
       id="nogi-jiu-jitsu"
       className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-gray-200 py-10"
     >
-      <h2 className="text-2xl lg:text-3xl text-center mb-8">No-Gi Grappling</h2>
+      <h2 className="text-2xl lg:text-3xl text-center mb-8">
+        Kids No-Gi Grappling
+      </h2>
 
       {classDescription.map((classItem, index) => (
         <div key={index} className="container mx-auto px-4">
@@ -44,33 +46,7 @@ export default function ClassDescription() {
               <p className="mb-4">{classItem.description1}</p>
             </div>
           </div>
-          <div key={index} className="container mx-auto px-4">
-            {/* second row */}
-            <div className="flex flex-col md:flex-row mb-8 gap-6">
-              {/* Video 1 */}
-              <div className="w-full md:w-1/2">
-                <div className="bg-black p-1">
-                  <iframe
-                    className="w-full h-[50vh]"
-                    src="https://www.youtube.com/embed/PqZiShzsvCM?si=v0camAQ4kLcEJ_SQ"
-                    title="YouTube video player"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerPolicy="strict-origin-when-cross-origin"
-                    allowFullScreen
-                  ></iframe>
-                </div>
-              </div>
-
-              {/* Text Description */}
-              <div className="w-full md:w-1/2 flex flex-col justify-center">
-                <h3 className="text-lg font-semibold mb-4">
-                  {classItem.className}
-                </h3>
-                <p className="mb-4">{classItem.description1}</p>
-              </div>
-            </div>
-          </div>
+          <div key={index} className="container mx-auto px-4"></div>
         </div>
       ))}
     </section>
