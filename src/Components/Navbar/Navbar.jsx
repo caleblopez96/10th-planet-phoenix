@@ -17,7 +17,7 @@ const Navbar = () => {
       // find the element with that ID
       const element = document.getElementById(elementId);
 
-      // if the element exists scroll to it
+      // if the element exists scroll to it after 1ms
       if (element) {
         setTimeout(() => {
           element.scrollIntoView({ behavior: "smooth" });
