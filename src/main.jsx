@@ -11,7 +11,7 @@ import Info from "./pages/info.jsx";
 import Contact from "./pages/contact.jsx";
 import Instructors from "./pages/instructors.jsx";
 import Classes from "./pages/classes.jsx";
-import Membership from "./pages/membership.jsx";
+// import Membership from "./pages/membership.jsx";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter basename="/10th-planet-phoenix/">
@@ -23,7 +23,7 @@ createRoot(document.getElementById("root")).render(
       <Route path="/info" element={<Info />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/instructors" element={<Instructors />} />
-      <Route path="/membership" element={<Membership />} />
+      {/* <Route path="/membership" element={<Membership />} /> */}
     </Routes>
     <Footer />
   </BrowserRouter>

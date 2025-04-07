@@ -33,4 +33,10 @@ IMG OPTIMIZATION:
 
 [] implenet react router hash
 
+[] finish readme
+
+[] make buttons responsive.
+
+[] fix overflow in the footer. grid children text is overflowing on a certain screen size cnt remember
+
 ctrl alt a toggles tailwind fold on/off

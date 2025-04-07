@@ -53,12 +53,12 @@ const Navbar = () => {
       sections: [],
       showDropdown: false,
     },
-    {
-      name: "Membership",
-      path: "/membership",
-      sections: [],
-      showDropdown: false,
-    },
+    // {
+    //   name: "Membership",
+    //   path: "/membership",
+    //   sections: [],
+    //   showDropdown: false,
+    // },
     {
       name: "Contact",
       path: "/contact",

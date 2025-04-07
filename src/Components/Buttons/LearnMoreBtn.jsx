@@ -8,7 +8,31 @@ const LearnMoreBtn = ({
   return (
     <Link to={"/info"}>
       <button
-        className={`px-6 py-4 sm:px-4 sm:py-2 text-base sm:text-sm ${hover} text-gray-300 rounded-md transition-colors shadow-md cursor-pointer ${backgroundColor}`}
+        className={`
+          px-4 py-2 
+          sm:px-5 sm:py-2.5
+          md:px-6 md:py-3
+          lg:px-7 lg:py-3.5
+          xl:px-8 xl:py-4
+          text-sm
+          sm:text-sm
+          md:text-base
+          lg:text-base
+          xl:text-lg
+          ${hover}
+          text-gray-300
+          rounded-md
+          transition-colors
+          duration-300
+          shadow-md
+          hover:shadow-lg
+          focus:outline-none
+          focus:ring-2
+          focus:ring-offset-2
+          focus:ring-gray-500
+          cursor-pointer
+          ${backgroundColor}
+        `}
       >
         {content}
       </button>
