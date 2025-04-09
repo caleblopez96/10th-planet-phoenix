@@ -33,7 +33,6 @@ export default function ClassDescription() {
                   src="https://www.youtube.com/embed/PqZiShzsvCM?si=v0camAQ4kLcEJ_SQ"
                   title="YouTube video player"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
                   allowFullScreen
                 ></iframe>
               </div>

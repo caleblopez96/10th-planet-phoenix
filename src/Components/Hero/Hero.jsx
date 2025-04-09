@@ -12,8 +12,7 @@ import mobile3 from "../../assets/HERO SM/20220627_185141.jpg";
 import mobile4 from "../../assets/HERO SM/IMG_20210703_121346.jpg";
 
 // UI Components
-import GetStartedBtn from "../Buttons/GetStartedBtn";
-import LearnMoreBtn from "../Buttons/LearnMoreBtn";
+import Button from "../Buttons/Button";
 
 const desktopImages = [desktop1, desktop2, desktop3, desktop4];
 const mobileImages = [mobile1, mobile2, mobile3, mobile4];
@@ -51,20 +50,28 @@ const Hero = () => {
       </div>
 
       {/* content*/}
-      <div className="p-8 rounded-lg z-10 relative max-w-4xl pt-24">
-        <h1 className="text-4xl md:text-6xl font-bold text-pretty drop-shadow-2xl leading-15 lg:leading-20">
+      <div className="p-8 rounded-lg z-10 relative max-w-4xl">
+        <h1 className="text-3xl md:text-6xl font-bold text-pretty drop-shadow-2xl leading-10 lg:leading-20">
           10TH PLANET JIU-JITSU PHOENIX
         </h1>
-        <p className="text-lg md:text-xl mt-4 drop-shadow-2xl">
+        <p className="text-lg md:text-xl drop-shadow-2xl">
           LEARN THIS UNIQUE STYLE OF SUBMISSION GRAPPLING
         </p>
-        <div className="flex flex-col sm:flex-row justify-center gap-4 mt-6 sm:mt-4">
-          <div className="w-full sm:w-auto">
-            <GetStartedBtn />
-          </div>
-          <div className="w-full sm:w-auto">
-            <LearnMoreBtn />
-          </div>
+        <div className="flex justify-center items-center gap-4 flex-col">
+          <Button
+            content="Start Training"
+            backgroundColor="bg-red-600"
+            hover="hover:bg-red-700"
+            color="text-white"
+            className="flex-1"
+          />
+          <Button
+            content="Start Training"
+            backgroundColor="bg-red-600"
+            hover="hover:bg-red-700"
+            color="text-white"
+            className="flex-1"
+          />
         </div>
       </div>
     </section>

@@ -2,7 +2,7 @@ import logo from "../../assets/logo/10th-planet-phoenix.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-white text-white py-8 border-gray-300 bg-gradient-to-b from-gray-800 to-gray-900">
+    <footer className="bg-white text-white py-8 border-gray-300 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800">
       <div className="max-w-screen-xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div className="flex flex-col">

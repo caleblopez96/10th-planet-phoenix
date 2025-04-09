@@ -1,16 +1,15 @@
 import eddieB from "./eddie-bravo.jpg";
-import LearnMoreBtn from "../Buttons/LearnMoreBtn";
-import StartTraining from "../Buttons/StartTraining";
+import Button from "../Buttons/Button";
 
 const Information = () => {
   return (
-    <div className="py-8 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+    <div className="py-8 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800">
       <div className="max-w-4xl mx-auto mb-8 relative">
-        <div className="absolute text-6xl text-gray-700 opacity-30 top-0 left-5 transition-transform duration-500 hover:scale-130">
+        <div className="absolute text-6xl text-gray-700 opacity-30 top-0 left-5 transition-transform duration-500 hover:scale-110">
           "
         </div>
         <h3 className="text-xl md:text-2xl lg:text-3xl text-white text-center p-5 italic font-light">
-          Where other systems cease to grow, 10th Planets entire focus is to
+          Where other systems cease to grow, 10th Planet's entire focus is to
           continue its own growth.
         </h3>
         <div className="absolute text-6xl text-gray-700 opacity-30 bottom-0 right-5 transition-transform duration-500 hover:scale-110">
@@ -49,20 +48,21 @@ const Information = () => {
             further the system.
           </p>
 
-          <div className="flex flex-col md:flex-row gap-4 mt-8 w-full justify-center align-middle">
-            <div className="flex-1">
-              <StartTraining
-                content="Start Training"
-                backgroundColor="bg-red-600"
-                hover="hover:bg-red-700"
-              />
-            </div>
-            <div className="flex-1">
-              <LearnMoreBtn
-                content="Learn More"
-                backgroundColor="bg-gray-600"
-              />
-            </div>
+          <div className="flex gap-4 w-full flex-col">
+            <Button
+              content="Learn More"
+              backgroundColor="bg-gray-700"
+              hover="hover:bg-gray-600"
+              color="text-white"
+              className="flex-1"
+            />
+            <Button
+              content="Start Training"
+              backgroundColor="bg-red-600"
+              hover="hover:bg-red-700"
+              color="text-white"
+              className="flex-1"
+            />
           </div>
         </div>
       </div>

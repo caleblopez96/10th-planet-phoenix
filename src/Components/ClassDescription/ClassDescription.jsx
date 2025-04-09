@@ -33,7 +33,6 @@ export default function ClassDescription() {
                   src="https://www.youtube.com/embed/PqZiShzsvCM?si=v0camAQ4kLcEJ_SQ"
                   title="YouTube video player"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
                   allowFullScreen
                 ></iframe>
               </div>
@@ -56,9 +55,7 @@ export default function ClassDescription() {
                     className="w-full h-[50vh]"
                     src="https://www.youtube.com/embed/GOocqe3LebM?si=xQYiLYAsO3xutoRM"
                     title="YouTube video player"
-                    frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
                     allowFullScreen
                   ></iframe>
                 </div>
