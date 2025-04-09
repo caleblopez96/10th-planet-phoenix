@@ -83,10 +83,6 @@ const ClassesSection = () => {
             </div>
           ))}
         </div>
-
-        <div className="mt-16">
-          <GetStartedBtn />
-        </div>
       </div>
     </section>
   );

@@ -49,15 +49,15 @@ const Information = () => {
             further the system.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 mt-8 w-full">
-            <div className="flex-1 w-full">
+          <div className="flex flex-col md:flex-row gap-4 mt-8 w-full justify-center align-middle">
+            <div className="flex-1">
               <StartTraining
                 content="Start Training"
                 backgroundColor="bg-red-600"
                 hover="hover:bg-red-700"
               />
             </div>
-            <div className="flex-1 w-full">
+            <div className="flex-1">
               <LearnMoreBtn
                 content="Learn More"
                 backgroundColor="bg-gray-600"

@@ -58,9 +58,13 @@ const Hero = () => {
         <p className="text-lg md:text-xl mt-4 drop-shadow-2xl">
           LEARN THIS UNIQUE STYLE OF SUBMISSION GRAPPLING
         </p>
-        <div className="flex justify-center gap-4 mt-6 sm:mt-4">
-          <GetStartedBtn />
-          <LearnMoreBtn />
+        <div className="flex flex-col sm:flex-row justify-center gap-4 mt-6 sm:mt-4">
+          <div className="w-full sm:w-auto">
+            <GetStartedBtn />
+          </div>
+          <div className="w-full sm:w-auto">
+            <LearnMoreBtn />
+          </div>
         </div>
       </div>
     </section>

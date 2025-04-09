@@ -1,5 +1,5 @@
 // UI Component imports
-import ButtonLight from "../Buttons/ButtonLight";
+import StartTraining from "../Buttons/StartTraining";
 import ctaBackgroundImg from "../../assets/CTA BANNER/adultClass.jpg";
 
 const CTABanner = ({ title = "CLASSES FOR ALL AGES AND SKILL LEVELS" }) => {
@@ -15,8 +15,7 @@ const CTABanner = ({ title = "CLASSES FOR ALL AGES AND SKILL LEVELS" }) => {
         <h2 className="text-2xl md:text-3xl text-white mb-8 tracking-wider">
           {title}
         </h2>
-
-        <ButtonLight content={"Learn More"} />
+        <StartTraining />
       </div>
     </section>
   );

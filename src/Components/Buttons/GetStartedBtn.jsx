@@ -6,9 +6,9 @@ const ButtonLight = ({
   hover = "hover:bg-gray-400",
 }) => {
   return (
-    <Link to={"/contact"}>
+    <Link to={"/contact"} className="w-full block">
       <button
-        className={`px-6 py-4 sm:px-4 sm:py-2 text-base sm:text-sm ${hover} text-gray-800 rounded-md transition-colors shadow-md cursor-pointer flex1 ${backgroundColor}`}
+        className={`px-4 py-3 text-base ${backgroundColor} ${hover} text-gray-800 rounded-md transition-colors shadow-md cursor-pointer`}
       >
         {content}
       </button>
