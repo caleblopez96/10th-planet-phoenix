@@ -72,9 +72,9 @@ const Navbar = () => {
     setActiveDropdown(activeDropdown === index ? null : index);
   };
 
-  // Handle navigation item click
+  // handle nav item click
   const handleNavItemClick = (item) => {
-    // If it doesn't have a dropdown or we're not on mobile, close the menu
+    // if it doesn't have a dropdown or we're not on mobile close the menu
     if (!item.showDropdown || window.innerWidth < 768) {
       setIsMenuOpen(false);
     }
@@ -164,7 +164,7 @@ const Navbar = () => {
                     {item.name}
                   </NavLink>
 
-                  {/* show dropdown buttons for items that have showDropdown only */}
+                  {/* show dropdown buttons for items that have showDropdown only if not dont show (&&)*/}
                   {item.showDropdown && (
                     <button
                       className="p-2 text-gray-300 hover:text-white"

@@ -1,5 +1,5 @@
 import eddieB from "./eddie-bravo.jpg";
-import LearnMoreBtnLg from "../Buttons/LearnMoreBtnLg";
+import LearnMoreBtn from "../Buttons/LearnMoreBtn";
 import StartTraining from "../Buttons/StartTraining";
 
 const Information = () => {
@@ -58,7 +58,7 @@ const Information = () => {
               />
             </div>
             <div className="flex-1 w-full">
-              <LearnMoreBtnLg
+              <LearnMoreBtn
                 content="Learn More"
                 backgroundColor="bg-gray-600"
               />
