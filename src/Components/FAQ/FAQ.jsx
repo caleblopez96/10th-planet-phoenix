@@ -4,9 +4,9 @@ const FAQItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border border-gray-600 rounded-lg mb-2 bg-gray-700">
+    <div className="border border-gray-600 rounded-lg mb-2 bg-gray-100">
       <button
-        className="w-full flex justify-between items-center p-4 text-left text-white font-bold uppercase tracking-wide hover:bg-gray-600 transition duration-300"
+        className="w-full flex justify-between items-center p-4 text-left text-black font-bold uppercase tracking-wide hover:bg-gray-600 transition duration-300"
         onClick={() => setIsOpen(!isOpen)}
       >
         {question}
@@ -17,7 +17,7 @@ const FAQItem = ({ question, answer }) => {
           isOpen ? "max-h-80 p-4" : "max-h-0"
         }`}
       >
-        <p className="text-gray-300">{answer}</p>
+        <p className="text-black">{answer}</p>
       </div>
     </div>
   );
@@ -25,8 +25,8 @@ const FAQItem = ({ question, answer }) => {
 
 const FAQ = ({ faqs }) => {
   return (
-    <div className="mx-auto bg-gray-800 px-6 py-15 shadow-lg">
-      <h2 className="text-white text-xl font-bold uppercase tracking-wide mb-4">
+    <div className="mx-auto px-6 py-15 shadow-lg">
+      <h2 className="text-black text-xl font-bold uppercase tracking-wide mb-4">
         Frequently Asked Questions
       </h2>
       {faqs.map((faq, index) => (

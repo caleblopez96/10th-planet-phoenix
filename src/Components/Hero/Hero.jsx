@@ -26,7 +26,7 @@ const Hero = () => {
   return (
     <section className="relative min-h-[75vh] lg:min-h-screen w-full flex flex-col items-center justify-center text-gray-300 text-center transition-all duration-500 overflow-hidden mt-0 pt-16">
       {/* sm */}
-      <div className="block lg:hidden w-full z-0 overflow-hidden pt-16 absolute inset-0 bg-black bg-opacity-50 mt-10">
+      <div className="block lg:hidden w-full z-0 overflow-hidden absolute inset-0 bg-black bg-opacity-50">
         <img
           src={mobileImages[imageIndex]}
           alt="Background"

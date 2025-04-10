@@ -24,6 +24,5 @@ createRoot(document.getElementById("root")).render(
       <Route path="/instructors" element={<Instructors />} />
       {/* <Route path="/membership" element={<Membership />} /> */}
     </Routes>
-    <Footer />
   </BrowserRouter>
 );
