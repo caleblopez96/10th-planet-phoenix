@@ -118,7 +118,6 @@ export default function ClassSchedule() {
           ))}
         </ul>
       </div>
-
       {/* spaced evenly on lg*/}
       <div className="hidden lg:block w-full py-6">
         <ul className="flex w-full px-2">

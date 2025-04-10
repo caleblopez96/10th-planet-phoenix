@@ -8,6 +8,7 @@ import ClassDescription2 from "../Components/ClassDescription/ClassDescription2"
 // image imports
 import classes1 from "../assets/classes/classes1.jpg";
 import classes2 from "../assets/classes/classes2.jpg";
+import Footer from "../Components/Footer/Footer";
 
 const classesFAQs = [
   { question: "Do you offer classes for beginners?", answer: "" },
@@ -20,11 +21,14 @@ const Classes = () => {
   return (
     <>
       <Hero2 imageOne={classes1} imageTwo={classes2} content={"Classes"} />
-      <ClassSchedule />
-      <ClassesSection />
-      <ClassDescription />
-      <ClassDescription2 />
-      <FAQ faqs={classesFAQs} />
+      <div className="max-w-[1200px] mx-auto px-4">
+        <ClassSchedule />
+        <ClassesSection />
+        <ClassDescription />
+        <ClassDescription2 />
+        <FAQ faqs={classesFAQs} />
+      </div>
+      <Footer />
     </>
   );
 };
