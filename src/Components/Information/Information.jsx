@@ -52,9 +52,9 @@ const Information = () => {
             <div className="flex gap-4 w-full flex-col">
               <Button
                 content="Learn More"
-                backgroundColor="bg-gray-700"
+                backgroundColor="bg-gray-300"
                 hover="hover:bg-gray-600"
-                color="text-white"
+                color="text-black"
                 className="flex-1"
               />
               <Button
