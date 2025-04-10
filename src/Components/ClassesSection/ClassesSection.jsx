@@ -32,13 +32,13 @@ const ClassesSection = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 px-4 py-16 w-full relative">
+    <section className="bg-gradient-to-r from-white via-gray-50 to-white px-4 py-16 w-full relative">
       <div className="container mx-auto flex flex-col items-center relative z-10">
-        <div className="mb-16 text-center">
+        <div className="mb-16">
           <h3 className="text-sm uppercase tracking-widest text-red-400 font-semibold mb-2">
             Something for Everybody
           </h3>
-          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold text-black mb-4">
             Our Classes
           </h2>
           <div className="w-full h-1 bg-red-500 mx-auto"></div>
@@ -51,27 +51,27 @@ const ClassesSection = () => {
               key={index}
               className={`group relative overflow-hidden rounded-lg shadow-xl transition-all duration-300 hover:-translate-y-2`}
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-red-600 to-gray-800 opacity-80 group-hover:opacity-90 transition-opacity"></div>
+              <div className="bg-gradient-to-r from-white via-gray-50 to-whiteopacity-80 group-hover:opacity-90 transition-opacity"></div>
 
               <div className="relative z-10 p-6 h-full flex flex-col justify-between lg:h-96">
                 <div>
-                  <span className="inline-block px-3 py-1 bg-red-900 bg-opacity-50 text-xs text-white rounded-full mb-4">
+                  <span className="inline-block px-3 py-1 bg-red-500 bg-opacity-50 text-xs text-black rounded-full mb-4">
                     {classItem.level}
                   </span>
 
-                  <h3 className="text-sm font-bold text-white mb-2 break-words hyphens-auto">
+                  <h3 className="text-sm font-bold text-black mb-2 break-words hyphens-auto">
                     {classItem.title}
                   </h3>
 
                   <div className="h-40 overflow-y-auto pr-2 custom-scrollbar">
-                    <p className="text-gray-200 mb-4 text-sm leading-relaxed">
+                    <p className="text-black mb-4 text-sm leading-relaxed">
                       {classItem.description}
                     </p>
                   </div>
                 </div>
 
                 <div className="flex items-center mt-4">
-                  <span className="text-xs text-gray-200 border-l-2 border-white pl-2 break-words">
+                  <span className="text-xs text-black border-l-2 border-red-500 pl-2 break-words">
                     {classItem.time}
                   </span>
                 </div>

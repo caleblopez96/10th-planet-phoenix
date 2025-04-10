@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import logo from "../../assets/logo/10th-planet-phoenix.png";
+import logo from "../../assets/10th P PHX.webp";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -64,7 +64,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed w-full z-50 p-4 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white shadow-2xl">
+    <nav className="fixed w-full z-50 p-4  text-black shadow-2xl">
       <div className="container mx-auto flex justify-between items-center">
         {/* logo */}
         <NavLink to="/">
@@ -94,9 +94,10 @@ const Navbar = () => {
                   {item.sections.map((section, sectionIndex) => (
                     <NavLink
                       key={sectionIndex}
-                      to={`${item.path}#${section
-                        .toLowerCase()
-                        .replace(/\s+/g, "-")}`}
+                      to={`${item.path}#${
+                        section.toLowerCase()
+                        // .replace(/\s+/g, "-")
+                      }`}
                       className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-700 hover:text-red-500"
                       onClick={() => setIsMenuOpen(false)}
                     >
@@ -118,7 +119,7 @@ const Navbar = () => {
           {isMenuOpen ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-10 w-10 text-white"
+              className="h-10 w-10 text-black"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -133,7 +134,7 @@ const Navbar = () => {
           ) : (
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-10 w-10 text-white"
+              className="h-10 w-10 text-black"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -151,7 +152,7 @@ const Navbar = () => {
 
       {/* mobile menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-gray-800 rounded-lg mt-2 shadow-xl">
+        <div className="md:hidden rounded-lg mt-2 shadow-xl">
           <ul className="flex flex-col">
             {navItems.map((item, index) => (
               <li
@@ -162,7 +163,7 @@ const Navbar = () => {
                   <NavLink
                     to={item.path}
                     className={({ isActive }) =>
-                      `block py-3 ${isActive ? "text-red-500" : "text-white"}`
+                      `block py-3 ${isActive ? "text-red-500" : "text-black"}`
                     }
                     onClick={() => handleNavItemClick(item)}
                   >
@@ -181,14 +182,14 @@ const Navbar = () => {
                       {activeDropdown === index ? (
                         <span className="text-red-500">▲</span>
                       ) : (
-                        <span className="text-white">▼</span>
+                        <span className="text-black">▼</span>
                       )}
                     </button>
                   )}
                 </div>
 
                 {item.showDropdown && activeDropdown === index && (
-                  <div className="bg-gray-700 px-6 pb-2">
+                  <div className=" bg-gray-100 px-6 pb-2">
                     {item.sections.map((section, sectionIndex) => (
                       <NavLink
                         key={sectionIndex}
@@ -196,7 +197,7 @@ const Navbar = () => {
                           section.toLowerCase()
                           // .replace(/\s+/g, "-")
                         }`}
-                        className="block py-2 text-sm text-gray-200 hover:text-white"
+                        className="block py-2 text-sm text-black hover:text-white"
                         onClick={() => setIsMenuOpen(false)}
                       >
                         {section}

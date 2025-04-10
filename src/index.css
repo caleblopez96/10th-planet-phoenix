@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 body {
-  background-color: darkgray;
+  background-color: linear-gradient(to right, white, gray 50%, white);
   height: 100vh;
   font-family: "Bank Gothic", sans-serif;
 }

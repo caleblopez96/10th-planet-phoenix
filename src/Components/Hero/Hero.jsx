@@ -1,17 +1,12 @@
-// images desktop
 import { useState, useEffect } from "react";
 import desktop1 from "../../assets/HERO LG/MCC_8853(2).jpg";
 import desktop2 from "../../assets/HERO LG/MCC_8792.jpg";
 import desktop3 from "../../assets/HERO LG/20220112_200025.jpg";
 import desktop4 from "../../assets/HERO LG/received_10100266450098952.jpeg";
-
-// images mobile
 import mobile1 from "../../assets/HERO SM/20211025_200740.jpg";
 import mobile2 from "../../assets/HERO SM/20220122_113831_edited.jpg";
 import mobile3 from "../../assets/HERO SM/20220627_185141.jpg";
 import mobile4 from "../../assets/HERO SM/IMG_20210703_121346.jpg";
-
-// UI Components
 import Button from "../Buttons/Button";
 
 const desktopImages = [desktop1, desktop2, desktop3, desktop4];
@@ -49,29 +44,29 @@ const Hero = () => {
         <div className="absolute inset-0 bg-black opacity-30"></div>
       </div>
 
-      {/* content*/}
+      {/* content */}
       <div className="p-8 rounded-lg z-10 relative max-w-4xl">
         <h1 className="text-3xl md:text-6xl font-bold text-pretty drop-shadow-2xl leading-10 lg:leading-20">
           10TH PLANET JIU-JITSU PHOENIX
         </h1>
-        <p className="text-lg md:text-xl drop-shadow-2xl">
-          LEARN THIS UNIQUE STYLE OF SUBMISSION GRAPPLING
-        </p>
-        <div className="flex justify-center items-center gap-4 flex-col">
-          <Button
-            content="Start Training"
-            backgroundColor="bg-red-600"
-            hover="hover:bg-red-700"
-            color="text-white"
-            className="flex-1"
-          />
-          <Button
-            content="Start Training"
-            backgroundColor="bg-red-600"
-            hover="hover:bg-red-700"
-            color="text-white"
-            className="flex-1"
-          />
+
+        <div className="flex flex-col lg:flex-row justify-center items-center gap-4 mt-6 w-full max-w-md mx-auto">
+          <div className="inline-flex flex-col lg:flex-row gap-4 justify-center w-full">
+            <Button
+              content="Learn More"
+              backgroundColor="bg-gray-300"
+              hover="hover:bg-red-700"
+              color="text-black"
+              className="h-12 text-lg font-semibold px-6 whitespace-nowrap flex-1"
+            />
+            <Button
+              content="Start Training"
+              backgroundColor="bg-red-600"
+              hover="hover:bg-red-700"
+              color="text-white"
+              className="h-12 text-lg font-semibold px-6 whitespace-nowrap flex-1"
+            />
+          </div>
         </div>
       </div>
     </section>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100.13 100">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        font-family: Supreme, Supreme;
+      }
+
+      .cls-1, .cls-3 {
+        font-size: 16px;
+      }
+
+      .cls-2 {
+        font-size: 10px;
+      }
+
+      .cls-3, .cls-4 {
+        font-family: BankGothicBT-Light, 'Bank Gothic BT';
+        font-weight: 300;
+      }
+
+      .cls-4 {
+        font-size: 15px;
+      }
+
+      .cls-5 {
+        letter-spacing: .2em;
+      }
+    </style>
+  </defs>
+  <text transform="translate(33.12 28.38) scale(1 1.1)"><tspan class="cls-2"><tspan x="0" y="0">1</tspan><tspan class="cls-5" x="4.38" y="0">0</tspan><tspan x="15.79" y="0">th </tspan></tspan><tspan class="cls-1"><tspan x="-26" y="14.55">planet</tspan></tspan><tspan class="cls-3"><tspan x="16.88" y="29.09"> </tspan></tspan><tspan class="cls-1"><tspan x="-31.46" y="46.55">phoenix</tspan></tspan></text>
+  <text class="cls-4" transform="translate(16.16 56.87) scale(1 1.1)"><tspan x="0" y="0">jiu jitsu</tspan></text>
+</svg>
