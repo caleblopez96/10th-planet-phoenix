@@ -17,9 +17,10 @@ const Hero = () => {
       </div>
 
       {/* content */}
-      <div className="p-8 rounded-lg z-10 relative max-w-4xl">
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-pretty drop-shadow-2xl leading-15 md:leading-20 lg:leading-26">
-          10TH PLANET JIU-JITSU PHOENIX
+      <div className="p-8 rounded-lg z-10 relative max-w-5xl">
+        <h1 className="text-5xl md:text-6xl lg:text-10xl font-bold text-pretty drop-shadow-2xl leading-15 md:leading-20 lg:leading-26">
+          10TH PLANET
+          <br /> JIU-JITSU PHOENIX
         </h1>
 
         <div className="flex flex-col lg:flex-row justify-center items-center gap-4 mt-6 w-full max-w-md mx-auto">
