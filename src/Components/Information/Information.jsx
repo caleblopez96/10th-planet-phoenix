@@ -6,19 +6,10 @@ const Information = () => {
     <div className="py-8 ">
       <section className="max-w-[1200px] mx-auto px-4">
         <div className="mb-8 relative">
-          <div className="absolute text-6xl text-red-500 top-0 left-5 transition-transform duration-500 hover:scale-110">
-            "
-          </div>
           <h3 className="text-xl md:text-2xl lg:text-3xl text-black text-center p-5 italic font-light">
             Where other systems cease to grow, 10th Planet's entire focus is to
             continue its own growth.
           </h3>
-          <div
-            className="absolute text-6xl text-red-500 bottom-0 right-5 transition-transform duration-500 hover:scale-110
-        "
-          >
-            "
-          </div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 my-8">
@@ -49,7 +40,7 @@ const Information = () => {
               school to further the system.
             </p>
 
-            <div className="flex gap-4 w-full flex-col">
+            <div className="flex gap-4 flex-col">
               <Button
                 content="Learn More"
                 backgroundColor="bg-gray-300"

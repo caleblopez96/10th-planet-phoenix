@@ -90,7 +90,7 @@ const Navbar = () => {
               </NavLink>
 
               {item.showDropdown && (
-                <div className="invisible group-hover:visible absolute left-0 mt-2 w-48 bg-gray-800 rounded-md shadow-lg py-1 z-50 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                <div className="invisible group-hover:visible absolute left-0 mt-2 w-48 bg-gray-300 rounded-md shadow-lg py-1 z-50 opacity-0 group-hover:opacity-100 transition-all duration-300">
                   {item.sections.map((section, sectionIndex) => (
                     <NavLink
                       key={sectionIndex}
@@ -98,7 +98,7 @@ const Navbar = () => {
                         section.toLowerCase()
                         // .replace(/\s+/g, "-")
                       }`}
-                      className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-700 hover:text-red-500"
+                      className="block px-4 py-2 text-sm text-black hover:bg-gray-700 hover:text-red-500"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       {section}

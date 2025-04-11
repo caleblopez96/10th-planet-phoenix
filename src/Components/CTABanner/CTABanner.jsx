@@ -18,7 +18,7 @@ const CTABanner = ({ title = "CLASSES FOR ALL AGES AND SKILL LEVELS" }) => {
         <h2 className="text-2xl md:text-3xl text-white mb-8 tracking-wider">
           {title}
         </h2>
-        <Button />
+        <Button color="text-black" />
       </div>
     </section>
   );

@@ -2,14 +2,14 @@ import Button from "../Buttons/Button";
 import video from "../../assets/headervideo.mp4";
 const Hero = () => {
   return (
-    <section className="relative lg:min-h-screen w-full flex flex-col items-center justify-center text-gray-300 text-center overflow-hidden mt-0 pt-16">
-      {/* Background video container */}
+    <section className="relative min-h-screen w-full flex flex-col items-center justify-center text-gray-300 text-center overflow-hidden mt-0 pt-16">
       <div className="w-full z-0 overflow-hidden absolute inset-0 bg-black">
         <video
           className="w-full h-full object-cover opacity-70"
           autoPlay
           muted
           loop
+          playsInline
         >
           <source src={video} type="video/mp4" />
           Your browser does not support the video tag.
@@ -18,7 +18,7 @@ const Hero = () => {
 
       {/* content */}
       <div className="p-8 rounded-lg z-10 relative max-w-4xl">
-        <h1 className="text-3xl md:text-6xl font-bold text-pretty drop-shadow-2xl leading-10 md:leading-20">
+        <h1 className="text-3xl md:text-6xl lg:text-7xl font-bold text-pretty drop-shadow-2xl leading-10 md:leading-20 lg:leading-26">
           10TH PLANET JIU-JITSU PHOENIX
         </h1>
 
