@@ -23,6 +23,10 @@ h3 {
   letter-spacing: 3px;
 }
 
+svg {
+  cursor: pointer;
+}
+
 @font-face {
   font-family: "Bank Gothic";
   src: url("/src/Fonts/bank-gothic-light.ttf") format("truetype");
