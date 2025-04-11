@@ -3,7 +3,6 @@ import ClassesSection from "../Components/ClassesSection/ClassesSection";
 import FAQ from "../Components/FAQ/FAQ";
 import Hero2 from "../Components/Hero/Hero2";
 import ClassDescription from "../Components/ClassDescription/ClassDescription";
-import ClassDescription2 from "../Components/ClassDescription/ClassDescription2";
 
 // image imports
 import classes1 from "../assets/classes/classes1.jpg";
@@ -25,7 +24,6 @@ const Classes = () => {
         <ClassSchedule />
         <ClassesSection />
         <ClassDescription />
-        <ClassDescription2 />
         <FAQ faqs={classesFAQs} />
       </div>
       <Footer />

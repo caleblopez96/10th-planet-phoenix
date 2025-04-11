@@ -21,7 +21,7 @@ body:not(.night) nav {
   color: black;
 }
 
-svg.night {
+body.night svg {
   fill: #fafafa;
 }
 
