@@ -6,7 +6,7 @@ const Information = () => {
     <div className="py-8 ">
       <section className="max-w-[1200px] mx-auto px-4">
         <div className="mb-8 relative">
-          <h3 className="text-xl md:text-2xl lg:text-3xl text-black text-center font-light">
+          <h3 className="text-xl md:text-2xl lg:text-3xl text-center font-light">
             Where other systems cease to grow, 10th Planet's entire focus is to
             continue its own growth.
           </h3>
@@ -23,7 +23,7 @@ const Information = () => {
             </div>
           </div>
 
-          <div className="p-8 rounded-lg shadow-xl text-black">
+          <div className="card p-8 rounded-lg shadow-xl">
             <p id="info" className="leading-relaxed mb-8">
               10th Planet Jiu Jitsu was created by Eddie Bravo under the
               tutelage of Jean Jacques Machado. It is a unique style of no gi
@@ -46,14 +46,14 @@ const Information = () => {
                 backgroundColor="bg-gray-300"
                 hover="hover:bg-gray-600"
                 color="text-black"
-                className="flex-1"
+                className="flex-1 w-full"
               />
               <Button
                 content="Start Training"
                 backgroundColor="bg-red-600"
                 hover="hover:bg-red-700"
                 color="text-white"
-                className="flex-1"
+                className="flex-1 w-full"
               />
             </div>
           </div>

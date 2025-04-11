@@ -6,13 +6,12 @@ const Button = ({
   backgroundColor = "bg-gray-300",
   hover = "hover:bg-gray-400",
   route,
-  className = "", // Add this line to accept the className prop
+  className = "",
 }) => {
   return (
-    <Link to={route} className={className}>
-      {" "}
+    <Link to={route}>
       <button
-        className={`${backgroundColor} ${hover} ${color} cursor-pointer px-4 py-2 rounded font-medium transition-colors w-full`}
+        className={`${backgroundColor} ${hover} ${color} cursor-pointer px-4 py-2 rounded transition-colors font-semibold ${className}`}
       >
         {content}
       </button>

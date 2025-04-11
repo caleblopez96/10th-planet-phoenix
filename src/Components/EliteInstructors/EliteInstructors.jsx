@@ -41,11 +41,11 @@ const EliteInstructors = () => {
         Meet the Team
       </h3>
 
-      <h2 className="text-3xl lg:text-4xl font-bold text-black mb-2 relative z-10">
+      <h2 className="text-3xl lg:text-4xl font-bold mb-2 relative z-10">
         Elite Level <span className="text-red-600">Instructors</span>
       </h2>
 
-      <p className="text-black mt-6 max-w-2xl">
+      <p className="mt-6 max-w-2xl">
         Learn from world-class practitioners with decades of combined experience
         in Brazilian Jiu-Jitsu. Our instructors are dedicated to your growth and
         development on the mats.
@@ -78,26 +78,24 @@ const EliteInstructors = () => {
                 </div>
 
                 <div className="text-center mb-6">
-                  <h3 className="text-2xl font-bold text-black mb-1">
-                    {instructor.name}
-                  </h3>
+                  <h3 className="text-xl font-bold mb-1">{instructor.name}</h3>
                   <p className="text-red-600 font-medium text-sm mb-4">
                     {instructor.title}
                   </p>
 
                   <div className="w-12 h-0.5 bg-gray-600 mx-auto my-4"></div>
 
-                  <div className="text-left text-sm text-black space-y-2">
+                  <div className="text-left text-sm space-y-2">
                     {instructor.experience && (
                       <div className="flex items-center">
                         <span className="w-2 h-2 bg-red-600 rounded-full mr-2"></span>
-                        <span className="text-black">Experience:</span>
+                        <span className="">Experience:</span>
                         <span className="ml-auto">{instructor.experience}</span>
                       </div>
                     )}
                     <div className="flex items-center">
                       <span className="w-2 h-2 bg-red-600 rounded-full mr-2"></span>
-                      <span className="text-black">Rank:</span>
+                      <span className="">Rank:</span>
                       <span className="ml-auto">{instructor.belt}</span>
                     </div>
                   </div>
@@ -106,7 +104,7 @@ const EliteInstructors = () => {
                 <div className="absolute inset-x-0 bottom-0 h-12 bg-gray-200 flex items-center justify-center translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                   <Link
                     to="/instructors#instructorBios"
-                    className="text-black text-sm font-medium w-full h-full hover:bg-red-600 transition-colors duration-300 cursor-pointer text-center py-4"
+                    className=" text-sm font-medium w-full h-full hover:bg-red-600 transition-colors duration-300 cursor-pointer text-center py-4"
                   >
                     View Profile
                   </Link>
@@ -117,8 +115,8 @@ const EliteInstructors = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <Button />
-          <p className="text-black mt-4">
+          <Button color="text-black" content="Meet the" />
+          <p className="mt-4">
             Drop in for a free trial class and meet our instructors in person.
           </p>
         </div>

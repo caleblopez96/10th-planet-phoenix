@@ -2,14 +2,14 @@ import logo from "../../assets/logo/10th-planet-phoenix.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-white text-black py-8 border-gray-300 ">
+    <footer className="py-8 border-gray-300 ">
       <div className="max-w-screen-xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div className="flex flex-col">
             <a href="#home" className="mb-4">
               <img src={logo} alt="10th Planet Phoenix Logo" className="h-16" />
             </a>
-            <p className="text-black mb-4">
+            <p className="mb-4">
               Training Brazilian Jiu-Jitsu athletes in the Phoenix area since
               2010. Join our community of dedicated grapplers today!
             </p>
@@ -131,11 +131,11 @@ const Footer = () => {
         <div className="border-t border-gray-200 my-4"></div>
 
         <div className="flex flex-col md:flex-row justify-between items-center pt-4">
-          <p className="text-black text-sm mb-2 md:mb-0">
+          <p className="text-sm mb-2 md:mb-0">
             &copy; {new Date().getFullYear()} 10th Planet Phoenix. All rights
             reserved.
           </p>
-          <div className="flex space-x-4 text-sm text-black">
+          <div className="flex space-x-4 text-sm">
             <a href="#privacy" className="hover:text-red-500 transition-colors">
               Privacy Policy
             </a>

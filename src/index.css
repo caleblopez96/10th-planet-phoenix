@@ -1,9 +1,19 @@
 @import "tailwindcss";
 
 body {
-  background-color: linear-gradient(to right, white, gray 50%, white);
+  background-color: #fafafa;
   height: 100vh;
   font-family: "Bank Gothic", sans-serif;
+}
+
+body.night,
+main.night {
+  background-color: #111111;
+  color: white;
+}
+
+.card.night {
+  box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
 }
 
 h1,

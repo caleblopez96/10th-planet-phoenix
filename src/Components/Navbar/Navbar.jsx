@@ -52,7 +52,6 @@ const Navbar = () => {
 
   // func to toggle menu
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-  // func to toggle
 
   const toggleDropdown = (index) =>
     setActiveDropdown(activeDropdown === index ? null : index);
@@ -63,13 +62,69 @@ const Navbar = () => {
     }
   };
 
+  useEffect(() => {
+    const themeToggler = document.querySelector("#theme-toggler");
+
+    const handleToggle = () => {
+      document.body.classList.toggle("night");
+      document.querySelectorAll(".card").forEach((card) => {
+        card.classList.toggle("night");
+      });
+    };
+
+    if (themeToggler) {
+      themeToggler.addEventListener("click", handleToggle);
+    }
+
+    return () => {
+      if (themeToggler) {
+        themeToggler.removeEventListener("click", handleToggle);
+      }
+    };
+  }, []);
+
   return (
     <nav className="w-full z-50 p-4 sticky top-0 bg-white text-black shadow-2xl">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="flex justify-between items-center md:justify-between">
+        {/* hamburger */}
+        <div className="md:hidden">
+          <button
+            onClick={toggleMenu}
+            className="text-black focus:outline-none"
+            aria-label="Toggle menu"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              {isMenuOpen ? (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              ) : (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              )}
+            </svg>
+          </button>
+        </div>
+
         {/* logo */}
-        <NavLink to="/">
-          <img src={logo} alt="Logo" className="h-18" />
-        </NavLink>
+        <div className="flex justify-center md:justify-start">
+          <NavLink to="/" className="flex">
+            <img src={logo} alt="Logo" className="h-16 md:h-18" />
+          </NavLink>
+        </div>
 
         {/* desktop nav */}
         <ul className="hidden md:flex space-x-6">
@@ -94,11 +149,8 @@ const Navbar = () => {
                   {item.sections.map((section, sectionIndex) => (
                     <NavLink
                       key={sectionIndex}
-                      to={`${item.path}#${
-                        section.toLowerCase()
-                        // .replace(/\s+/g, "-")
-                      }`}
-                      className="block px-4 py-2 text-sm text-black  hover:text-red-500"
+                      to={`${item.path}#${section.toLowerCase()}`}
+                      className="block px-4 py-2 text-sm text-black hover:text-red-500"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       {section}
@@ -110,47 +162,32 @@ const Navbar = () => {
           ))}
         </ul>
 
-        {/* hamburger */}
-        <button
-          className="md:hidden p-2 focus:outline-none"
-          onClick={toggleMenu}
-          aria-label="Toggle menu"
-        >
-          {isMenuOpen ? (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-10 w-10 text-black"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          ) : (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-10 w-10 text-black"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          )}
-        </button>
+        {/* right icons */}
+        <div className="flex gap-1 lg:gap-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="currentColor"
+            className="cursor-pointer"
+          >
+            <path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z" />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#0000000"
+            id="theme-toggler"
+          >
+            <path d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z" />
+          </svg>
+        </div>
       </div>
 
-      {/* mobile menu */}
+      {/* mobile menu - slide down */}
       {isMenuOpen && (
         <div className="md:hidden rounded-lg mt-2 shadow-xl">
           <ul className="flex flex-col">
@@ -189,15 +226,12 @@ const Navbar = () => {
                 </div>
 
                 {item.showDropdown && activeDropdown === index && (
-                  <div className=" bg-gray-100 px-6 pb-2">
+                  <div className="bg-gray-100 px-6 pb-2">
                     {item.sections.map((section, sectionIndex) => (
                       <NavLink
                         key={sectionIndex}
-                        to={`${item.path}#${
-                          section.toLowerCase()
-                          // .replace(/\s+/g, "-")
-                        }`}
-                        className="block py-2 text-sm text-black hover:text-white"
+                        to={`${item.path}#${section.toLowerCase()}`}
+                        className="block py-2 text-sm text-black hover:text-red-500"
                         onClick={() => setIsMenuOpen(false)}
                       >
                         {section}

@@ -32,15 +32,13 @@ const ClassesSection = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-r from-white via-gray-50 to-white px-4 py-16 w-full relative">
+    <section className="px-4 py-16 w-full relative">
       <div className="container mx-auto flex flex-col align-middle relative z-10">
         <div className="mb-2">
           <h3 className="text-sm  text-red-600 font-semibold mb-2">
             Classes for Everyone
           </h3>
-          <h2 className="text-3xl lg:text-4xl font-bold text-black mb-4">
-            Our Classes
-          </h2>
+          <h2 className="text-3xl lg:text-4xl font-bold mb-4">Our Classes</h2>
         </div>
 
         {/* class cards */}
@@ -54,23 +52,23 @@ const ClassesSection = () => {
 
               <div className="relative z-10 p-6 h-full flex flex-col justify-between lg:h-96">
                 <div>
-                  <span className="inline-block px-3 py-1 bg-red-500 bg-opacity-50 text-xs text-black rounded-full mb-4">
+                  <span className="inline-block px-3 py-1 bg-red-500 bg-opacity-50 text-xs rounded-full mb-4">
                     {classItem.level}
                   </span>
 
-                  <h3 className="text-sm font-bold text-black mb-2 break-words hyphens-auto">
+                  <h3 className="text-sm font-bold mb-2 break-words hyphens-auto">
                     {classItem.title}
                   </h3>
 
                   <div className="h-40 overflow-y-auto pr-2 custom-scrollbar">
-                    <p className="text-black mb-4 text-sm leading-relaxed">
+                    <p className="mb-4 text-sm leading-relaxed">
                       {classItem.description}
                     </p>
                   </div>
                 </div>
 
                 <div className="flex items-center mt-4">
-                  <span className="text-xs text-black border-l-2 border-red-500 pl-2 break-words">
+                  <span className="text-xs border-l-2 border-red-500 pl-2 break-words">
                     {classItem.time}
                   </span>
                 </div>

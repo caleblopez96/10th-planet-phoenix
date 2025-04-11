@@ -6,7 +6,7 @@ const FAQItem = ({ question, answer }) => {
   return (
     <div className="border border-gray-600 rounded-lg mb-2 bg-gray-100">
       <button
-        className="w-full flex justify-between items-center p-4 text-left text-black font-bold uppercase tracking-wide hover:bg-gray-600 transition duration-300"
+        className="w-full flex justify-between items-center p-4 text-left text-black font-bold uppercase tracking-wide hover:bg-red-600 transition duration-300"
         onClick={() => setIsOpen(!isOpen)}
       >
         {question}

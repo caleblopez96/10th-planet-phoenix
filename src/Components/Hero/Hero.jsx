@@ -29,14 +29,15 @@ const Hero = () => {
               backgroundColor="bg-gray-300"
               hover="hover:bg-red-700"
               color="text-black"
-              className="h-12 text-lg font-semibold px-6 whitespace-nowrap flex-1"
+              className="h-12 text-lg px-6 w-full" // 👈 fit-content default
             />
+
             <Button
               content="Start Training"
               backgroundColor="bg-red-600"
               hover="hover:bg-red-700"
               color="text-white"
-              className="h-12 text-lg font-semibold px-6 whitespace-nowrap flex-1"
+              className="h-12 text-lg px-6 w-full" // 👈 full width
             />
           </div>
         </div>
