@@ -67,13 +67,14 @@ const Navbar = () => {
   const handleThemeToggle = () => {
     setIsNightMode(!isNightMode);
     document.body.classList.toggle("night");
-    document.querySelectorAll(".card").forEach((card) => {
-      card.classList.toggle("night");
-    });
   };
 
   return (
-    <nav className="w-full z-50 p-4 sticky top-0 bg-white text-black shadow-2xl">
+    <nav
+      className={`w-full z-50 p-4 sticky top-0 shadow-2xl ${
+        isNightMode ? "bg-[#111] text-white" : "bg-[#fafafa] text-black"
+      }`}
+    >
       <div className="flex justify-between items-center md:justify-between">
         {/* hamburger */}
         <div className="md:hidden">

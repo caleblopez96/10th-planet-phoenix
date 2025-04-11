@@ -6,14 +6,19 @@ body {
   font-family: "Bank Gothic", sans-serif;
 }
 
-body.night,
-main.night {
+body.night {
   background-color: #111111;
   color: white;
 }
 
-.card.night {
-  box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
+body.night nav {
+  background-color: #111111;
+  color: white;
+}
+
+body:not(.night) nav {
+  background-color: white;
+  color: black;
 }
 
 h1,
