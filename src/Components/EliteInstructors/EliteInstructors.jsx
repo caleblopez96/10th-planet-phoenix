@@ -36,12 +36,12 @@ const EliteInstructors = () => {
   ];
 
   return (
-    <section className="px-4 py-16 w-full overflow-hidden  inset-0 ">
+    <section className="px-4 py-8 lg:py-16 w-full overflow-hidden  inset-0 ">
       <h3 className="text-sm uppercase tracking-widest text-red-600 font-bold mb-2">
         Meet the Team
       </h3>
 
-      <h2 className="text-3xl lg:text-4xl font-bold mb-2 relative z-10">
+      <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-2 relative z-10">
         Elite Level <span className="text-red-600">Instructors</span>
       </h2>
 
@@ -115,7 +115,11 @@ const EliteInstructors = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <Button color="text-black" content="Meet the" />
+          <Button
+            color="text-black"
+            content="Meet the Team"
+            route={"/instructors"}
+          />
           <p className="mt-4">
             Drop in for a free trial class and meet our instructors in person.
           </p>

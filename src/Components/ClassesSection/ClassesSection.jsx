@@ -32,13 +32,23 @@ const ClassesSection = () => {
   ];
 
   return (
-    <section className="px-4 py-16 w-full relative">
-      <div className="container mx-auto flex flex-col align-middle relative z-10">
+    <section className="px-4 my-16 w-full relative">
+      <div className="container flex flex-col justify-center items-center z-10">
         <div className="mb-2">
-          <h3 className="text-sm  text-red-600 font-semibold mb-2">
-            Classes for Everyone
+          <h3 className="text-sm uppercase tracking-widest text-red-600 font-bold mb-2">
+            Classes
           </h3>
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4">Our Classes</h2>
+
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-2 relative z-10">
+            Something For <br />
+            <span className="text-red-600">Everyone</span>
+          </h2>
+
+          <p className="mt-6 max-w-2xl">
+            Learn from world-class practitioners with decades of combined
+            experience in Brazilian Jiu-Jitsu. Our instructors are dedicated to
+            your growth and development on the mats.
+          </p>
         </div>
 
         {/* class cards */}

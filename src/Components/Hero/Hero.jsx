@@ -17,7 +17,7 @@ const Hero = () => {
       </div>
 
       {/* content */}
-      <div className="p-8 rounded-lg z-10 relative max-w-5xl">
+      <div className="p-8 rounded-lg z-10 relative max-w-2xl lg:max-w-5xl">
         <h1 className="text-5xl md:text-6xl lg:text-10xl font-bold text-pretty drop-shadow-2xl leading-15 md:leading-20 lg:leading-26">
           10TH PLANET
           <br /> JIU-JITSU PHOENIX
@@ -26,11 +26,12 @@ const Hero = () => {
         <div className="flex flex-col lg:flex-row justify-center items-center gap-4 mt-6 w-full max-w-md mx-auto">
           <div className="inline-flex flex-col lg:flex-row gap-4 justify-center w-full">
             <Button
+              route={"/info"}
               content="Learn More"
               backgroundColor="bg-gray-300"
               hover="hover:bg-red-700"
               color="text-black"
-              className="h-12 text-lg px-6 w-full" // 👈 fit-content default
+              className="h-12 text-lg px-6 w-full"
             />
 
             <Button
@@ -38,7 +39,7 @@ const Hero = () => {
               backgroundColor="bg-red-600"
               hover="hover:bg-red-700"
               color="text-white"
-              className="h-12 text-lg px-6 w-full" // 👈 full width
+              className="h-12 text-lg px-6 w-full"
             />
           </div>
         </div>
