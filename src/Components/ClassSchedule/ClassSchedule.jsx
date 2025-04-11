@@ -109,7 +109,7 @@ export default function ClassSchedule() {
             <li
               key={day}
               className={`cursor-pointer px-4 py-2 rounded ${
-                selectedDay === day ? "bg-gray-800 text-white" : "bg-gray-200"
+                selectedDay === day ? "bg-red-600 text-white" : "bg-gray-200"
               }`}
               onClick={() => setSelectedDay(day)}
             >

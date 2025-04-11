@@ -98,7 +98,7 @@ const Navbar = () => {
                         section.toLowerCase()
                         // .replace(/\s+/g, "-")
                       }`}
-                      className="block px-4 py-2 text-sm text-black hover:bg-gray-700 hover:text-red-500"
+                      className="block px-4 py-2 text-sm text-black  hover:text-red-500"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       {section}

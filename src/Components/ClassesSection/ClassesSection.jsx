@@ -33,15 +33,14 @@ const ClassesSection = () => {
 
   return (
     <section className="bg-gradient-to-r from-white via-gray-50 to-white px-4 py-16 w-full relative">
-      <div className="container mx-auto flex flex-col items-center relative z-10">
-        <div className="mb-16">
-          <h3 className="text-sm uppercase tracking-widest text-red-400 font-semibold mb-2">
-            Something for Everybody
+      <div className="container mx-auto flex flex-col align-middle relative z-10">
+        <div className="mb-2">
+          <h3 className="text-sm  text-red-600 font-semibold mb-2">
+            Classes for Everyone
           </h3>
           <h2 className="text-3xl lg:text-4xl font-bold text-black mb-4">
             Our Classes
           </h2>
-          <div className="w-full h-1 bg-red-500 mx-auto"></div>
         </div>
 
         {/* class cards */}

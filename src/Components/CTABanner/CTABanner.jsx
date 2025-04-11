@@ -2,7 +2,7 @@
 import Button from "../Buttons/Button";
 import ctaBackgroundImg from "../../assets/CTA BANNER/adultClass.jpg";
 
-const CTABanner = ({ title = "CLASSES FOR ALL AGES AND SKILL LEVELS" }) => {
+const CTABanner = ({ title = "TRY A FREE CLASS TODAY" }) => {
   return (
     <section
       className={`relative w-full px-6 py-16 flex flex-col items-center justify-center bg-cover bg-center  lg:h-[50vh]`}

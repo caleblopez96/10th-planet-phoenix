@@ -1,4 +1,4 @@
-import eddieB from "./eddie-bravo.jpg";
+import eddieB from "../../assets/HERO SM/20211025_200740.jpg";
 import Button from "../Buttons/Button";
 
 const Information = () => {
@@ -6,7 +6,7 @@ const Information = () => {
     <div className="py-8 ">
       <section className="max-w-[1200px] mx-auto px-4">
         <div className="mb-8 relative">
-          <h3 className="text-xl md:text-2xl lg:text-3xl text-black text-center p-5 italic font-light">
+          <h3 className="text-xl md:text-2xl lg:text-3xl text-black text-center font-light">
             Where other systems cease to grow, 10th Planet's entire focus is to
             continue its own growth.
           </h3>
@@ -14,11 +14,11 @@ const Information = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 my-8">
           <div className="lg:block relative overflow-hidden rounded-lg shadow-xl group">
-            <div className="h-full w-full p-8 flex items-center justify-center">
+            <div className="h-full w-full p-4 flex items-center justify-center grayscale">
               <img
                 src={eddieB}
                 alt="Eddie Bravo rolling with student"
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                className="w-full h-full object-cover rounded-sm"
               />
             </div>
           </div>
