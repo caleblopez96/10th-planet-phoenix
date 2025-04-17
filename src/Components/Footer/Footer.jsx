@@ -1,14 +1,25 @@
-import logo from "../../assets/logo/10th-planet-phoenix.png";
+import { NavLink } from "react-router-dom";
+import logo from "../../assets/10PLogoLight.webp";
+import logoDark from "../../assets/10PLogoDark.webp";
+import { useTheme } from "../../ThemeContext";
 
 const Footer = () => {
+  // Use theme context
+  const { isNightMode } = useTheme();
+
   return (
     <footer className="py-8 border-gray-300 ">
       <div className="max-w-screen-xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div className="flex flex-col">
-            <a href="#home" className="mb-4">
-              <img src={logo} alt="10th Planet Phoenix Logo" className="h-16" />
-            </a>
+            <NavLink to="/" className="flex">
+              <img
+                src={!isNightMode ? logo : logoDark}
+                alt="Logo"
+                className="h-16 md:h-18"
+              />
+            </NavLink>
+
             <p className="mb-4">
               Training Brazilian Jiu-Jitsu athletes in the Phoenix area since
               2010. Join our community of dedicated grapplers today!

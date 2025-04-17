@@ -12,7 +12,7 @@ const CTABanner = ({ title = "TRY A FREE CLASS TODAY" }) => {
       }}
     >
       {/* overlay */}
-      <div className="absolute inset-0 bg-black/60"></div>
+      <div className="absolute inset-0 bg-black/50"></div>
 
       <div className="container mx-auto flex flex-col items-center text-center relative z-10 px-4">
         <h2 className="text-2xl md:text-3xl text-white mb-8 tracking-wider">

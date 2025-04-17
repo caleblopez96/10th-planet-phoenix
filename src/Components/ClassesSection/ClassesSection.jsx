@@ -53,7 +53,7 @@ const ClassesSection = () => {
           {classes.map((classItem, index) => (
             <div
               key={index}
-              className={`group relative overflow-hidden rounded-lg shadow-xl transition-all duration-300 hover:-translate-y-2`}
+              className={`group relative overflow-hidden rounded-lg shadow-xl transition-all duration-300 hover:-translate-y-2 card`}
             >
               <div className="bg-gradient-to-r from-white via-gray-50 to-whiteopacity-80 group-hover:opacity-90 transition-opacity"></div>
 
