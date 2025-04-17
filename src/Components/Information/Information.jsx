@@ -14,7 +14,7 @@ const Information = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 my-8">
           <div className="lg:block relative overflow-hidden rounded-lg shadow-xl group">
-            <div className="h-full w-full p-4 flex items-center justify-center grayscale">
+            <div className="h-full w-full p-4 flex items-center justify-center grayscale card">
               <img
                 src={eddieB}
                 alt="Eddie Bravo rolling with student"

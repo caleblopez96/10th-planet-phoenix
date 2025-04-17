@@ -2,11 +2,14 @@ import { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import lightLogo from "../../assets/10PLogoLight.webp";
 import darkLogo from "../../assets/10PLogoDark.webp";
+import { useTheme } from "../../ThemeContext";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
   const location = useLocation();
+
+  const { isNightMode, toggleNightMode } = useTheme();
 
   // after navigating with mobile menu and clicking on one of them,
   //  reset active dropdowns
@@ -63,18 +66,6 @@ const Navbar = () => {
     if (!item.showDropdown || window.innerWidth < 768) {
       setIsMenuOpen(false);
     }
-  };
-
-  // state for night mode
-  const [isNightMode, setIsNightMode] = useState(false);
-
-  // toggling classes to activate different theme
-  const handleThemeToggle = () => {
-    setIsNightMode(!isNightMode);
-    document.body.classList.toggle("night");
-    document.querySelectorAll("svg").forEach((svg) => {
-      svg.classList.toggle("night");
-    });
   };
 
   return (
@@ -200,7 +191,7 @@ const Navbar = () => {
 
           {/* theme toggler */}
           <button
-            onClick={handleThemeToggle}
+            onClick={toggleNightMode}
             aria-label={
               isNightMode ? "Switch to light mode" : "Switch to dark mode"
             }

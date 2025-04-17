@@ -5,7 +5,6 @@ import ClassesSection from "../Components/ClassesSection/ClassesSection";
 import CTABanner from "../Components/CTABanner/CTABanner";
 import Information from "../Components/Information/Information";
 import FAQ from "../Components/FAQ/FAQ";
-import Footer from "../Components/Footer/Footer";
 
 const homeFAQs = [
   {
@@ -39,7 +38,6 @@ function Home() {
         <CTABanner />
         <FAQ faqs={homeFAQs} />
       </div>
-      <Footer />
     </>
   );
 }
