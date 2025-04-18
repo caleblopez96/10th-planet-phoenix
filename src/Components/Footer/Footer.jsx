@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer className="py-8 border-gray-300 ">
       <div className="max-w-screen-xl mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-10 mb-8">
           <div className="flex flex-col">
             <NavLink to="/" className="flex">
               <img
@@ -118,7 +118,7 @@ const Footer = () => {
                   href="mailto:info@10thplanetphoenix.com"
                   className="hover:text-red-600 transition-colors"
                 >
-                  info@10thplanetphoenix.com
+                  info@10thplanetphx.com
                 </a>
               </li>
             </ul>

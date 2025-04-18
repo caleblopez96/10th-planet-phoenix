@@ -59,36 +59,36 @@ const schedules = {
   ],
   Thursday: [
     {
-      time: "5:30-6:30 AM",
+      time: "5:30 - 6:30 AM",
       class: "10th Planet Jiu-Jitsu",
       instructor: "Billy Phillips",
     },
     {
-      time: "5:00-6:00 PM",
+      time: "5:00 - 6:00 PM",
       class: "Kids Little Lobos Jiu-Jitsu",
       instructor: "John Botello",
     },
     {
-      time: "6:00-7:00 PM",
+      time: "6:00 - 7:00 PM",
       class: "Jiu Jitsu 101 (Teens/Adults)",
       instructor: "John Botello",
     },
     {
-      time: "7:00-8:30 PM",
+      time: "7:00 - 8:30 PM",
       class: "All Levels Jiu-Jitsu",
       instructor: "John Botello",
     },
   ],
   Friday: [
     {
-      time: "6:00-7:00 PM",
+      time: "6:00 - 7:00 PM",
       class: "All Levels Jiu-Jitsu",
       instructor: "John Botello (Availability Subject to Change)",
     },
   ],
   Saturday: [
     {
-      time: "10:00-11:00 AM",
+      time: "10:00 - 11:00 AM",
       class: "Kids Little Lobos Jiu-Jitsu",
       instructor: "John Botello",
     },
@@ -109,7 +109,7 @@ export default function ClassSchedule() {
             <li
               key={day}
               className={`cursor-pointer px-4 py-2 rounded ${
-                selectedDay === day ? "bg-red-600 text-white" : "bg-gray-200"
+                selectedDay === day ? "bg-red-600" : "bg-gray-200"
               }`}
               onClick={() => setSelectedDay(day)}
             >
@@ -124,8 +124,10 @@ export default function ClassSchedule() {
           {Object.keys(schedules).map((day) => (
             <li
               key={day}
-              className={`hover:bg-gray-800 hover:text-white cursor-pointer flex-1 text-center px-2 py-2 mx-1 rounded ${
-                selectedDay === day ? "bg-red-600 text-white" : "bg-gray-200"
+              className={`hover:bg-red-600 hover:text-white cursor-pointer flex-1 text-center px-2 py-2 mx-1 rounded ${
+                selectedDay === day
+                  ? "bg-red-600 hover:bg-red-800 text-white"
+                  : "bg-gray-300"
               }`}
               onClick={() => setSelectedDay(day)}
             >
@@ -135,17 +137,15 @@ export default function ClassSchedule() {
         </ul>
       </div>
 
-      <div className="p-4 bg-gray-100">
+      <div className=" p-8 min-h-[450px]">
         <h2 className="text-lg font-semibold">{selectedDay}</h2>
         <ul className="mt-2 space-y-2">
           {schedules[selectedDay].map((session, index) => (
-            <li key={index} className="p-2 bg-white shadow rounded">
-              <p className="text-sm font-semibold">{session.time}</p>
-              <p className="text-sm">{session.class}</p>
+            <li key={index} className="text-lg p-6 shadow-2xl rounded card">
+              <p className=" font-semibold">{session.time}</p>
+              <p className="">{session.class}</p>
               {session.instructor && (
-                <p className="text-sm text-gray-600">
-                  Instructor: {session.instructor}
-                </p>
+                <p className="text-sm">Instructor: {session.instructor}</p>
               )}
             </li>
           ))}

@@ -38,7 +38,7 @@ const Navbar = () => {
     {
       name: "Classes",
       path: "/classes",
-      sections: ["schedule", "NoGi Jiu-Jitsu"],
+      sections: ["schedule", "Class Descriptions"],
       showDropdown: true,
     },
     {
@@ -68,12 +68,15 @@ const Navbar = () => {
     }
   };
 
-  return (
-    <nav
-      className={`w-full z-50 p-4 sticky top-0 shadow-2xl ${
+  {
+    // i removed this from the nav.. its not needed anymore
+    /* ${
         isNightMode ? "bg-[#111] text-white" : "bg-[#fafafa] text-black"
-      }`}
-    >
+      }`*/
+  }
+
+  return (
+    <nav className={`w-full z-50 p-4 sticky top-0 shadow-2xl`}>
       <div className="flex justify-between items-center md:justify-between">
         {/* hamburger */}
         <div className="md:hidden">
@@ -139,7 +142,7 @@ const Navbar = () => {
           {navItems.map((item, index) => (
             <li
               key={index}
-              className={`relative ${item.showDropdown ? "group" : ""}`}
+              className={`relative ${item.showDropdown ? "group" : ""} text-lg`}
             >
               <NavLink
                 to={item.path}
