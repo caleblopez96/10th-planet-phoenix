@@ -18,19 +18,24 @@ const facilityFacts = [
 
 const Facility = () => {
   return (
-    <section className="p-4 md:p-8 lg:p-12 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 flex justify-center items-center">
-      <div className="w-full max-w-sm md:max-w-2xl lg:max-w-4xl xl:max-w-6xl bg-gray-700/50 p-4 md:p-8 lg:p-8 rounded-lg shadow-lg my-12">
+    <section className="p-4 md:p-8 lg:p-12">
+      <div className="container px-4 mb-6">
+        <h2 className="text-sm uppercase tracking-widest text-red-600 font-bold mb-2">
+          Facility Amenties
+        </h2>
+        <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-2 relative z-10">
+          We Cater to
+          <span className="text-red-600"> Everybody</span>
+        </h3>
+      </div>
+      <div className="w-full max-w-sm md:max-w-2xl lg:max-w-4xl xl:max-w-6xl p-4 rounded-lg shadow-lg my-12">
         <ul>
           {facilityFacts.map((fact, index) => (
-            <li
-              key={index}
-              className="text-white
-            py-4"
-            >
-              <h3 className="border-l-4 border-red-700 pl-2 text-balance my-2 font-sm lg:font-lg">
+            <li key={index} className="py-8 card my-4">
+              <h3 className="border-l-4 border-red-700 p-2 text-balance my-2 font-sm lg:font-lg">
                 {fact.title}
               </h3>
-              <p>{fact.description}</p>
+              <p className="p-2">{fact.description}</p>
             </li>
           ))}
         </ul>

@@ -35,11 +35,13 @@ const About = () => {
   return (
     <div>
       <Hero2 imageOne={infoLg} imageTwo={infoSm} content={"Info"} />
-      <Information />
-      <GymEtiquette />
-      <Facility />
-      <PricingSection />
-      <FAQ faqs={aboutFAQs} />
+      <div className="max-w-[1200px] mx-auto px-4">
+        <Information />
+        <GymEtiquette />
+        <Facility />
+        <PricingSection />
+        <FAQ faqs={aboutFAQs} />
+      </div>
     </div>
   );
 };

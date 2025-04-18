@@ -41,8 +41,8 @@ export const PricingSection = () => {
   return (
     <div className="pricing-container max-w-6xl mx-auto px-4 py-12">
       <header className="text-center mb-8">
-        <h2 className="text-3xl font-bold text-gray-900 mb-4">Pricing</h2>
-        <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+        <h2 className="text-3xl font-bold mb-4">Pricing</h2>
+        <p className="text-xl max-w-2xl mx-auto">
           Unlimited Classes and Access to the Facility
         </p>
       </header>
