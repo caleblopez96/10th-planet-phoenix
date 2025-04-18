@@ -31,17 +31,12 @@ const InstructorBio = () => {
   ];
 
   return (
-    <div
-      id="instructorBios"
-      className="py-12 bg-gradient-to-b from-gray-900 to-gray-800"
-    >
+    <div id="instructorBios" className="py-12">
       {instructors.map((instructor, index) => (
         <div key={index}>
-          <div className="max-w-4xl mx-auto mb-12 relative">
-            <div className="absolute text-6xl text-gray-700 opacity-30 top-0 left-5">
-              "
-            </div>
-            <h3 className="text-xl md:text-2xl lg:text-3xl text-white text-center my-4 p-5 italic font-light">
+          <div className="max-w-4xl mx-auto mb-12 relative ">
+            <div className="absolute text-6xl opacity-30 top-0 left-5">"</div>
+            <h3 className="text-xl md:text-2xl lg:text-3xl text-center my-4 p-5 italic">
               {instructor.name === "John Botello" ? (
                 <>
                   <span className="text-red-500">Head Coach</span>{" "}
@@ -53,15 +48,15 @@ const InstructorBio = () => {
               )}
             </h3>
 
-            <div className="absolute text-6xl text-gray-700 opacity-30 bottom-0 right-5">
+            <div className="absolute text-6xl opacity-30 bottom-0 right-5">
               "
             </div>
           </div>
 
           <div className="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 px-5">
             <div className="lg:block relative overflow-hidden rounded-lg shadow-xl">
-              <div className="bg-gray-700 h-full w-full p-8 flex items-center justify-center">
-                <div className="w-full h-full bg-gradient-to-br from-gray-700 to-gray-900 flex items-center justify-center">
+              <div className="h-full w-full p-4 flex items-center justify-center">
+                <div className="w-full h-full  flex items-center justify-center card">
                   {instructor.img ? (
                     <img
                       src={instructor.img}
@@ -69,8 +64,8 @@ const InstructorBio = () => {
                       className="w-full h-full object-cover"
                     />
                   ) : (
-                    <div className="border-4 border-white bg-gray-800 rounded-full h-48 w-48 flex items-center justify-center">
-                      <span className="text-white text-4xl font-bold">
+                    <div className="border-4 border-red-500  rounded-full h-48 w-48 flex items-center justify-center card">
+                      <span className="text-4xl font-bold">
                         {instructor.name.substring(0, 2)}
                       </span>
                     </div>
@@ -79,13 +74,11 @@ const InstructorBio = () => {
               </div>
             </div>
 
-            <div className="bg-gray-800 p-8 rounded-lg shadow-xl">
+            <div className="p-8 rounded-lg shadow-xl card">
               {instructor.bio1 ? (
-                <p className="text-gray-300 leading-relaxed mb-8">
-                  {instructor.bio1}
-                </p>
+                <p className="leading-relaxed mb-8">{instructor.bio1}</p>
               ) : (
-                <p className="text-gray-300 leading-relaxed mb-8">
+                <p className=" leading-relaxed mb-8">
                   {instructor.name} is a {instructor.belt} instructor with{" "}
                   {instructor.experience || "extensive"} experience in
                   Jiu-Jitsu. As our {instructor.title},{" "}
@@ -95,16 +88,14 @@ const InstructorBio = () => {
               )}
 
               {instructor.bio2 && (
-                <p className="text-gray-300 leading-relaxed mb-8">
-                  {instructor.bio2}
-                </p>
+                <p className="leading-relaxed mb-8">{instructor.bio2}</p>
               )}
 
               <div className="flex flex-col sm:flex-row gap-4 mt-8">
-                <button className="px-8 py-4 bg-red-600 hover:bg-red-700 text-white rounded-md transition-colors shadow-md flex-1">
+                <button className="px-8 py-4 bg-red-600 hover:bg-red-700 rounded-md transition-colors shadow-md flex-1">
                   Start Training
                 </button>
-                <button className="px-8 py-4 bg-gray-700 hover:bg-gray-600 text-white border border-gray-600 rounded-md transition-colors shadow-md flex-1">
+                <button className="px-8 py-4 bg-gray-700 hover:bg-gray-600 border border-gray-600 rounded-md transition-colors shadow-md flex-1">
                   Learn More
                 </button>
               </div>

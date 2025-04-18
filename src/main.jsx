@@ -22,9 +22,9 @@ createRoot(document.getElementById("root")).render(
         <Route path="/" element={<Home />} />
         <Route path="/classes" element={<Classes />} />
         <Route path="/info" element={<Info />} />
-        <Route path="/contact" element={<Contact />} />
         <Route path="/instructors" element={<Instructors />} />
         <Route path="/shop" element={<Shop />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </BrowserRouter>
