@@ -59,6 +59,11 @@ section:not(.hero) {
   margin: 3rem 0;
 }
 
+body.night .faq-buttons {
+  background-color: #333;
+  color: #fafafa;
+}
+
 @font-face {
   font-family: "Bank Gothic";
   src: url("/src/Fonts/bank-gothic-light.ttf") format("truetype");

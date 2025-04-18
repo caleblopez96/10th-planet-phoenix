@@ -31,10 +31,16 @@ const classDescription = [
 
 export default function ClassDescription() {
   return (
-    <section id="nogi-jiu-jitsu">
-      <h2 className="text-2xl lg:text-3xl text-center mb-8 ">
-        Class Descriptions
-      </h2>
+    <section id="descriptions">
+      <div className="container px-4 mb-6">
+        <h2 className="text-sm uppercase tracking-widest text-red-600 font-bold mb-2">
+          Classes Descriptions
+        </h2>
+        <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-2 relative z-10">
+          From white belts to
+          <span className="text-red-600">Black belts</span>
+        </h3>
+      </div>
 
       {classDescription.map((classItem, index) => (
         <div key={index} className="container mx-auto px-4 mb-24">
