@@ -13,18 +13,23 @@ const GymEtiquette = () => {
   ];
 
   return (
-    <section className="p-4 md:p-8 lg:p-12 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 flex justify-center items-center">
-      <div className="w-full max-w-sm md:max-w-2xl lg:max-w-4xl xl:max-w-6xl bg-gray-500/50 p-4 md:p-12 lg:p-12 rounded-lg shadow-lg my-12">
-        <h2 className="text-xl md:text-2xl lg:text-3xl font-bold uppercase tracking-widest my-4 md:mb-8 text-gray-300 text-center lg:text-left">
-          GYM ETIQUETTE
+    <section className="p-4 lg:p-12 ">
+      <div className="container px-4 mb-6">
+        <h2 className="text-sm uppercase tracking-widest text-red-600 font-bold mb-2">
+          Gym Etiquette
         </h2>
-
+        <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-2 relative z-10">
+          Rules of the
+          <span className="text-red-600"> Gym</span>
+        </h3>
+      </div>
+      <div className="w-full max-w-sm md:max-w-2xl lg:max-w-4xl xl:max-w-6xl p-4 md:p-12 lg:p-12 rounded-lg shadow-lg my-12 flex justify-center items-center">
         {/* sm */}
         <ol className="space-y-4 md:space-y-6 list-decimal pl-6 md:pl-8 lg:hidden">
           {rules.map((rule, index) => (
             <li
               key={index}
-              className="text-xs md:text-sm opacity-80 leading-relaxed text-white"
+              className="text-xs md:text-sm opacity-80 leading-relaxed"
             >
               {rule}
             </li>
