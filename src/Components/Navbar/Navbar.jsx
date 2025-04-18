@@ -38,7 +38,7 @@ const Navbar = () => {
     {
       name: "Classes",
       path: "/classes",
-      sections: ["schedule", "Class Descriptions"],
+      sections: ["schedule", "Descriptions"],
       showDropdown: true,
     },
     {

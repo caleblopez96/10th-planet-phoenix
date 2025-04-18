@@ -119,7 +119,7 @@ export default function ClassSchedule() {
         </ul>
       </div>
       {/* spaced evenly on lg*/}
-      <div className="hidden lg:block w-full py-6">
+      <div className="hidden lg:block w-full lg:pt-16">
         <ul className="flex w-full px-2">
           {Object.keys(schedules).map((day) => (
             <li
