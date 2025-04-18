@@ -11,7 +11,7 @@ import Info from "./pages/info.jsx";
 import Contact from "./pages/contact.jsx";
 import Instructors from "./pages/instructors.jsx";
 import Classes from "./pages/classes.jsx";
-// import Membership from "./pages/membership.jsx";
+import Shop from "./pages/shop.jsx";
 
 createRoot(document.getElementById("root")).render(
   <ThemeProvider>
@@ -22,9 +22,9 @@ createRoot(document.getElementById("root")).render(
         <Route path="/" element={<Home />} />
         <Route path="/classes" element={<Classes />} />
         <Route path="/info" element={<Info />} />
-        <Route path="/contact" element={<Contact />} />
         <Route path="/instructors" element={<Instructors />} />
-        {/* <Route path="/membership" element={<Membership />} /> */}
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </BrowserRouter>

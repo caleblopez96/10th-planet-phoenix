@@ -37,7 +37,7 @@ export default function ClassDescription() {
       </h2>
 
       {classDescription.map((classItem, index) => (
-        <div key={index} className="container mx-auto px-4 mb-12">
+        <div key={index} className="container mx-auto px-4 mb-24">
           <div
             className={`flex flex-col lg:flex-row gap-6 lg:gap-12 ${
               index % 2 !== 0 ? "lg:flex-row-reverse" : ""
@@ -59,7 +59,7 @@ export default function ClassDescription() {
                 <img
                   src={classItem.img}
                   alt={classItem.className}
-                  className="w-full object-cover rounded-sm max-h-100"
+                  className="w-full object-cover rounded-sm max-h-75 shadow-2xl"
                 />
               </div>
             </div>

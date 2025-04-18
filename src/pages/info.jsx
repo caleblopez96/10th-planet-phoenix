@@ -34,14 +34,12 @@ const aboutFAQs = [
 const About = () => {
   return (
     <div>
-      <section>
-        <Hero2 imageOne={infoLg} imageTwo={infoSm} content={"Info"} />
-        <Information />
-        <GymEtiquette />
-        <Facility />
-        <PricingSection />
-        <FAQ faqs={aboutFAQs} />
-      </section>
+      <Hero2 imageOne={infoLg} imageTwo={infoSm} content={"Info"} />
+      <Information />
+      <GymEtiquette />
+      <Facility />
+      <PricingSection />
+      <FAQ faqs={aboutFAQs} />
     </div>
   );
 };

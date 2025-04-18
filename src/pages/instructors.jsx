@@ -7,12 +7,7 @@ import Hero2 from "../Components/Hero/Hero2";
 const Instructors = () => {
   return (
     <>
-      <Hero2
-        imageOne={eddie}
-        imageTwo={johnKeith}
-        content={"Instructors"}
-        height="75vh"
-      />
+      <Hero2 imageOne={eddie} imageTwo={johnKeith} content={"Instructors"} />
       <InstructorBio />
     </>
   );
