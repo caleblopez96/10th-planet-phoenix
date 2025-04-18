@@ -1,23 +1,25 @@
 @import "tailwindcss";
 
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
 body {
   background-color: #fafafa;
   height: 100vh;
-  font-family: "Bank Gothic", sans-serif;
+  font-weight: 400;
 }
 
 body.night {
   background-color: #111111;
-  color: white;
+  color: #fafafa;
 }
 
 body.night nav {
   background-color: #111111;
-  color: white;
+  color: #fafafa;
 }
 
 body:not(.night) nav {
-  background-color: white;
+  background-color: #fafafa;
   color: black;
 }
 
@@ -29,6 +31,10 @@ body.night .card {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+nav {
+  font-family: "Bank Gothic", sans-serif;
+}
+
 h1,
 h2,
 h3 {
@@ -36,8 +42,21 @@ h3 {
   letter-spacing: 3px;
 }
 
+button,
+.hero p {
+  font-family: "Bank Gothic", sans-serif;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
 svg {
   cursor: pointer;
+}
+
+section:not(.hero) {
+  margin: 3rem 0;
 }
 
 @font-face {

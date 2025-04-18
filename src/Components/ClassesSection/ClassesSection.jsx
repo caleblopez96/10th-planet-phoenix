@@ -32,7 +32,7 @@ const ClassesSection = () => {
   ];
 
   return (
-    <section className="px-4 my-16 w-full relative">
+    <section className="px-4 w-full relative">
       <div className="container mb-6">
         <h2 className="text-sm uppercase tracking-widest text-red-600 font-bold mb-2">
           Classes
