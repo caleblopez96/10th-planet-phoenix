@@ -1,6 +1,5 @@
 import { useState } from "react";
 import ProductCard from "../ProductCard/ProductCard";
-import "../../Components/ProductGrid/ProductGrid.css";
 
 function ProductGrid() {
   const allProducts = [
@@ -18,7 +17,7 @@ function ProductGrid() {
     },
     {
       id: 3,
-      name: "Hoodie",
+      name: "10th Planet Phoenix Hoodie",
       price: "60.00",
       image: "/10th-planet-phoenix/products/10th-planet-phoenix-hoodie.webp",
     },
@@ -73,6 +72,12 @@ function ProductGrid() {
       price: "30.00",
       image: "url_to_image",
     },
+    {
+      id: 12,
+      name: "Vintage Phoenix T-Shirt",
+      price: "30.00",
+      image: "url_to_image",
+    },
   ];
 
   const [visibleProducts, setVisibleProducts] = useState(4);
@@ -91,8 +96,13 @@ function ProductGrid() {
         ))}
       </div>
       {visibleProducts < allProducts.length && (
-        <div className="button-container">
-          <button onClick={loadMoreProducts}>Load More</button>
+        <div className="button flex justify-center mt-12">
+          <button
+            className="mt-auto w-fit py-2 bg-gradient-to-r from-red-500 to-red-600 font-medium text-sm rounded-md transform hover:scale-102 transition-all duration-300 ease-in-out focus:outline-none shadow-sm hover:shadow-md px-8 cursor-pointer"
+            onClick={loadMoreProducts}
+          >
+            Load More
+          </button>
         </div>
       )}
     </div>
