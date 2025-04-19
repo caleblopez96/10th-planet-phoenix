@@ -1,7 +1,5 @@
 import Hero2 from "../Components/Hero/Hero2";
-
 import ContactForm from "../Components/ContactForm/ContactForm";
-
 import eddieB from "../Components/Information/eddie-bravo.jpg";
 
 const Contact = () => {
@@ -15,4 +13,4 @@ const Contact = () => {
   );
 };
 
-export default Contact; // Ensure this is present
+export default Contact;

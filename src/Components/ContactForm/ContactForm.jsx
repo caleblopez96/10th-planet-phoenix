@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import johnKeith from "../../assets/HERO SM/IMG_20210703_121346.jpg";
+
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     fullName: "",
@@ -62,15 +64,17 @@ const ContactForm = () => {
   return (
     <section id="contact" className="py-8 lg:py-16">
       <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row gap-8">
-        <div className="flex-1 flex flex-col bg-black/5 dark:bg-white/5 dark:border dark:border-white/10 rounded-lg shadow-lg p-6 min-h-[850px]">
-          <h2 className="text-2xl font-bold text-red-500 m-0">Contact Us</h2>
+        <div className="flex-1 flex flex-col bg-black/5 dark:bg-white/5 dark:border dark:border-white/10 rounded-lg shadow-lg p-6 sm:min-h-[600px]">
+          <h2 className="text-lg lg:text-2xl font-bold text-red-500 m-0">
+            Contact Us
+          </h2>
           <p className="font-sans">Reach out to us by filling out the form</p>
 
-          <h3 className="text-xl font-semibold mt-8 mb-3">
+          <h3 className="font-semibold my-6 text-sm text-red-500">
             Find us on social media
           </h3>
           <ul className="list-none p-0 mb-3">
-            <li className="flex items-center gap-3 mb-6 py-3">
+            <li className="flex items-center gap-3 py-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
@@ -84,12 +88,12 @@ const ContactForm = () => {
               </svg>
               <a
                 href="#"
-                className="no-underline text-gray-800  font-medium transition-colors hover:text-red-500 dark:hover:text-red-500"
+                className="no-underline font-medium transition-colors hover:text-red-500 dark:hover:text-red-500"
               >
                 Instagram
               </a>
             </li>
-            <li className="flex items-center gap-3 mb-6 py-3">
+            <li className="flex items-center gap-3 py-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
@@ -108,7 +112,7 @@ const ContactForm = () => {
                 Facebook
               </a>
             </li>
-            <li className="flex items-center gap-3 mb-6 py-3">
+            <li className="flex items-center gap-3 py-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
@@ -130,9 +134,9 @@ const ContactForm = () => {
           </ul>
 
           <img
-            src="Assets/contact/johnstudent.jpg"
+            src={johnKeith}
             alt="Coach John Botello with student"
-            className="w-full max-w-md h-64 object-cover object-top rounded-lg my-6 shadow-md"
+            className="w-full max-w-md object-cover object-top rounded-lg my-6 shadow-md block mx-auto"
           />
         </div>
 
