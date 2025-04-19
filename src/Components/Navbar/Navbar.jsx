@@ -74,36 +74,23 @@ const Navbar = () => {
     }
   };
 
-  {
-    // i removed this from the nav.. its not needed anymore
-    /* ${
-        isNightMode ? "bg-[#111] text-white" : "bg-[#fafafa] text-black"
-      }`*/
-  }
-
   return (
     <nav className={`w-full z-50 p-4 sticky top-0 shadow-2xl`}>
       <div className="flex justify-between items-center md:justify-between">
         {/* hamburger */}
-        <div className="md:hidden">
+        <div className="md:hidden flex align-middle">
           <button
             onClick={toggleMenu}
             className="text-black focus:outline-none"
             aria-label="Toggle menu"
           >
-            {isNightMode ? (
+            {isMenuOpen ? (
+              // X icon with conditional color based on night mode
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                viewBox="0 -960 960 960"
-                width="24px"
-              >
-                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-              </svg>
-            ) : isMenuOpen ? (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
+                className={`h-7 w-7 ${
+                  isNightMode ? "text-white" : "text-black"
+                }`}
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
@@ -114,10 +101,21 @@ const Navbar = () => {
                   d="M6 18L18 6M6 6l12 12"
                 />
               </svg>
-            ) : (
+            ) : isNightMode ? (
+              // Dark mode hamburger
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
+                className="h-7 w-7"
+                viewBox="0 -960 960 960"
+                width="24px"
+              >
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+              </svg>
+            ) : (
+              // Light mode hamburger
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-7 w-7"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
@@ -189,7 +187,7 @@ const Navbar = () => {
           {/* cart icon */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6 cursor-pointer"
+            className="h-7 w-7 cursor-pointer"
             viewBox="0 -960 960 960"
             role="button"
             aria-label="View shopping cart"
@@ -207,7 +205,7 @@ const Navbar = () => {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-7 w-7"
               viewBox="0 -960 960 960"
             >
               {isNightMode ? (
