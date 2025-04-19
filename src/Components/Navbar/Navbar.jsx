@@ -74,13 +74,6 @@ const Navbar = () => {
     }
   };
 
-  {
-    // i removed this from the nav.. its not needed anymore
-    /* ${
-        isNightMode ? "bg-[#111] text-white" : "bg-[#fafafa] text-black"
-      }`*/
-  }
-
   return (
     <nav className={`w-full z-50 p-4 sticky top-0 shadow-2xl`}>
       <div className="flex justify-between items-center md:justify-between">
@@ -91,19 +84,13 @@ const Navbar = () => {
             className="text-black focus:outline-none"
             aria-label="Toggle menu"
           >
-            {isNightMode ? (
+            {isMenuOpen ? (
+              // X icon with conditional color based on night mode
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                viewBox="0 -960 960 960"
-                width="24px"
-              >
-                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-              </svg>
-            ) : isMenuOpen ? (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
+                className={`h-6 w-6 ${
+                  isNightMode ? "text-white" : "text-black"
+                }`}
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
@@ -114,7 +101,18 @@ const Navbar = () => {
                   d="M6 18L18 6M6 6l12 12"
                 />
               </svg>
+            ) : isNightMode ? (
+              // Dark mode hamburger
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                viewBox="0 -960 960 960"
+                width="24px"
+              >
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+              </svg>
             ) : (
+              // Light mode hamburger
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"
