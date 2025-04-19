@@ -78,7 +78,7 @@ const Navbar = () => {
     <nav className={`w-full z-50 p-4 sticky top-0 shadow-2xl`}>
       <div className="flex justify-between items-center md:justify-between">
         {/* hamburger */}
-        <div className="md:hidden">
+        <div className="md:hidden flex align-middle">
           <button
             onClick={toggleMenu}
             className="text-black focus:outline-none"
@@ -88,7 +88,7 @@ const Navbar = () => {
               // X icon with conditional color based on night mode
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className={`h-6 w-6 ${
+                className={`h-7 w-7 ${
                   isNightMode ? "text-white" : "text-black"
                 }`}
                 viewBox="0 0 24 24"
@@ -105,7 +105,7 @@ const Navbar = () => {
               // Dark mode hamburger
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
+                className="h-7 w-7"
                 viewBox="0 -960 960 960"
                 width="24px"
               >
@@ -115,7 +115,7 @@ const Navbar = () => {
               // Light mode hamburger
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
+                className="h-7 w-7"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
@@ -187,7 +187,7 @@ const Navbar = () => {
           {/* cart icon */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6 cursor-pointer"
+            className="h-7 w-7 cursor-pointer"
             viewBox="0 -960 960 960"
             role="button"
             aria-label="View shopping cart"
@@ -205,7 +205,7 @@ const Navbar = () => {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-7 w-7"
               viewBox="0 -960 960 960"
             >
               {isNightMode ? (
