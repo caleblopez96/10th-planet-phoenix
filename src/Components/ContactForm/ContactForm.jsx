@@ -60,7 +60,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contact" className="py-16">
+    <section id="contact" className="py-8 lg:py-16">
       <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row gap-8">
         <div className="flex-1 flex flex-col bg-black/5 dark:bg-white/5 dark:border dark:border-white/10 rounded-lg shadow-lg p-6 min-h-[850px]">
           <h2 className="text-2xl font-bold text-red-500 m-0">Contact Us</h2>
@@ -84,7 +84,7 @@ const ContactForm = () => {
               </svg>
               <a
                 href="#"
-                className="no-underline text-gray-800 dark:text-gray-200 font-medium transition-colors hover:text-red-500 dark:hover:text-red-500"
+                className="no-underline text-gray-800  font-medium transition-colors hover:text-red-500 dark:hover:text-red-500"
               >
                 Instagram
               </a>
@@ -103,7 +103,7 @@ const ContactForm = () => {
               </svg>
               <a
                 href="#"
-                className="no-underline text-gray-800 dark:text-gray-200 font-medium transition-colors hover:text-red-500 dark:hover:text-red-500"
+                className="no-underline font-medium transition-colors hover:text-red-500 dark:hover:text-red-500"
               >
                 Facebook
               </a>
@@ -122,7 +122,7 @@ const ContactForm = () => {
               </svg>
               <a
                 href="#"
-                className="no-underline text-gray-800 dark:text-gray-200 font-medium transition-colors hover:text-red-500 dark:hover:text-red-500"
+                className="no-underline font-medium transition-colors hover:text-red-500 dark:hover:text-red-500"
               >
                 Youtube
               </a>
@@ -145,10 +145,7 @@ const ContactForm = () => {
             Send us a message
           </h3>
 
-          <label
-            htmlFor="fullName"
-            className="block mt-6 mb-2 font-semibold text-gray-800 dark:text-gray-200 font-serif"
-          >
+          <label htmlFor="fullName" className="block mt-6 mb-2 font-semibold">
             Full Name *
           </label>
           <input
@@ -170,7 +167,7 @@ const ContactForm = () => {
             First name and last name are required
           </p>
 
-          <label className="block mt-6 mb-2 font-semibold text-gray-800 dark:text-gray-200 font-serif">
+          <label className="block mt-6 mb-2 font-semibold ">
             Preferred Method of Contact *
           </label>
 
@@ -206,10 +203,7 @@ const ContactForm = () => {
             Please select a contact method.
           </p>
 
-          <label
-            htmlFor="email"
-            className="block mt-6 mb-2 font-semibold text-gray-800 dark:text-gray-200 font-serif"
-          >
+          <label htmlFor="email" className="block mt-6 mb-2 font-semibold">
             Email
           </label>
           <input
@@ -231,10 +225,7 @@ const ContactForm = () => {
             Please enter a valid email address.
           </p>
 
-          <label
-            htmlFor="phone"
-            className="block mt-6 mb-2 font-semibold text-gray-800 dark:text-gray-200 font-serif"
-          >
+          <label htmlFor="phone" className="block mt-6 mb-2 font-semibold">
             Phone Number
           </label>
           <input
@@ -256,10 +247,7 @@ const ContactForm = () => {
             Please enter a valid phone number.
           </p>
 
-          <label
-            htmlFor="comments"
-            className="block mt-6 mb-2 font-semibold text-gray-800 dark:text-gray-200 font-serif"
-          >
+          <label htmlFor="comments" className="block mt-6 mb-2 font-semibold">
             Comments *
           </label>
           <textarea
