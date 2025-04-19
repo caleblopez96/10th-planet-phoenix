@@ -1,8 +1,16 @@
+import Hero2 from "../Components/Hero/Hero2";
+
+import ContactForm from "../Components/ContactForm/ContactForm";
+
+import eddieB from "../Components/Information/eddie-bravo.jpg";
+
 const Contact = () => {
   return (
     <div>
-      <h1>Contact Us</h1>
-      <p>This is the contact page.</p>
+      <Hero2 imageOne={eddieB} imageTwo={eddieB} />
+      <div className="max-w-[1200px] mx-auto px-4">
+        <ContactForm />
+      </div>
     </div>
   );
 };
