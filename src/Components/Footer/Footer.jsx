@@ -12,7 +12,7 @@ const Footer = () => {
     <footer className="py-8 border-gray-300 ">
       <div className="max-w-screen-xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-10 mb-8">
-          <div className="flex flex-col justify-between">
+          <div className="flex flex-col gap-4">
             <NavLink to="/" className="flex-col">
               <h3 className="font-bold text-lg">10th Planet Phoenix</h3>
               {/* <img
@@ -22,10 +22,11 @@ const Footer = () => {
               /> */}
             </NavLink>
 
-            <p className="mb-4">
+            <p className="">
               Training Brazilian Jiu-Jitsu athletes in the Phoenix area since
-              2010. Join our community of dedicated grapplers today!
+              2010.
             </p>
+            <p>Join our community of dedicated grapplers today!</p>
           </div>
 
           <div className="flex flex-col justify-between">
