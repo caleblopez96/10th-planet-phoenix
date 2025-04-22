@@ -74,14 +74,12 @@ const ClassesSection = () => {
                   </div>
                 </div>
 
-                <div className="flex items-center mt-4">
-                  <span className="text-xs border-l-2 border-red-500 pl-2 break-words">
-                    {classItem.time}
-                  </span>
-                </div>
-
-                <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 py-3 px-6 translate-y-full group-hover:translate-y-0 transition-transform flex justify-center items-center">
-                  <Button />
+                <div className="mt-4 flex justify-center align-middle">
+                  <Button
+                    color="text-black"
+                    content="Meet the Team"
+                    route={"/instructors"}
+                  />
                 </div>
               </div>
             </div>

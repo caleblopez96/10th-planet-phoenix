@@ -10,7 +10,7 @@ import classes2 from "../assets/classes/classes2.jpg";
 
 const classesFAQs = [
   {
-    question: "What age can children start training",
+    question: "When can children start training",
     answer: "We recommend children start training at age 7.",
   },
   { question: "What should I bring with me?", answer: "" },

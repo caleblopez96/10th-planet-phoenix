@@ -1,34 +1,27 @@
+/* imports */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-
 @import "tailwindcss";
 
+/* custom fonts */
+@font-face {
+  font-family: "Bank Gothic";
+  src: url("/src/Fonts/bank-gothic-light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Supreme";
+  src: url("/src/Fonts/SUPRRG__.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* global */
 body {
   background-color: #fafafa;
   height: 100vh;
   font-weight: 400;
-}
-
-body.night {
-  background-color: #111111;
-  color: #fafafa;
-}
-
-body.night nav {
-  background-color: #111111;
-  color: #fafafa;
-}
-
-body:not(.night) nav {
-  background-color: #fafafa;
-  color: black;
-}
-
-body.night svg {
-  fill: #fafafa;
-}
-
-body.night .card {
-  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 nav {
@@ -56,12 +49,7 @@ svg {
 }
 
 section:not(.hero) {
-  margin: 3rem 0;
-}
-
-body.night .faq-buttons {
-  background-color: #333;
-  color: #fafafa;
+  margin: 10rem 0;
 }
 
 form label,
@@ -69,16 +57,47 @@ form label,
   font-family: "Bank Gothic", sans-serif;
 }
 
-@font-face {
-  font-family: "Bank Gothic";
-  src: url("/src/Fonts/bank-gothic-light.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+/* night mode styles*/
+
+body.night {
+  background-color: #111111;
+  color: #fafafa;
 }
 
-@font-face {
-  font-family: "Supreme";
-  src: url("/src/Fonts/SUPRRG__.TTF") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+body.night nav {
+  background-color: #111111;
+  color: #fafafa;
+}
+
+body:not(.night) nav {
+  background-color: #fafafa;
+  color: black;
+}
+
+body.night svg {
+  fill: #fafafa;
+}
+
+body.night .card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.night .faq-buttons {
+  background-color: #333;
+  color: #fafafa;
+}
+
+/* custom scroll bar styles */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
 }

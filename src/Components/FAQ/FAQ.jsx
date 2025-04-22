@@ -6,7 +6,7 @@ const FAQItem = ({ question, answer }) => {
   return (
     <div className="rounded-xl mb-2 bg-gray-100 overflow-hidden faq-buttons">
       <button
-        className="w-full flex justify-between items-center p-4 font-bold uppercase tracking-wide hover:bg-gray-400 transition duration-400 text-sm faq-button"
+        className="w-full flex justify-between items-center p-4 font-bold uppercase tracking-wide hover:bg-gray-400 transition duration-400 text-sm faq-button text-left"
         onClick={() => setIsOpen(!isOpen)}
       >
         {question}
@@ -26,7 +26,7 @@ const FAQItem = ({ question, answer }) => {
 const FAQ = ({ faqs }) => {
   return (
     <div className="mx-auto p-6 my-12 shadow-lg">
-      <h2 className="text-xl font-bold text-left uppercase tracking-wide mb-4">
+      <h2 className="text-xl font-bold uppercase tracking-wide mb-4">
         Frequently Asked Questions
       </h2>
       {faqs.map((faq, index) => (
