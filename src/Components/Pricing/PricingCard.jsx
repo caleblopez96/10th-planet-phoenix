@@ -30,7 +30,7 @@ const PricingCards = () => {
         {pricingCardInformation.map((membership, index) => (
           <li
             key={index}
-            className="bg-gray-50 p-3 rounded-md border-l-4 border-red-700 pl-4 space-y-4"
+            className="bg-gray-50 p-3 rounded-md border-l-4 border-red-700 pl-4 space-y-4 card"
           >
             {" "}
             <h2 className="text-lg mb-1">{membership.membership}</h2>
