@@ -98,6 +98,10 @@ body.night .faq-buttons {
   color: #fafafa;
 }
 
+body.night footer svg:hover {
+  fill: var(--color-red-600);
+}
+
 /* custom scroll bar styles */
 .custom-scrollbar::-webkit-scrollbar {
   width: 6px;

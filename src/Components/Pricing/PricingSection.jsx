@@ -39,7 +39,10 @@ const pricingInformation = [
 
 export const PricingSection = () => {
   return (
-    <div className="pricing-container max-w-6xl mx-auto px-4 py-12">
+    <div
+      id="pricing"
+      className="pricing-container max-w-6xl mx-auto px-4 py-12"
+    >
       <div className="container py-8">
         <h2 className="text-sm uppercase tracking-widest text-red-600 font-bold mb-2">
           Pricing

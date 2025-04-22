@@ -44,7 +44,7 @@ const Navbar = () => {
     {
       name: "Info",
       path: "/info",
-      sections: ["About the Gym", "Facility", "FAQ", "Policies"],
+      sections: ["About", "Facility", "Pricing"],
       showDropdown: true,
     },
     {
