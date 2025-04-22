@@ -58,6 +58,10 @@ form label,
   font-family: "Bank Gothic", sans-serif;
 }
 
+footer * {
+  font-family: "Bank Gothic", sans-serif !important;
+}
+
 /* night mode styles*/
 
 body.night {

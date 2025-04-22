@@ -15,11 +15,6 @@ const Footer = () => {
           <div className="flex flex-col gap-4">
             <NavLink to="/" className="flex-col">
               <h3 className="font-bold text-lg">10th Planet Phoenix</h3>
-              {/* <img
-                src={!isNightMode ? logo : logoDark}
-                alt="Logo"
-                className="h-16 md:h-18"
-              /> */}
             </NavLink>
 
             <p className="">
@@ -29,36 +24,38 @@ const Footer = () => {
             <p>Join our community of dedicated grapplers today!</p>
           </div>
 
-          <div className="flex flex-col justify-between">
+          <div className="flex flex-col gap-4">
             <h3 className="font-bold text-lg">Quick Links</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link to="/home" className="hover:text-red-600 ">
-                  Home
-                </Link>
-              </li>
+            <nav>
+              <ul className="space-y-2">
+                <li>
+                  <Link to="/home" className="hover:text-red-600 ">
+                    Home
+                  </Link>
+                </li>
 
-              <li>
-                <Link to="/instructors" className="hover:text-red-600 ">
-                  Instructors
-                </Link>
-              </li>
-              <li>
-                <Link to="/classes" className="hover:text-red-600 ">
-                  Classes
-                </Link>
-              </li>
-              <li>
-                <Link to="/about" className="hover:text-red-600 ">
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" className="hover:text-red-600 ">
-                  Contact
-                </Link>
-              </li>
-            </ul>
+                <li>
+                  <Link to="/instructors" className="hover:text-red-600 ">
+                    Instructors
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/classes" className="hover:text-red-600 ">
+                    Classes
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/about" className="hover:text-red-600 ">
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/contact" className="hover:text-red-600 ">
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </nav>
           </div>
 
           <div className="flex flex-col gap-4">
@@ -74,7 +71,16 @@ const Footer = () => {
                     <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z" />
                   </svg>
                 </span>
-                <span>123 Main St, Phoenix, AZ 85001</span>
+                <a
+                  className="hover:text-red-600"
+                  href="https://g.co/kgs/mtHac27"
+                >
+                  10th Planet Phoenix
+                  <br />
+                  123 Main St, Phoenix
+                  <br />
+                  AZ 85001
+                </a>
               </li>
               <li className="flex items-start">
                 <span className="mr-2">
@@ -118,9 +124,13 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="flex items-start">
                 <div>
-                  <p>Monday - Friday: 6:00am - 9:00pm</p>
-                  <p>Saturday: 9:00am - 2:00pm</p>
-                  <p>Sunday: Closed</p>
+                  <p>Mon: 10-11 AM, 5:00-8:30 PM</p>
+                  <p>Tue: 5:30-7 AM, 5-8:30 PM</p>
+                  <p>Wed: 5:30-7 AM, 6-8:30 PM</p>
+                  <p>Thur: 5:30-7 AM, 6-8 PM</p>
+                  <p>Fri: CLOSED</p>
+                  <p>Sat: 10AM - 1 PM</p>
+                  <p>Sun: CLOSED</p>
                 </div>
               </li>
             </ul>
