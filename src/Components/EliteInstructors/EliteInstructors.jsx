@@ -9,29 +9,37 @@ import Button from "../Buttons/Button";
 const EliteInstructors = () => {
   const instructors = [
     {
+      firstName: "John",
+      lastName: "Botello",
       name: "John Botello",
-      title: "Head Coach",
+      title: "Head Coach, Fundamentals, Kids, Competition",
       belt: "Black Belt",
-      experience: "15 Years",
+      experience: "25 Years",
       image: johnBotello,
     },
     {
-      name: "Eric Anderson",
-      title: "Fundamentals Coach",
-      belt: "Black Belt",
-      experience: "12 Years",
-      image: eric,
-    },
-    {
+      firstName: "Felicia",
+      lastName: "Oh",
       name: "Felicia Oh",
       title: "Competition Coach, Fundamentals Coach",
       belt: "Black Belt",
-      experience: "10 Years",
+      experience: "20 Years",
       image: felicia,
     },
     {
+      firstName: "Eric",
+      lastName: "Anderson",
+      name: "Eric Anderson",
+      title: "Fundamentals Coach, Strength & Conditioning",
+      belt: "Black Belt",
+      experience: "15 Years",
+      image: eric,
+    },
+    {
+      firstName: "Billy",
+      lastName: "Phillips",
       name: "Billy Phillips",
-      title: "Strength & Conditioning, Fundamentals Coach",
+      title: "Fundamentals Coach, Strength & Conditioning",
       belt: "Black Belt",
       experience: "10 Years",
       image: billy,
@@ -78,7 +86,9 @@ const EliteInstructors = () => {
                 </div>
 
                 <div className="text-center mb-6 flex-grow">
-                  <h3 className="text-xl font-bold mb-1">{instructor.name}</h3>
+                  <h3 className="text-xl font-bold mb-1">
+                    {instructor.firstName} <br /> {instructor.lastName}
+                  </h3>
                   <p className="text-red-600 font-medium text-sm mb-4">
                     {instructor.title}
                   </p>
