@@ -18,7 +18,7 @@ const facilityFacts = [
 
 const Facility = () => {
   return (
-    <section className="p-4 md:p-8 lg:p-12">
+    <section className="">
       <div className="container px-4 mb-6">
         <h2 className="text-sm uppercase tracking-widest text-red-600 font-bold mb-2">
           Facility Amenties

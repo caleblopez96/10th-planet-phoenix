@@ -3,11 +3,11 @@ import Button from "../Buttons/Button";
 
 const Information = () => {
   return (
-    <section className="max-w-[1200px] mx-auto px-4">
+    <section id="information" className="my-12">
       <div className="mb-8 relative">
         <h2 className="text-xl md:text-2xl lg:text-3xl text-center font-light">
           Where other systems cease to grow, 10th Planet's entire focus is to
-          continue its own growth.
+          grow.
         </h2>
       </div>
 
@@ -47,6 +47,7 @@ const Information = () => {
               hover="hover:bg-gray-600"
               color="text-black"
               className="flex-1 w-full"
+              route={"/info"}
             />
             <Button
               content="Start Training"
@@ -54,6 +55,7 @@ const Information = () => {
               hover="hover:bg-red-700"
               color="text-white"
               className="flex-1 w-full"
+              route={"/contact"}
             />
           </div>
         </div>

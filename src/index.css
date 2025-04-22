@@ -48,8 +48,8 @@ svg {
   cursor: pointer;
 }
 
-section:not(.hero) {
-  margin: 10rem 0;
+section:not(.hero):not(#information) {
+  margin: 7rem 0;
 }
 
 form label,

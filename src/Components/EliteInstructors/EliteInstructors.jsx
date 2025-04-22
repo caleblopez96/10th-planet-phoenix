@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 
 import johnBotello from "../../assets/instructor photos/john botello.png";
 import eric from "../../assets/instructor photos/coach_erik.jpg";
+import felicia from "../../assets/instructor photos/coach_felicia.jpg";
+import billy from "../../assets/instructor photos/billy.jpg";
 import Button from "../Buttons/Button";
 
 const EliteInstructors = () => {
@@ -15,24 +17,24 @@ const EliteInstructors = () => {
     },
     {
       name: "Eric Anderson",
-      title: "Competition Coach",
+      title: "Fundamentals Coach",
       belt: "Black Belt",
       experience: "12 Years",
       image: eric,
     },
     {
       name: "Felicia Oh",
-      title: "Fundamentals Coach",
+      title: "Competition Coach, Fundamentals Coach",
       belt: "Black Belt",
       experience: "10 Years",
-      image: "",
+      image: felicia,
     },
     {
       name: "Billy Phillips",
-      title: "Strength & Conditioning",
+      title: "Strength & Conditioning, Fundamentals Coach",
       belt: "Black Belt",
       experience: "10 Years",
-      image: "",
+      image: billy,
     },
   ];
 
@@ -62,18 +64,15 @@ const EliteInstructors = () => {
             >
               <div className="absolute top-0 left-0 w-full h-1 bg-red-600"></div>
 
-              <div className="p-8 pt-12 pb-12 relative h-full flex flex-col">
+              <div className="p-8 pt-12 pb-12 relative h-full flex flex-col card">
                 <div className="relative mx-auto mb-6">
-                  {instructor.image ? (
-                    <img
-                      src={instructor.image}
-                      alt={instructor.name}
-                      className="w-24 h-24 rounded-full border-4 border-red-600 object-cover mx-auto"
-                    />
-                  ) : (
-                    <div className="w-24 h-24 rounded-full bg-gray-700 border-4 border-red-500 overflow-hidden mx-auto"></div>
-                  )}
-                  <div className="absolute -top-7 -right-18 bg-red-600 text-xs text-white rounded-full px-2 py-1">
+                  <img
+                    src={instructor.image}
+                    alt={instructor.name}
+                    className="w-24 h-24 rounded-full border-4 border-red-600 object-cover mx-auto"
+                  />
+
+                  <div className="absolute -top-7 sm:-right-25 lg:-right-15 bg-red-600 text-xs text-white rounded-full px-2 py-1">
                     {instructor.belt}
                   </div>
                 </div>

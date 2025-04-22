@@ -40,6 +40,7 @@ const Hero = () => {
               hover="hover:bg-red-700"
               color="text-white"
               className="h-12 text-lg px-6 w-full text-center"
+              route={"/contact"}
             />
           </div>
         </div>
