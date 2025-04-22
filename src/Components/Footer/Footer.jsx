@@ -1,23 +1,25 @@
 import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from "../../assets/10PLogoLight.webp";
 import logoDark from "../../assets/10PLogoDark.webp";
 import { useTheme } from "../../ThemeContext";
 
 const Footer = () => {
-  // Use theme context
+  // se theme context
   const { isNightMode } = useTheme();
 
   return (
     <footer className="py-8 border-gray-300 ">
       <div className="max-w-screen-xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-10 mb-8">
-          <div className="flex flex-col">
-            <NavLink to="/" className="flex">
-              <img
+          <div className="flex flex-col justify-between">
+            <NavLink to="/" className="flex-col">
+              <h3 className="font-bold text-lg">10th Planet Phoenix</h3>
+              {/* <img
                 src={!isNightMode ? logo : logoDark}
                 alt="Logo"
                 className="h-16 md:h-18"
-              />
+              /> */}
             </NavLink>
 
             <p className="mb-4">
@@ -26,54 +28,40 @@ const Footer = () => {
             </p>
           </div>
 
-          <div>
-            <h3 className="font-bold text-lg mb-4">Quick Links</h3>
+          <div className="flex flex-col justify-between">
+            <h3 className="font-bold text-lg">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="#home"
-                  className="hover:text-red-600 transition-colors"
-                >
+                <Link to="/home" className="hover:text-red-600 ">
                   Home
-                </a>
+                </Link>
               </li>
+
               <li>
-                <a
-                  href="#instructors"
-                  className="hover:text-red-600 transition-colors"
-                >
+                <Link to="/instructors" className="hover:text-red-600 ">
                   Instructors
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#classes"
-                  className="hover:text-red-600 transition-colors"
-                >
+                <Link to="/classes" className="hover:text-red-600 ">
                   Classes
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#about"
-                  className="hover:text-red-600 transition-colors"
-                >
+                <Link to="/about" className="hover:text-red-600 ">
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#contact"
-                  className="hover:text-red-600 transition-colors"
-                >
+                <Link to="/contact" className="hover:text-red-600 ">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
 
-          <div>
-            <h3 className="font-bold text-lg mb-4">Contact Us</h3>
+          <div className="flex flex-col gap-4">
+            <h3 className="font-bold text-lg">Contact Us</h3>
             <ul className="space-y-2">
               <li className="flex items-start">
                 <span className="mr-2">
@@ -124,8 +112,8 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
-            <h3 className="font-bold text-lg mb-4">Hours</h3>
+          <div className="flex flex-col gap-4">
+            <h3 className="font-bold text-lg">Hours</h3>
             <ul className="space-y-2">
               <li className="flex items-start">
                 <div>

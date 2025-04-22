@@ -1,5 +1,5 @@
 import ClassSchedule from "../Components/ClassSchedule/ClassSchedule";
-import ClassesSection from "../Components/ClassesSection/ClassesSection";
+
 import FAQ from "../Components/FAQ/FAQ";
 import Hero2 from "../Components/Hero/Hero2";
 import ClassDescription from "../Components/ClassDescription/ClassDescription";
@@ -24,7 +24,6 @@ const Classes = () => {
       <Hero2 imageOne={classes1} imageTwo={classes2} content={"Classes"} />
       <div className="max-w-[1200px] mx-auto px-4">
         <ClassSchedule />
-        <ClassesSection />
         <ClassDescription />
         <FAQ faqs={classesFAQs} />
       </div>

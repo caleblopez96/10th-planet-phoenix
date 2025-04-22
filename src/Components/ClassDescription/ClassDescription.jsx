@@ -1,4 +1,5 @@
-import eddie from "../../assets/test.jpg";
+import electricChair from "../../assets/electric_chair.png";
+import openMat from "../../assets/openmat.jpg";
 import test from "../../assets/test2.jpg";
 import kidsLittleLobos from "../../assets/kidsLittleLobos.jpg";
 
@@ -7,7 +8,7 @@ const classDescription = [
     className: "Fundamentals",
     description1:
       "Jiu jitsu is a highly effective martial art that offers many benefits. One of the main benefits is that it is a great way to stay active and maintain a healthy lifestyle. The constant movement and physical activity required during training helps you improve your cardiovascular health, increase strength and flexibility, and maintain a healthy weight. Additionally, jiu jitsu training requires a high level of focus and concentration, which can help you improve your cognitive abilities and overall mental well-being.",
-    img: eddie,
+    img: electricChair,
   },
   {
     className: "All Levels NoGi Jiu-Jitsu",
@@ -25,7 +26,7 @@ const classDescription = [
     className: "Open Mat",
     description1:
       "Jiu jitsu is a highly effective martial art that offers many benefits. One of the main benefits is that it is a great way to stay active and maintain a healthy lifestyle. The constant movement and physical activity required during training helps you improve your cardiovascular health, increase strength and flexibility, and maintain a healthy weight. Additionally, jiu jitsu training requires a high level of focus and concentration, which can help you improve your cognitive abilities and overall mental well-being.",
-    img: eddie,
+    img: openMat,
   },
 ];
 
@@ -43,7 +44,10 @@ export default function ClassDescription() {
       </div>
 
       {classDescription.map((classItem, index) => (
-        <div key={index} className="container mx-auto px-4 mb-24">
+        <div
+          key={index}
+          className="card rounded-lg container mx-auto mb-24 p-12 shadow-2xl"
+        >
           <div
             className={`flex flex-col lg:flex-row gap-6 lg:gap-12 ${
               index % 2 !== 0 ? "lg:flex-row-reverse" : ""
