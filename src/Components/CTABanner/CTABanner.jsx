@@ -18,7 +18,12 @@ const CTABanner = ({ title = "TRY A FREE CLASS TODAY" }) => {
         <h2 className="text-2xl md:text-3xl text-white mb-8 tracking-wider">
           {title}
         </h2>
-        <Button color="text-black" />
+        <Button
+          color="text-black"
+          hover="hover:bg-red-600 hover:text-white"
+          content="Get Started"
+          route={"/contact"}
+        />
       </div>
     </section>
   );

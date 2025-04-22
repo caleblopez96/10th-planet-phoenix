@@ -5,16 +5,15 @@ const Button = ({
   color = "text-gray-200",
   backgroundColor = "bg-gray-300",
   hover = "hover:bg-gray-400",
-  route,
+  route = "#",
   className = "",
 }) => {
   return (
-    <Link to={route}>
-      <button
-        className={`${backgroundColor} ${hover} ${color} cursor-pointer px-4 py-2 rounded transition-colors font-semibold ${className}`}
-      >
-        {content}
-      </button>
+    <Link
+      to={route}
+      className={`${backgroundColor} ${hover} ${color} cursor-pointer px-4 py-2 rounded transition-colors font-semibold inline-block text-center ${className}`}
+    >
+      {content}
     </Link>
   );
 };

@@ -77,8 +77,9 @@ const ClassesSection = () => {
                 <div className="mt-4 flex justify-center align-middle">
                   <Button
                     color="text-black"
-                    content="Meet the Team"
-                    route={"/instructors"}
+                    hover="hover:bg-red-600 hover:text-white"
+                    content="Learn More"
+                    route={"/classes"}
                   />
                 </div>
               </div>

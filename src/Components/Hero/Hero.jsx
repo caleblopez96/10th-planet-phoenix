@@ -29,7 +29,7 @@ const Hero = () => {
               route={"/info"}
               content="Learn More"
               backgroundColor="bg-gray-300"
-              hover="hover:bg-red-700"
+              hover="hover:bg-red-600 hover:text-white"
               color="text-black"
               className="h-12 text-lg px-6 w-full text-center"
             />
@@ -37,7 +37,7 @@ const Hero = () => {
             <Button
               content="Start Training"
               backgroundColor="bg-red-600"
-              hover="hover:bg-red-700"
+              hover="hover:bg-gray-300 hover:text-black"
               color="text-white"
               className="h-12 text-lg px-6 w-full text-center"
               route={"/contact"}

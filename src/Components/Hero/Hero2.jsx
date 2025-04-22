@@ -5,7 +5,7 @@ const Hero2 = ({ content, imageOne, imageTwo }) => {
       <img
         src={imageOne}
         alt="Background"
-        className="w-full max-h-[80vh] object-cover opacity-70 hidden lg:block"
+        className="w-full max-h-[87vh] object-cover object-[center_15%] opacity-70 hidden lg:block"
       />
 
       {/* sm */}

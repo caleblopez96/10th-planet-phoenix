@@ -36,7 +36,8 @@ h3 {
 }
 
 button,
-.hero p {
+.hero p,
+a {
   font-family: "Bank Gothic", sans-serif;
 }
 

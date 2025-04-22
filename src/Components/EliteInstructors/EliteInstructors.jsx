@@ -77,7 +77,7 @@ const EliteInstructors = () => {
                   <img
                     src={instructor.image}
                     alt={instructor.name}
-                    className="w-24 h-24 rounded-full border-4 border-red-600 object-cover mx-auto"
+                    className="w-24 h-24 rounded-full border-4 border-red-600 object-cover mx-auto group-hover:scale-105 transition-transform duration-300"
                   />
 
                   <div className="absolute -top-7 sm:-right-25 lg:-right-15 bg-red-600 text-xs text-white rounded-full px-2 py-1">
@@ -114,7 +114,7 @@ const EliteInstructors = () => {
                 <div className="mt-auto">
                   <Link
                     to="/instructors#instructorBios"
-                    className="block w-full bg-gray-200 hover:bg-red-600 hover:text-gray-200 transition-colors duration-300 text-sm font-medium py-3 text-center rounded-md text-black"
+                    className="block w-full bg-gray-200 hover:bg-red-600 hover:text-gray-200 transition-colors duration-300 text-sm py-3 text-center rounded-md text-black font-bold"
                   >
                     View Profile
                   </Link>
@@ -127,6 +127,7 @@ const EliteInstructors = () => {
         <div className="mt-16 text-center">
           <Button
             color="text-black"
+            hover="hover:bg-red-600 hover:text-white"
             content="Meet the Team"
             route={"/instructors"}
           />

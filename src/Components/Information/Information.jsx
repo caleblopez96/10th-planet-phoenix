@@ -42,19 +42,20 @@ const Information = () => {
 
           <div className="flex gap-4 flex-col">
             <Button
+              route={"/info"}
               content="Learn More"
               backgroundColor="bg-gray-300"
-              hover="hover:bg-gray-600"
+              hover="hover:bg-red-600 hover:text-white"
               color="text-black"
-              className="flex-1 w-full"
-              route={"/info"}
+              className="h-12 text-lg px-6 w-full text-center"
             />
+
             <Button
               content="Start Training"
               backgroundColor="bg-red-600"
-              hover="hover:bg-red-700"
+              hover="hover:bg-gray-300 hover:text-black"
               color="text-white"
-              className="flex-1 w-full"
+              className="h-12 text-lg px-6 w-full text-center"
               route={"/contact"}
             />
           </div>
