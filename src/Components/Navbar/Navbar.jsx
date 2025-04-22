@@ -85,7 +85,6 @@ const Navbar = () => {
             aria-label="Toggle menu"
           >
             {isMenuOpen ? (
-              // X icon with conditional color based on night mode
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className={`h-7 w-7 ${

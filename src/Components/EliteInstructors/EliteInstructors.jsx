@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 import johnBotello from "../../assets/instructor photos/john botello.png";
+import eric from "../../assets/instructor photos/coach_erik.jpg";
 import Button from "../Buttons/Button";
 
 const EliteInstructors = () => {
@@ -17,10 +18,10 @@ const EliteInstructors = () => {
       title: "Competition Coach",
       belt: "Black Belt",
       experience: "12 Years",
-      image: "",
+      image: eric,
     },
     {
-      name: "Keith Trujillo",
+      name: "Felicia Oh",
       title: "Fundamentals Coach",
       belt: "Black Belt",
       experience: "10 Years",
@@ -36,7 +37,7 @@ const EliteInstructors = () => {
   ];
 
   return (
-    <section className="px-4 py-8 lg:py-16 w-full overflow-hidden  inset-0 ">
+    <section className="px-4 py-8 lg:py-16 w-full overflow-hidden inset-0">
       <h3 className="text-sm uppercase tracking-widest text-red-600 font-bold mb-2">
         Meet the Team
       </h3>
@@ -57,11 +58,11 @@ const EliteInstructors = () => {
           {instructors.map((instructor, index) => (
             <div
               key={index}
-              className="group relative  rounded-lg overflow-hidden shadow-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl card"
+              className="group relative rounded-lg overflow-hidden shadow-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl h-full"
             >
               <div className="absolute top-0 left-0 w-full h-1 bg-red-600"></div>
 
-              <div className="p-8 pt-12 relative">
+              <div className="p-8 pt-12 pb-12 relative h-full flex flex-col">
                 <div className="relative mx-auto mb-6">
                   {instructor.image ? (
                     <img
@@ -72,12 +73,12 @@ const EliteInstructors = () => {
                   ) : (
                     <div className="w-24 h-24 rounded-full bg-gray-700 border-4 border-red-500 overflow-hidden mx-auto"></div>
                   )}
-                  <div className="absolute -top-7 -right-6 bg-red-600 text-xs text-white rounded-full px-2 py-1">
+                  <div className="absolute -top-7 -right-18 bg-red-600 text-xs text-white rounded-full px-2 py-1">
                     {instructor.belt}
                   </div>
                 </div>
 
-                <div className="text-center mb-6">
+                <div className="text-center mb-6 flex-grow">
                   <h3 className="text-xl font-bold mb-1">{instructor.name}</h3>
                   <p className="text-red-600 font-medium text-sm mb-4">
                     {instructor.title}
@@ -88,23 +89,23 @@ const EliteInstructors = () => {
                   <div className="text-left text-sm space-y-2">
                     {instructor.experience && (
                       <div className="flex items-center">
-                        <span className="w-2 h-2 bg-red-600 rounded-full mr-2"></span>
+                        <span className="w-2 bg-red-600 rounded-full mr-2"></span>
                         <span className="">Experience:</span>
                         <span className="ml-auto">{instructor.experience}</span>
                       </div>
                     )}
                     <div className="flex items-center">
-                      <span className="w-2 h-2 bg-red-600 rounded-full mr-2"></span>
+                      <span className="w-2 bg-red-600 rounded-full mr-2"></span>
                       <span className="">Rank:</span>
                       <span className="ml-auto">{instructor.belt}</span>
                     </div>
                   </div>
                 </div>
 
-                <div className="absolute inset-x-0 bottom-0 h-12 bg-gray-200 flex items-center justify-center translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                <div className="mt-auto">
                   <Link
                     to="/instructors#instructorBios"
-                    className=" text-sm font-medium w-full h-full hover:bg-red-600 transition-colors duration-300 cursor-pointer text-center py-4"
+                    className="block w-full bg-gray-200 hover:bg-red-600 hover:text-gray-200 transition-colors duration-300 text-sm font-medium py-3 text-center rounded-md text-black"
                   >
                     View Profile
                   </Link>
