@@ -68,7 +68,7 @@ const EliteInstructors = () => {
           {instructors.map((instructor, index) => (
             <div
               key={index}
-              className="group relative rounded-lg overflow-hidden shadow-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl h-full"
+              className="group relative rounded-lg overflow-hidden shadow-xl transition-all duration-300 hover:-translate-y-2 h-full"
             >
               <div className="absolute top-0 left-0 w-full h-1 bg-red-600"></div>
 
