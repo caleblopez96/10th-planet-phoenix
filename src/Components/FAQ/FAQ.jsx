@@ -25,7 +25,7 @@ const FAQItem = ({ question, answer }) => {
 
 const FAQ = ({ faqs }) => {
   return (
-    <div className="mx-auto p-6 my-12 shadow-lg">
+    <div className="mx-auto p-6 my-12 shadow-lg card rounded-lg">
       <h2 className="text-xl font-bold uppercase tracking-wide mb-4">
         Frequently Asked Questions
       </h2>
