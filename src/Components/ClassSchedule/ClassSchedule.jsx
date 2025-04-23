@@ -109,7 +109,7 @@ export default function ClassSchedule() {
             <li
               key={day}
               className={`cursor-pointer px-4 py-2 rounded ${
-                selectedDay === day ? "bg-red-600" : "bg-gray-200"
+                selectedDay === day ? "bg-red-600" : "bg-gray-100"
               }`}
               onClick={() => setSelectedDay(day)}
             >
@@ -127,7 +127,7 @@ export default function ClassSchedule() {
               className={`hover:bg-red-600 hover:text-white cursor-pointer flex-1 text-center px-2 py-2 mx-1 rounded ${
                 selectedDay === day
                   ? "bg-red-600 hover:bg-red-800 text-white"
-                  : "bg-gray-300"
+                  : "bg-gray-300 text-black"
               }`}
               onClick={() => setSelectedDay(day)}
             >
