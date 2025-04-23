@@ -196,9 +196,12 @@ const Footer = () => {
             reserved.
           </p>
           <div className="flex space-x-4 text-sm">
-            <a href="#privacy" className="hover:text-red-500 transition-colors">
-              Privacy Policy
-            </a>
+            <Link to={"privacy"}>
+              <p className="hover:text-red-500 transition-colors">
+                Privacy Policy
+              </p>
+            </Link>
+
             <a href="#terms" className="hover:text-red-500 transition-colors">
               Terms of Service
             </a>

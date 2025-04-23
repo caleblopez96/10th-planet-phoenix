@@ -12,6 +12,7 @@ import Contact from "./pages/contact.jsx";
 import Instructors from "./pages/instructors.jsx";
 import Classes from "./pages/classes.jsx";
 import Shop from "./pages/shop.jsx";
+import Privacy from "./pages/privacy.jsx";
 
 createRoot(document.getElementById("root")).render(
   <ThemeProvider>
@@ -25,6 +26,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/instructors" element={<Instructors />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/privacy" element={<Privacy />} />
       </Routes>
       <Footer />
     </BrowserRouter>
