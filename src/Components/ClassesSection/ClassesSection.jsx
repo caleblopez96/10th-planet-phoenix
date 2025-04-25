@@ -34,13 +34,13 @@ const ClassesSection = () => {
   return (
     <section className="px-4 w-full relative">
       <div className="container mb-6">
-        <h2 className="text-sm uppercase tracking-widest text-red-600 font-bold mb-2">
+        <p className="text-sm uppercase tracking-widest text-red-600 font-bold mb-2">
           Classes
-        </h2>
-        <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-2 relative z-10">
+        </p>
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-2 relative z-10">
           Something For
           <span className="text-red-600"> Everyone</span>
-        </h3>
+        </h2>
         <p className="mt-6 max-w-2xl text-sm">
           Learn from world-class practitioners with decades of combined
           experience in Brazilian Jiu-Jitsu. Our instructors are dedicated to
