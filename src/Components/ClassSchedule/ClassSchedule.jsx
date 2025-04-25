@@ -109,7 +109,9 @@ export default function ClassSchedule() {
             <li
               key={day}
               className={`cursor-pointer px-4 py-2 rounded ${
-                selectedDay === day ? "bg-red-600" : "bg-gray-100"
+                selectedDay === day
+                  ? "bg-red-600 text-white"
+                  : "bg-gray-100 text-black"
               }`}
               onClick={() => setSelectedDay(day)}
             >
@@ -137,7 +139,7 @@ export default function ClassSchedule() {
         </ul>
       </div>
 
-      <div className=" p-8 min-h-[450px]">
+      <div className=" p-4 min-h-[450px]">
         <h2 className="text-lg font-semibold">{selectedDay}</h2>
         <ul className="mt-2 space-y-2">
           {schedules[selectedDay].map((session, index) => (

@@ -8,7 +8,9 @@ const Instructors = () => {
   return (
     <>
       <Hero2 imageOne={eddie} imageTwo={eddieB} content={"Instructors"} />
-      <InstructorBio />
+      <div className="max-w-[1200px] mx-auto px-4">
+        <InstructorBio />
+      </div>
     </>
   );
 };
