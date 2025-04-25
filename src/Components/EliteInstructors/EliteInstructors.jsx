@@ -48,9 +48,9 @@ const EliteInstructors = () => {
 
   return (
     <section className="px-4 py-8 lg:py-16 w-full overflow-hidden inset-0">
-      <h3 className="text-sm uppercase tracking-widest text-red-600 font-bold mb-2">
+      <p className="text-sm uppercase tracking-widest text-red-600 font-bold mb-2">
         Meet the Team
-      </h3>
+      </p>
 
       <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-2 relative z-10">
         Elite Level <span className="text-red-600">Instructors</span>

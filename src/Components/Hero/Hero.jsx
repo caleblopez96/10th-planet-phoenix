@@ -22,7 +22,9 @@ const Hero = () => {
           10TH PLANET
           <br /> JIU-JITSU PHOENIX
         </h1>
-
+        <h2 className="text-sm uppercase tracking-widest mb-2">
+          No Gi. All Day. World Wide.
+        </h2>
         <div className="flex flex-col lg:flex-row justify-center items-center gap-4 mt-6 w-full max-w-md mx-auto">
           <div className="inline-flex flex-col lg:flex-row gap-4 justify-center w-full">
             <Button
@@ -45,6 +47,16 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="30px"
+        viewBox="0 -960 960 960"
+        width="30px"
+        fill="red"
+        className="absolute bottom-25 lg:bottom-30 left-1/2 -translate-x-1/2 animate-bounce"
+      >
+        <path d="M480-200 240-440l56-56 184 183 184-183 56 56-240 240Zm0-240L240-680l56-56 184 183 184-183 56 56-240 240Z" />
+      </svg>
     </section>
   );
 };

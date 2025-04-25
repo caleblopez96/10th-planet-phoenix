@@ -44,13 +44,13 @@ export const PricingSection = () => {
       className="pricing-container max-w-6xl mx-auto px-4 py-12"
     >
       <div className="container py-8">
-        <h2 className="text-sm uppercase tracking-widest text-red-600 font-bold mb-2">
+        <p className="text-sm uppercase tracking-widest text-red-600 font-bold mb-2">
           Pricing
-        </h2>
-        <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-2 relative z-10">
+        </p>
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-2 relative z-10">
           Memberships for
           <span className="text-red-600"> Everyone</span>
-        </h3>
+        </h2>
       </div>
       <PricingCard />
     </div>
