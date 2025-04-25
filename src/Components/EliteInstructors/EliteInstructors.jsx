@@ -80,7 +80,7 @@ const EliteInstructors = () => {
                     className="w-24 h-24 rounded-full border-4 border-red-600 object-cover mx-auto group-hover:scale-105 transition-transform duration-300"
                   />
 
-                  <div className="absolute -top-7 sm:-right-25 lg:-right-15 bg-red-600 text-xs text-white rounded-full px-2 py-1">
+                  <div className="absolute -top-7 left-30 lg:left-20 lg:-right-15 bg-red-600 text-xs text-white rounded-full px-2 py-1 w-[80px] text-center">
                     {instructor.belt}
                   </div>
                 </div>

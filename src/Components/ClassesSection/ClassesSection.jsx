@@ -59,7 +59,7 @@ const ClassesSection = () => {
 
               <div className="relative z-10 p-6 h-full flex flex-col justify-between lg:h-96">
                 <div>
-                  <span className="inline-block px-3 py-1 bg-red-500 bg-opacity-50 text-xs rounded-full mb-4">
+                  <span className="inline-block px-3 py-1 bg-red-500 bg-opacity-50 text-xs rounded-full mb-4 text-white">
                     {classItem.level}
                   </span>
 
