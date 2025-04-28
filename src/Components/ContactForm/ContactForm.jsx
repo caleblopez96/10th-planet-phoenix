@@ -278,6 +278,11 @@ const ContactForm = () => {
           >
             Submit
           </button>
+          <p>
+            We appreciate your message! You can expect a reply within 3–5
+            business days. If your inquiry is urgent, please consider giving us
+            a call at <a href="tel:480-553-0009">480-553-0009</a>.
+          </p>
         </form>
       </div>
     </section>
