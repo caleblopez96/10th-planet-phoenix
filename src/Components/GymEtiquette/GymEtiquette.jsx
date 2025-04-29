@@ -14,7 +14,7 @@ const GymEtiquette = () => {
 
   return (
     <section id="about" className="rounded-lg">
-      <div className="container px-4 mb-6">
+      <div className="container mb-12">
         <p className="text-sm uppercase tracking-widest text-red-600 font-bold mb-2">
           Gym Etiquette
         </p>

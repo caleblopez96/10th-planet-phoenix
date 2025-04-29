@@ -19,7 +19,7 @@ const facilityFacts = [
 const Facility = () => {
   return (
     <section id="facility" className="">
-      <div className="container px-4 mb-6">
+      <div className="container mb-12">
         <p className="text-sm uppercase tracking-widest text-red-600 font-bold mb-2">
           Facility Amenties
         </p>
@@ -28,7 +28,7 @@ const Facility = () => {
           <span className="text-red-600"> Access</span>
         </h2>
       </div>
-      <div className="w-full max-w-sm md:max-w-2xl lg:max-w-4xl xl:max-w-6xl p-4 rounded-lg shadow-lg my-12">
+      <div className="mb-6">
         <ul>
           {facilityFacts.map((fact, index) => (
             <li key={index} className=" card my-4">

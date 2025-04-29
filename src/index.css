@@ -56,7 +56,7 @@ svg {
   cursor: pointer;
 }
 
-section:not(.hero):not(#information) {
+section:not(.hero):not(#information):not(#instructorBios) {
   margin: 7rem 0;
 }
 

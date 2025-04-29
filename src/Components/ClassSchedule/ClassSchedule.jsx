@@ -101,7 +101,16 @@ export default function ClassSchedule() {
   const [selectedDay, setSelectedDay] = useState("Monday");
 
   return (
-    <div id="schedule" className="w-full">
+    <div id="schedule" className="w-full my-12">
+      <div className="my-6">
+        <p className="text-sm uppercase tracking-widest text-red-600 font-bold mb-2">
+          10th Planet Phoenix
+        </p>
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-2 relative z-10">
+          Class Schedule
+        </h2>
+      </div>
+
       {/* day tabs */}
       <div className="block lg:hidden w-full overflow-x-auto px-0.5">
         <ul className="flex gap-4 whitespace-nowrap w-max m-4">
@@ -121,7 +130,7 @@ export default function ClassSchedule() {
         </ul>
       </div>
       {/* spaced evenly on lg*/}
-      <div className="hidden lg:block w-full lg:pt-16">
+      <div className="hidden lg:block w-full">
         <ul className="flex w-full px-2">
           {Object.keys(schedules).map((day) => (
             <li

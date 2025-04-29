@@ -41,7 +41,7 @@ export const PricingSection = () => {
   return (
     <div
       id="pricing"
-      className="pricing-container max-w-6xl mx-auto px-4 py-12"
+      className="pricing-container max-w-6xl mx-auto px-4 mb-36 "
     >
       <div className="container py-8">
         <p className="text-sm uppercase tracking-widest text-red-600 font-bold mb-2">
@@ -59,7 +59,7 @@ export const PricingSection = () => {
 
 export const PricingCard = () => {
   return (
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
       {pricingInformation.map((plan) => (
         <div
           key={plan.id}
