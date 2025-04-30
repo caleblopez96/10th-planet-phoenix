@@ -10,12 +10,24 @@ import classes2 from "../assets/classes/classes2.jpg";
 
 const classesFAQs = [
   {
-    question: "When can children start training",
+    question: "When can children start training?",
     answer: "We recommend children start training at age 7.",
   },
-  { question: "What should I bring with me?", answer: "" },
-  { question: "What should I wear?", answer: "" },
-  { question: "Are mouth pieces required?", answer: "" },
+  {
+    question: "What should I bring with me?",
+    answer:
+      "Bring a water bottle, a towel, and be ready to train hard! If it’s your first class, we’ll handle the rest.",
+  },
+  {
+    question: "What should I wear?",
+    answer:
+      "Wear a rash guard or athletic shirt and shorts with no pockets, zippers, or metal. No loose clothing.",
+  },
+  {
+    question: "Are mouth pieces required?",
+    answer:
+      "Mouth pieces aren’t required for beginner classes, but we strongly recommend them for sparring and live drills.",
+  },
 ];
 
 const Classes = () => {
