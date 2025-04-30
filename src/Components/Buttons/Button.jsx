@@ -11,7 +11,7 @@ const Button = ({
   return (
     <Link
       to={route}
-      className={`${backgroundColor} ${hover} ${color} cursor-pointer flex flex-col rounded transition-colors font-semibold justify-center align-middle text-center ${className}`}
+      className={`${backgroundColor} ${hover} ${color} cursor-pointer flex flex-col rounded transition-colors font-semibold justify-center align-middle py-2 px-2 text-center ${className}`}
     >
       {content}
     </Link>
