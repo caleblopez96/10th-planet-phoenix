@@ -46,7 +46,7 @@ export default function ClassDescription() {
       {classDescription.map((classItem, index) => (
         <div
           key={index}
-          className="card rounded-lg container mx-auto mb-24 p-12 shadow-2xl"
+          className="card rounded-lg container mx-auto mb-24 p-6 lg:p-8 shadow-2xl"
         >
           <div
             className={`flex flex-col lg:flex-row gap-6 lg:gap-12 ${

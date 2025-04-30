@@ -2,7 +2,10 @@ import Button from "../Buttons/Button";
 import video from "../../assets/headervideo.mp4";
 const Hero = () => {
   return (
-    <section className="relative min-h-screen w-full flex flex-col items-center justify-center text-gray-300 text-center overflow-hidden mt-0 hero">
+    <section
+      id="hero"
+      className="relative min-h-screen w-full flex flex-col items-center justify-center text-gray-300 text-center overflow-hidden mt-0 hero"
+    >
       <div className="w-full z-0 overflow-hidden absolute inset-0 bg-black">
         <video
           className="w-full h-full object-cover opacity-70"

@@ -12,7 +12,7 @@ const InstructorBio = () => {
       belt: "Black Belt",
       experience: "25 Years",
       img: johnImage,
-      bio1: "John Botello, the Chief Instructor and owner of 10th Planet Jiu-Jitsu Phoenix, began his Jiu-Jitsu journey in 2001 while serving in the U.S. Navy in Pearl Harbor, Hawaii, training under Relson Gracie. After moving to San Diego and later Los Angeles, he trained with Rickson Gracie and his black belt Fabio Santos, earning his blue belt. Intrigued by Eddie Bravo, John transitioned to training at 10th Planet Hollywood after one class, eventually abandoning the Gi. In 2006, John was persuaded by his sister to stay in Arizona, where he trained under Edward Rene Sanchez at Sitan Gym and earned his purple belt in 2007.",
+      bio1: "John Botello, the Chief Instructor and owner of 10th Planet Jiu-Jitsu Phoenix, began his Jiu-Jitsu journey in 2001 while serving in the U.S. Navy in Pearl Harbor, Hawaii, training under Relson Gracie. After moving to San Diego and later Los Angeles, he trained with Rickson Gracie and his black belt Fabio Santos, earning his blue belt. Intrigued by Eddie Bravo, John transitioned to training at 10th Planet Hollywood after one class, eventually abandoning the Gi.",
       bio2: "Certified to teach the 10th Planet Jiu-Jitsu system since 2007, John holds the rank of 3rd-degree black belt under Eddie Bravo and is the first 10th Planet black belt in Arizona. As Eddie Bravo's first 10th Planet affiliate, John fosters a friendly, competitive, and ego-free training environment. Known for his patience and expertise, he provides step-by-step guidance for beginners. Still an active competitor, John believes the best is yet to come, both for 10th Planet Phoenix and the broader 10th Planet Jiu-Jitsu family.",
     },
     {
@@ -45,7 +45,7 @@ const InstructorBio = () => {
   ];
 
   return (
-    <section id="instructorBios" className="bg-gray-50 py-2 my-12">
+    <section id="instructorBios" className=" py-2 my-12">
       <div className="container mx-auto px-4 max-w-7xl">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -69,7 +69,7 @@ const InstructorBio = () => {
           {instructors.map((instructor, index) => (
             <div
               key={index}
-              className={`bg-white rounded-xl shadow-lg overflow-hidden ${
+              className={`card rounded-xl shadow-lg overflow-hidden ${
                 index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
               } lg:flex`}
             >
@@ -100,18 +100,16 @@ const InstructorBio = () => {
                 </div>
               </div>
 
-              {/* Bio Section */}
+              {/* bio */}
               <div className="lg:w-2/3 p-8 md:p-10 flex flex-col">
                 {" "}
-                {/* Add flex and flex-col */}
                 <div className="prose max-w-none flex-1">
                   {" "}
-                  {/* Add flex-1 to take remaining space */}
-                  <p className="text-gray-700 mb-6 text-lg leading-relaxed">
+                  <p className="mb-6 text-lg leading-relaxed">
                     {instructor.bio1}
                   </p>
                   {instructor.bio2 && (
-                    <p className="text-gray-700 mb-8 text-lg leading-relaxed">
+                    <p className=" mb-8 text-lg leading-relaxed">
                       {instructor.bio2}
                     </p>
                   )}
@@ -121,19 +119,20 @@ const InstructorBio = () => {
                   {" "}
                   {/* mt-auto pushes to bottom */}
                   <Button
-                    content="Start Training"
-                    backgroundColor="bg-red-600"
-                    hover="hover:bg-red-700"
-                    className="rounded-md shadow-md flex-1 transition-colors py-3 px-6 text-lg"
-                    route={"/contact"}
-                  />
-                  <Button
                     route={"/info"}
                     content="Learn More"
-                    backgroundColor="bg-gray-100"
-                    hover="hover:bg-gray-200"
-                    color="text-gray-800"
-                    className="rounded-md shadow-md flex-1 transition-colors py-3 px-6 text-lg border border-gray-200"
+                    backgroundColor="bg-gray-300"
+                    hover="hover:bg-red-600 hover:text-white"
+                    color="text-black"
+                    className="h-12 text-lg px-6 w-full text-center"
+                  />
+                  <Button
+                    content="Start Training"
+                    backgroundColor="bg-red-600"
+                    hover="hover:bg-gray-300 hover:text-black"
+                    color="text-white"
+                    className="h-12 text-lg px-6 w-full text-center"
+                    route={"/contact"}
                   />
                 </div>
               </div>

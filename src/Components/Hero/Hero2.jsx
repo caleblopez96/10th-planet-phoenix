@@ -1,6 +1,6 @@
 const Hero2 = ({ content, imageOne, imageTwo }) => {
   return (
-    <section className="relative w-full overflow-hidden hero">
+    <section id="hero2" className="relative w-full overflow-hidden hero">
       {/* lg */}
       <img
         src={imageOne}

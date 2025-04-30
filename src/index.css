@@ -61,7 +61,8 @@ section:not(.hero):not(#information):not(#instructorBios) {
 }
 
 form label,
-#contact p {
+#contact p,
+details {
   font-family: "Bank Gothic", sans-serif;
 }
 
@@ -94,6 +95,11 @@ body:not(.night) nav {
 
 body.night svg {
   fill: #fafafa;
+}
+
+body.night #hero svg,
+body.night #hero2 svg {
+  fill: red;
 }
 
 body.night .card {

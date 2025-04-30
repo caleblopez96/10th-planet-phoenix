@@ -1,25 +1,16 @@
-import { useState } from "react";
-
 const FAQItem = ({ question, answer }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
-    <div className="rounded-xl mb-2 bg-gray-200 overflow-hidden card faq-buttons">
-      <button
-        className="w-full flex justify-between items-center p-4 font-bold uppercase tracking-wide hover:bg-gray-400 transition duration-400 text-sm faq-button text-left"
-        onClick={() => setIsOpen(!isOpen)}
-      >
+    <details className="rounded-xl mb-2 bg-gray-200 overflow-hidden card faq-buttons group">
+      <summary className="w-full flex justify-between items-center p-4 font-bold uppercase tracking-wide hover:bg-gray-400 transition duration-400 text-sm faq-button text-left cursor-pointer">
         {question}
-        <span className="text-lg font-bold">{isOpen ? "-" : "+"}</span>
-      </button>
-      <div
-        className={`overflow-hidden transition-all duration-300 ${
-          isOpen ? "max-h-80 p-4" : "max-h-0"
-        }`}
-      >
-        <p className="">{answer}</p>
+        <span className="text-2xl font-bold transition-transform duration-300 group-open:rotate-45">
+          +
+        </span>
+      </summary>
+      <div className="p-4">
+        <p>{answer}</p>
       </div>
-    </div>
+    </details>
   );
 };
 
