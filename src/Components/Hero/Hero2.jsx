@@ -5,22 +5,23 @@ const Hero2 = ({ content, imageOne, imageTwo }) => {
       <img
         src={imageOne}
         alt="Background"
-        className="w-full max-h-[65vh] object-cover object-[center_15%] opacity-70 hidden lg:block"
+        className="w-full max-h-[70vh] object-cover  opacity-90 hidden md:block"
       />
 
       {/* sm */}
       <img
         src={imageTwo}
         alt="Background"
-        className="w-full min-h-[65vh] max-h-[65vh] object-cover opacity-90 transform lg:hidden "
+        className="w-full min-h-[65vh] max-h-[65vh] object-cover opacity-90 transform md:hidden"
       />
 
-      {/* Text with subtle backdrop */}
+      {/* Text */}
       <div className="absolute bottom-4 left-4 z-10 max-w-2xl">
-        <p className="text-white text-2xl lg:text-5xl border-l-4 border-red-700 pl-2 font-bold backdrop-blur-sm backdrop-brightness-50 py-1 pr-3">
+        <p className="text-white text-2xl md:text-4xl lg:text-5xl border-l-4 border-red-700 pl-2 font-bold backdrop-blur-sm backdrop-brightness-50 py-1 pr-3">
           {content}
         </p>
       </div>
+
       <svg
         xmlns="http://www.w3.org/2000/svg"
         height="30px"

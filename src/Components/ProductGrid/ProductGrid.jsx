@@ -98,7 +98,7 @@ function ProductGrid() {
       {visibleProducts < allProducts.length && (
         <div className="button flex justify-center mt-12">
           <button
-            className="mt-auto w-fit py-2 bg-gradient-to-r from-red-500 to-red-600 font-medium text-sm rounded-md transform hover:scale-102 transition-all duration-300 ease-in-out focus:outline-none shadow-sm hover:shadow-md px-8 cursor-pointer text-white"
+            className="mt-auto w-fit py-2 bg-gradient-to-r from-red-600 to-red-600 font-medium text-sm rounded-md transform hover:scale-102 transition-all duration-300 ease-in-out focus:outline-none shadow-sm hover:shadow-md px-8 cursor-pointer text-white"
             onClick={loadMoreProducts}
           >
             Load More

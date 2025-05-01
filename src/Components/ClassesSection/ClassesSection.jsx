@@ -12,7 +12,7 @@ const ClassesSection = () => {
     {
       title: "All Levels Jiu-Jitsu",
       description:
-        "All Levels classes are open to both beginners and more experienced practitioners looking to learn and sharpen technique. At 10th Planet Jiu Jitsu Phoenix we offer a variety of different packages to meet all of your training needs. From 1 year contracted memberships to month to month options, we have you covered! ",
+        "All Levels classes are open to both beginners and more experienced practitioners looking to learn and sharpen technique. At 10th Planet Jiu Jitsu Phoenix we offer a variety of different packages to meet all of your training needs ",
       level: "All Levels",
       time: "Mon/Tue/Wed/Thur 7:00-8:30 PM",
     },
@@ -59,7 +59,7 @@ const ClassesSection = () => {
 
               <div className="relative z-10 p-6 h-full flex flex-col justify-between lg:h-96">
                 <div>
-                  <span className="inline-block px-3 py-1 bg-red-500 bg-opacity-50 text-xs rounded-full mb-4 text-white">
+                  <span className="inline-block px-3 py-1 bg-red-600 bg-opacity-50 text-xs rounded-full mb-4 text-white">
                     {classItem.level}
                   </span>
 

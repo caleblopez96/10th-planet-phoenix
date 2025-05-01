@@ -54,12 +54,12 @@ const Navbar = () => {
       sections: [],
       showDropdown: false,
     },
-    {
-      name: "Shop",
-      path: "/shop",
-      sections: [],
-      showDropdown: false,
-    },
+    // {
+    //   name: "Shop",
+    //   path: "/shop",
+    //   sections: [],
+    //   showDropdown: false,
+    // },
     { name: "Contact", path: "/contact", sections: [], showDropdown: false },
   ];
 
@@ -151,7 +151,7 @@ const Navbar = () => {
               <NavLink
                 to={item.path}
                 className={({ isActive }) =>
-                  `text-md ${isActive ? "text-red-500" : "hover:text-red-500"}`
+                  `text-md ${isActive ? "text-red-600" : "hover:text-red-600"}`
                 }
                 onClick={() => handleNavItemClick(item)}
               >
@@ -171,7 +171,7 @@ const Navbar = () => {
                     <NavLink
                       key={sectionIndex}
                       to={`${item.path}#${section.toLowerCase()}`}
-                      className="block px-4 py-2 text-sm hover:text-red-500"
+                      className="block px-4 py-2 text-sm hover:text-red-600"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       {section}
@@ -185,7 +185,7 @@ const Navbar = () => {
 
         <div className="flex gap-1 lg:gap-4">
           {/* cart icon */}
-          <Link to="/shoppingcart">
+          {/* <Link to="/shoppingcart">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-7 w-7 cursor-pointer"
@@ -195,7 +195,7 @@ const Navbar = () => {
             >
               <path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z" />
             </svg>
-          </Link>
+          </Link> */}
 
           {/* theme toggler */}
           <button
@@ -232,7 +232,7 @@ const Navbar = () => {
                   <NavLink
                     to={item.path}
                     className={({ isActive }) =>
-                      `block py-3 ${isActive ? "text-red-500" : ""}`
+                      `block py-3 ${isActive ? "text-red-600" : ""}`
                     }
                     onClick={() => handleNavItemClick(item)}
                   >
@@ -249,7 +249,7 @@ const Navbar = () => {
                       aria-label={`Toggle ${item.name} sections`}
                     >
                       {activeDropdown === index ? (
-                        <span className="text-red-500">▲</span>
+                        <span className="text-red-600">▲</span>
                       ) : (
                         <span>▼</span>
                       )}
@@ -263,7 +263,7 @@ const Navbar = () => {
                       <NavLink
                         key={sectionIndex}
                         to={`${item.path}#${section.toLowerCase()}`}
-                        className="block py-2 text-sm hover:text-red-500"
+                        className="block py-2 text-sm hover:text-red-600"
                         onClick={() => setIsMenuOpen(false)}
                       >
                         {section}

@@ -25,10 +25,10 @@ createRoot(document.getElementById("root")).render(
         <Route path="/classes" element={<Classes />} />
         <Route path="/info" element={<Info />} />
         <Route path="/instructors" element={<Instructors />} />
-        <Route path="/shop" element={<Shop />} />
+        {/* <Route path="/shop" element={<Shop />} /> */}
         <Route path="/contact" element={<Contact />} />
         <Route path="/privacy" element={<Privacy />} />
-        <Route path="/shoppingcart" element={<ShoppingCart />} />
+        {/* <Route path="/shoppingcart" element={<ShoppingCart />} /> */}
       </Routes>
       <Footer />
     </BrowserRouter>
