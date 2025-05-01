@@ -20,7 +20,7 @@ const Hero = () => {
       </div>
 
       {/* content */}
-      <div className="px-8 rounded-lg z-10 relative max-w-2xl lg:max-w-5xl">
+      <div className="px-8 lg:px-0 rounded-lg z-10 relative max-w-2xl lg:max-w-5xl">
         <h1 className="text-5xl md:text-6xl lg:text-10xl font-bold text-pretty drop-shadow-2xl leading-15 md:leading-20 lg:leading-26">
           10TH PLANET
           <br /> JIU-JITSU PHOENIX

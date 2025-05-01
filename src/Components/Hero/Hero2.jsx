@@ -12,7 +12,7 @@ const Hero2 = ({ content, imageOne, imageTwo }) => {
       <img
         src={imageTwo}
         alt="Background"
-        className="w-full min-h-[65vh] max-h-[65vh] object-cover opacity-90 transform md:hidden"
+        className="w-full min-h-[65vh] max-h-[65vh] object-cover opacity-90 transform md:hidden grayscale"
       />
 
       {/* Text */}
