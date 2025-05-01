@@ -39,7 +39,7 @@ const pricingInformation = [
 
 export const PricingSection = () => {
   return (
-    <section id="pricing" className=" mx-auto px-4 mb-36">
+    <section id="pricing" className=" mx-auto px-4 ">
       <div className="container mb-10">
         <p className="text-sm uppercase tracking-widest text-red-600 font-bold mb-2">
           Something for Everyone
