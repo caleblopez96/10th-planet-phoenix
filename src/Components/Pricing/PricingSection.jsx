@@ -39,21 +39,21 @@ const pricingInformation = [
 
 export const PricingSection = () => {
   return (
-    <div
-      id="pricing"
-      className="pricing-container max-w-6xl mx-auto px-4 mb-36 "
-    >
-      <div className="container py-8">
+    <section id="pricing" className=" mx-auto px-4 mb-36">
+      <div className="container mb-10">
         <p className="text-sm uppercase tracking-widest text-red-600 font-bold mb-2">
-          Pricing
+          Something for Everyone
         </p>
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-2 relative z-10">
-          Memberships for
-          <span className="text-red-600"> Everyone</span>
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 relative z-10">
+          Our Memberships
         </h2>
+        <p className="text-sm md:text-base opacity-70 max-w-2xl">
+          Simple, flexible options to fit your goals and lifestyle — whether
+          you're here once, or every day.
+        </p>
       </div>
       <PricingCard />
-    </div>
+    </section>
   );
 };
 
@@ -63,22 +63,19 @@ export const PricingCard = () => {
       {pricingInformation.map((plan) => (
         <div
           key={plan.id}
-          className={`
-            p-6 rounded-lg shadow-md transition-all duration-300
+          className={`p-6 rounded-lg border transition-all duration-300
             ${
               plan.featured
-                ? "bg-red-50 border-2 border-red-700 scale-105"
-                : "bg-white border border-gray-200 hover:shadow-lg"
+                ? "border-red-600 ring-1 ring-red-600"
+                : "border-gray-300 dark:border-gray-700 hover:shadow"
             }
           `}
         >
-          <div className="text-center card">
-            <h3 className="text-xl font-bold text-gray-900 mb-3">
-              {plan.membership}
-            </h3>
-            <p className="text-gray-600 mb-4">{plan.description}</p>
+          <div className="text-center">
+            <h3 className="text-xl font-bold mb-3">{plan.membership}</h3>
+            <p className="">{plan.description}</p>
             {plan.featured && (
-              <span className="inline-block bg-red-500 text-white text-xs px-3 py-1 rounded-full">
+              <span className="inline-block mt-4 text-xs font-semibold text-red-600">
                 Most Popular
               </span>
             )}

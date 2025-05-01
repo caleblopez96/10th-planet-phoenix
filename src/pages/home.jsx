@@ -23,7 +23,8 @@ const homeFAQs = [
   },
   {
     question: "How do I sign up?",
-    answer: "Visit our website or give us a call to sign up!",
+    answer:
+      "Fill out our contact form or give us a call and let us know you're interested. We'll send you a special sign up link based on the offer selected!",
   },
 ];
 

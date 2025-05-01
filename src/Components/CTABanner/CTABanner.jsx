@@ -5,7 +5,7 @@ import ctaBackgroundImg from "../../assets/CTA BANNER/adultClass.jpg";
 const CTABanner = ({ title = "TRY A FREE CLASS TODAY" }) => {
   return (
     <section className="relative w-full px-6 py-16 flex flex-col items-center justify-center lg:h-[50vh] overflow-hidden">
-      <div className="border-8 border-red-500">
+      <div className="border-8 border-red-600">
         <img
           src={ctaBackgroundImg}
           alt="CTA Background"

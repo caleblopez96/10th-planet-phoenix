@@ -45,10 +45,10 @@ const InstructorBio = () => {
   ];
 
   return (
-    <section id="instructorBios" className=" py-2 my-12">
+    <section id="instructorBios" className="py-2 my-12">
       <div className="container mx-auto px-4 max-w-7xl">
-        {/* Section Header */}
-        <div className="text-center mb-16">
+        {/* section */}
+        <div className=" mb-16">
           <p className="text-sm uppercase tracking-widest text-red-600 font-bold mb-2">
             Meet the Team
           </p>
@@ -64,7 +64,7 @@ const InstructorBio = () => {
           </p>
         </div>
 
-        {/* Instructors Grid */}
+        {/* instructors grid */}
         <div className="space-y-24">
           {instructors.map((instructor, index) => (
             <div
@@ -114,10 +114,8 @@ const InstructorBio = () => {
                     </p>
                   )}
                 </div>
-                {/* Buttons remain at the bottom */}
                 <div className="flex flex-col sm:flex-row gap-4 mt-auto">
                   {" "}
-                  {/* mt-auto pushes to bottom */}
                   <Button
                     route={"/info"}
                     content="Learn More"

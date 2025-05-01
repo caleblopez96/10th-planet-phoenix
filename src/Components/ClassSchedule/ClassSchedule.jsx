@@ -137,7 +137,7 @@ export default function ClassSchedule() {
               key={day}
               className={`hover:bg-red-600 hover:text-white cursor-pointer flex-1 text-center px-2 py-2 mx-1 rounded ${
                 selectedDay === day
-                  ? "bg-red-600 hover:bg-red-800 text-white"
+                  ? "bg-red-600 hover:bg-red-700 text-white"
                   : "bg-gray-300 text-black"
               }`}
               onClick={() => setSelectedDay(day)}
