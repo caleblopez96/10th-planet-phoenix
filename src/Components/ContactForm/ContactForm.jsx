@@ -21,7 +21,7 @@ const InputField = ({
     <input
       type={type}
       id={id}
-      name={id} // Ensure name matches id for easier handling
+      name={id}
       value={value}
       onChange={onChange}
       className={`w-full py-2 px-3 rounded-md border-2 ${
@@ -273,17 +273,17 @@ const ContactForm = () => {
             </h3>
             <ul className="list-none p-0 space-y-1">
               <SocialLink
-                href="#"
+                href="https://www.facebook.com/10thplanetphx/"
                 IconComponent={FacebookIcon}
                 label="Facebook"
               />
               <SocialLink
-                href="#"
+                href="https://www.instagram.com/10thplanetphx/"
                 IconComponent={InstagramIcon}
                 label="Instagram"
               />
               <SocialLink
-                href="#"
+                href="https://www.youtube.com/@10thplanetjjphx"
                 IconComponent={YoutubeIcon}
                 label="Youtube"
               />
