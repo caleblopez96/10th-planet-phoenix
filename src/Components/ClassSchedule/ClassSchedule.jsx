@@ -102,7 +102,7 @@ export default function ClassSchedule() {
 
   return (
     <div id="schedule" className="w-full my-12">
-      <div className="my-6">
+      <div className="my-6 px-4">
         <p className="text-sm uppercase tracking-widest text-red-600 font-bold mb-2">
           10th Planet Phoenix
         </p>
