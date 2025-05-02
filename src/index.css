@@ -67,21 +67,11 @@ details {
   font-family: "Bank Gothic", sans-serif;
 }
 
-footer h2,
-footer h3 {
-  font-family: "Bank Gothic", sans-serif !important;
-}
-
-footer p,
-footer a {
-  font-family: "Open Sans", sans-serif !important;
-}
-
 /* this is how you can stop the autofill of chrome changing the form input backgrounds*/
 input:-webkit-autofill,
 textarea:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0px 1000px #fafafa inset; /* your field bg color here */
-  -webkit-text-fill-color: black; /* your text color here */
+  -webkit-box-shadow: 0 0 0px 1000px #fafafa inset;
+  -webkit-text-fill-color: black;
   transition: background-color 5000s ease-in-out 0s; /* this makes it so you cant see it go from white to dark*/
 }
 
