@@ -1,5 +1,6 @@
 import Button from "../Buttons/Button";
-import video from "../../assets/headervideo.mp4";
+
+import headerVideo from "../../assets/headervideo.webm";
 const Hero = () => {
   return (
     <section
@@ -14,7 +15,7 @@ const Hero = () => {
           loop
           playsInline
         >
-          <source src={video} type="video/mp4" />
+          <source src={headerVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
