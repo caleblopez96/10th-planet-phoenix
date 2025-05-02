@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 
-import johnBotello from "../../assets/instructor photos/john botello.png";
-import eric from "../../assets/instructor photos/coach_erik.jpg";
-import felicia from "../../assets/instructor photos/coach_felicia.jpg";
-import billy from "../../assets/instructor photos/billy.jpg";
+import johnBotello from "../../assets/instructor photos/john botello.webp";
+import eric from "../../assets/instructor photos/coach_erik.webp";
+import felicia from "../../assets/instructor photos/coach_felicia.webp";
+import billy from "../../assets/instructor photos/billy.webp";
+
 import Button from "../Buttons/Button";
 
 const EliteInstructors = () => {
