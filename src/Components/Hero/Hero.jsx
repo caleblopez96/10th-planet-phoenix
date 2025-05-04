@@ -15,7 +15,7 @@ const Hero = () => {
           loop
           playsInline
         >
-          <source src={headerVideo} type="video/mp4" />
+          <source src={headerVideo} type="video/webm" />
           Your browser does not support the video tag.
         </video>
       </div>
